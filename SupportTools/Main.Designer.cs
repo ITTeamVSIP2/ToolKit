@@ -50,14 +50,14 @@
             this.accordionControlElement13 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement3 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement14 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.Other = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement5 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.documentManager = new DevExpress.XtraBars.Docking2010.DocumentManager(this.components);
-            this.tabbedView = new DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView(this.components);
             this.accordionControlElement15 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement16 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement17 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement18 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.Other = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlElement5 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.documentManager = new DevExpress.XtraBars.Docking2010.DocumentManager(this.components);
+            this.tabbedView = new DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dockManager)).BeginInit();
             this.dockPanel1.SuspendLayout();
             this.dockPanel1_Container.SuspendLayout();
@@ -255,35 +255,9 @@
             this.accordionControlElement16,
             this.accordionControlElement17,
             this.accordionControlElement18});
+            this.accordionControlElement14.Expanded = true;
             this.accordionControlElement14.Name = "accordionControlElement14";
             this.accordionControlElement14.Text = "WMS";
-            // 
-            // Other
-            // 
-            this.Other.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
-            this.accordionControlElement5});
-            this.Other.Name = "Other";
-            this.Other.Text = "Other";
-            // 
-            // accordionControlElement5
-            // 
-            this.accordionControlElement5.ImageOptions.Image = global::SupportTools.Properties.Resources.IconTree;
-            this.accordionControlElement5.Name = "accordionControlElement5";
-            this.accordionControlElement5.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement5.Text = "Lấy mật khẩu mới";
-            // 
-            // documentManager
-            // 
-            this.documentManager.ContainerControl = this;
-            this.documentManager.View = this.tabbedView;
-            this.documentManager.ViewCollection.AddRange(new DevExpress.XtraBars.Docking2010.Views.BaseView[] {
-            this.tabbedView});
-            // 
-            // tabbedView
-            // 
-            this.tabbedView.AppearancePage.HeaderActive.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.tabbedView.AppearancePage.HeaderActive.Options.UseBackColor = true;
-            this.tabbedView.DocumentClosed += new DevExpress.XtraBars.Docking2010.Views.DocumentEventHandler(this.tabbedView_DocumentClosed);
             // 
             // accordionControlElement15
             // 
@@ -312,6 +286,33 @@
             this.accordionControlElement18.Name = "accordionControlElement18";
             this.accordionControlElement18.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accordionControlElement18.Text = "Cắt siêu thị";
+            // 
+            // Other
+            // 
+            this.Other.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
+            this.accordionControlElement5});
+            this.Other.Name = "Other";
+            this.Other.Text = "Other";
+            // 
+            // accordionControlElement5
+            // 
+            this.accordionControlElement5.ImageOptions.Image = global::SupportTools.Properties.Resources.IconTree;
+            this.accordionControlElement5.Name = "accordionControlElement5";
+            this.accordionControlElement5.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlElement5.Text = "Lấy mật khẩu mới";
+            // 
+            // documentManager
+            // 
+            this.documentManager.ContainerControl = this;
+            this.documentManager.View = this.tabbedView;
+            this.documentManager.ViewCollection.AddRange(new DevExpress.XtraBars.Docking2010.Views.BaseView[] {
+            this.tabbedView});
+            // 
+            // tabbedView
+            // 
+            this.tabbedView.AppearancePage.HeaderActive.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.tabbedView.AppearancePage.HeaderActive.Options.UseBackColor = true;
+            this.tabbedView.DocumentClosed += new DevExpress.XtraBars.Docking2010.Views.DocumentEventHandler(this.tabbedView_DocumentClosed);
             // 
             // Main
             // 
