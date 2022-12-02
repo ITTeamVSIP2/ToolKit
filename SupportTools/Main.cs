@@ -253,5 +253,10 @@ namespace SupportTools
             if (e.Document.Caption == thietlapquyenhan) _Control11 = OpenControl11(thietlapquyenhan);
             if (e.Document.Caption == xoainputchuyenmay) _Control12 = OpenControl12(xoainputchuyenmay);
         }
+
+        private void accordionControl_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

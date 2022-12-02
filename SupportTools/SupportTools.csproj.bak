@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{59BCFFAC-C6BF-41A5-9765-5FAA7F41D1EB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SupportTools</RootNamespace>
+    <AssemblyName>SupportTools</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>\\fv2it010\IT-Team%28Share%29\Tool Kit\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>true</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>\\fv2it010\IT-Team%28Share%29\Tool Kit\</InstallUrl>
+    <UpdateUrl>\\fv2it010\IT-Team%28Share%29\Tool Kit\</UpdateUrl>
+    <MinimumRequiredVersion>1.0.0.1</MinimumRequiredVersion>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>261F39B2F0718769E90AA55AEF8E17863CA852BC</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>SupportTools_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v16.1" />
+    <Reference Include="DevExpress.Data.v16.1" />
+    <Reference Include="DevExpress.Printing.v16.1.Core, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v16.1" />
+    <Reference Include="DevExpress.Sparkline.v16.1.Core" />
+    <Reference Include="DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v16.1" />
+    <Reference Include="DevExpress.XtraGrid.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Frm_EditERP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_EditERP.Designer.cs">
+      <DependentUpon>Frm_EditERP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_FEPODetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_FEPODetail.Designer.cs">
+      <DependentUpon>Frm_FEPODetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Hello.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Hello.Designer.cs">
+      <DependentUpon>Frm_Hello.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageBoxx.cs" />
+    <Compile Include="Models\DepartmentDTO.cs" />
+    <Compile Include="Models\InvoiceDTO.cs" />
+    <Compile Include="Models\ItemDTO.cs" />
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SQL_Control11.cs" />
+    <Compile Include="Models\UnitDTO.cs" />
+    <Compile Include="Models\UserDTO.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Models\SQL_Control1.cs" />
+    <Compile Include="Models\SQL_Control2.cs" />
+    <Compile Include="XtraControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="XtraControl1.Designer.cs">
+      <DependentUpon>XtraControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraControl10.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="XtraControl10.Designer.cs">
+      <DependentUpon>XtraControl10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraControl11.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="XtraControl11.Designer.cs">
+      <DependentUpon>XtraControl11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraControl12.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="XtraControl12.Designer.cs">
+      <DependentUpon>XtraControl12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraControl2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="XtraControl2.Designer.cs">
+      <DependentUpon>XtraControl2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraControl3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="XtraControl3.Designer.cs">
+      <DependentUpon>XtraControl3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraControl4.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="XtraControl4.Designer.cs">
+      <DependentUpon>XtraControl4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraControl5.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="XtraControl5.Designer.cs">
+      <DependentUpon>XtraControl5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraControl6.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="XtraControl6.Designer.cs">
+      <DependentUpon>XtraControl6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraControl7.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="XtraControl7.Designer.cs">
+      <DependentUpon>XtraControl7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraControl8.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="XtraControl8.Designer.cs">
+      <DependentUpon>XtraControl8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraControl9.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="XtraControl9.Designer.cs">
+      <DependentUpon>XtraControl9.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Frm_EditERP.resx">
+      <DependentUpon>Frm_EditERP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_FEPODetail.resx">
+      <DependentUpon>Frm_FEPODetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Hello.resx">
+      <DependentUpon>Frm_Hello.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="XtraControl1.resx">
+      <DependentUpon>XtraControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraControl10.resx">
+      <DependentUpon>XtraControl10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraControl11.resx">
+      <DependentUpon>XtraControl11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraControl12.resx">
+      <DependentUpon>XtraControl12.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraControl2.resx">
+      <DependentUpon>XtraControl2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraControl3.resx">
+      <DependentUpon>XtraControl3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraControl4.resx">
+      <DependentUpon>XtraControl4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraControl5.resx">
+      <DependentUpon>XtraControl5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraControl6.resx">
+      <DependentUpon>XtraControl6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraControl7.resx">
+      <DependentUpon>XtraControl7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraControl8.resx">
+      <DependentUpon>XtraControl8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraControl9.resx">
+      <DependentUpon>XtraControl9.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="SupportTools_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconTree.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="it.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
