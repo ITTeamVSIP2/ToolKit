@@ -49,11 +49,15 @@
             this.accordionControlElement4 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement13 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement3 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlElement14 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.Other = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement5 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.documentManager = new DevExpress.XtraBars.Docking2010.DocumentManager(this.components);
             this.tabbedView = new DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView(this.components);
-            this.accordionControlElement14 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlElement15 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlElement16 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlElement17 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlElement18 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             ((System.ComponentModel.ISupportInitialize)(this.dockManager)).BeginInit();
             this.dockPanel1.SuspendLayout();
             this.dockPanel1_Container.SuspendLayout();
@@ -89,15 +93,15 @@
             this.dockPanel1.Options.ShowAutoHideButton = false;
             this.dockPanel1.Options.ShowCloseButton = false;
             this.dockPanel1.Options.ShowMaximizeButton = false;
-            this.dockPanel1.OriginalSize = new System.Drawing.Size(274, 200);
-            this.dockPanel1.Size = new System.Drawing.Size(274, 731);
+            this.dockPanel1.OriginalSize = new System.Drawing.Size(254, 200);
+            this.dockPanel1.Size = new System.Drawing.Size(254, 731);
             // 
             // dockPanel1_Container
             // 
             this.dockPanel1_Container.Controls.Add(this.accordionControl);
             this.dockPanel1_Container.Location = new System.Drawing.Point(3, 33);
             this.dockPanel1_Container.Name = "dockPanel1_Container";
-            this.dockPanel1_Container.Size = new System.Drawing.Size(263, 695);
+            this.dockPanel1_Container.Size = new System.Drawing.Size(243, 695);
             this.dockPanel1_Container.TabIndex = 0;
             // 
             // accordionControl
@@ -126,7 +130,7 @@
             this.accordionControl.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Flat;
             this.accordionControl.LookAndFeel.UseDefaultLookAndFeel = false;
             this.accordionControl.Name = "accordionControl";
-            this.accordionControl.Size = new System.Drawing.Size(263, 695);
+            this.accordionControl.Size = new System.Drawing.Size(243, 695);
             this.accordionControl.TabIndex = 3;
             this.accordionControl.SelectedElementChanged += new DevExpress.XtraBars.Navigation.SelectedElementChangedEventHandler(this.accordionControl_SelectedElementChanged);
             this.accordionControl.Click += new System.EventHandler(this.accordionControl_Click);
@@ -244,6 +248,16 @@
             this.accordionControlElement3.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accordionControlElement3.Text = "Đóng mở đơn hàng";
             // 
+            // accordionControlElement14
+            // 
+            this.accordionControlElement14.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
+            this.accordionControlElement15,
+            this.accordionControlElement16,
+            this.accordionControlElement17,
+            this.accordionControlElement18});
+            this.accordionControlElement14.Name = "accordionControlElement14";
+            this.accordionControlElement14.Text = "WMS";
+            // 
             // Other
             // 
             this.Other.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
@@ -271,10 +285,33 @@
             this.tabbedView.AppearancePage.HeaderActive.Options.UseBackColor = true;
             this.tabbedView.DocumentClosed += new DevExpress.XtraBars.Docking2010.Views.DocumentEventHandler(this.tabbedView_DocumentClosed);
             // 
-            // accordionControlElement14
+            // accordionControlElement15
             // 
-            this.accordionControlElement14.Name = "accordionControlElement14";
-            this.accordionControlElement14.Text = "WMS";
+            this.accordionControlElement15.ImageOptions.Image = global::SupportTools.Properties.Resources.IconTree;
+            this.accordionControlElement15.Name = "accordionControlElement15";
+            this.accordionControlElement15.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlElement15.Text = "Kho vải";
+            // 
+            // accordionControlElement16
+            // 
+            this.accordionControlElement16.ImageOptions.Image = global::SupportTools.Properties.Resources.IconTree;
+            this.accordionControlElement16.Name = "accordionControlElement16";
+            this.accordionControlElement16.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlElement16.Text = "Kho phụ liệu";
+            // 
+            // accordionControlElement17
+            // 
+            this.accordionControlElement17.ImageOptions.Image = global::SupportTools.Properties.Resources.IconTree;
+            this.accordionControlElement17.Name = "accordionControlElement17";
+            this.accordionControlElement17.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlElement17.Text = "Kho thành phẩm";
+            // 
+            // accordionControlElement18
+            // 
+            this.accordionControlElement18.ImageOptions.Image = global::SupportTools.Properties.Resources.IconTree;
+            this.accordionControlElement18.Name = "accordionControlElement18";
+            this.accordionControlElement18.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlElement18.Text = "Cắt siêu thị";
             // 
             // Main
             // 
@@ -329,6 +366,10 @@
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement13;
         private DevExpress.XtraBars.Navigation.AccordionControlElement Other;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement14;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement15;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement16;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement17;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement18;
     }
 }
 
