@@ -424,3 +424,4 @@ D:\Software\@Kay\ToolKit\SupportTools\obj\Debug\SupportTools.application
 D:\Software\@Kay\ToolKit\SupportTools\obj\Debug\SupportTools.csproj.CopyComplete
 D:\Software\@Kay\ToolKit\SupportTools\obj\Debug\SupportTools.exe
 D:\Software\@Kay\ToolKit\SupportTools\obj\Debug\SupportTools.pdb
+D:\Software\@Kay\ToolKit\SupportTools\obj\Debug\SupportTools.csproj.AssemblyReference.cache
