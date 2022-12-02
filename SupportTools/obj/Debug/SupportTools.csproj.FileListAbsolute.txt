@@ -527,3 +527,8 @@ D:\Team\ToolKit\ToolKits\SupportTools\obj\Debug\SupportTools.application
 D:\Team\ToolKit\ToolKits\SupportTools\obj\Debug\SupportTools.csproj.CopyComplete
 D:\Team\ToolKit\ToolKits\SupportTools\obj\Debug\SupportTools.exe
 D:\Team\ToolKit\ToolKits\SupportTools\obj\Debug\SupportTools.pdb
+D:\Team\ToolKit\ToolKits\SupportTools\obj\Debug\SupportTools.XtraControl13.resources
+D:\Team\ToolKit\ToolKits\SupportTools\obj\Debug\SupportTools.XtraControl14.resources
+D:\Team\ToolKit\ToolKits\SupportTools\obj\Debug\SupportTools.XtraControl15.resources
+D:\Team\ToolKit\ToolKits\SupportTools\obj\Debug\SupportTools.UpdateFEPO.resources
+D:\Team\ToolKit\ToolKits\SupportTools\obj\Debug\SupportTools.XtraControl16.resources
