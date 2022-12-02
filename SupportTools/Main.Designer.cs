@@ -28,9 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
-            this.dockManager = new DevExpress.XtraBars.Docking.DockManager(this.components);
+            this.dockManager = new DevExpress.XtraBars.Docking.DockManager();
             this.dockPanel1 = new DevExpress.XtraBars.Docking.DockPanel();
             this.dockPanel1_Container = new DevExpress.XtraBars.Docking.ControlContainer();
             this.accordionControl = new DevExpress.XtraBars.Navigation.AccordionControl();
@@ -56,8 +55,8 @@
             this.accordionControlElement18 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.Other = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement5 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.documentManager = new DevExpress.XtraBars.Docking2010.DocumentManager(this.components);
-            this.tabbedView = new DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView(this.components);
+            this.documentManager = new DevExpress.XtraBars.Docking2010.DocumentManager();
+            this.tabbedView = new DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView();
             this.accordionControlElement19 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement21 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement23 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -89,6 +88,8 @@
             // dockPanel1
             // 
             this.dockPanel1.Controls.Add(this.dockPanel1_Container);
+            this.dockPanel1.CustomHeaderButtons.AddRange(new DevExpress.XtraBars.Docking2010.IButton[] {
+            new DevExpress.XtraBars.Docking.CustomHeaderButton()});
             this.dockPanel1.Dock = DevExpress.XtraBars.Docking.DockingStyle.Left;
             this.dockPanel1.ID = new System.Guid("f6ee0279-d9bf-4f50-9938-b8fa7f58c7db");
             this.dockPanel1.ImageOptions.AllowCustomHeaderButtonsGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
@@ -103,9 +104,9 @@
             // dockPanel1_Container
             // 
             this.dockPanel1_Container.Controls.Add(this.accordionControl);
-            this.dockPanel1_Container.Location = new System.Drawing.Point(7, 36);
+            this.dockPanel1_Container.Location = new System.Drawing.Point(7, 38);
             this.dockPanel1_Container.Name = "dockPanel1_Container";
-            this.dockPanel1_Container.Size = new System.Drawing.Size(237, 688);
+            this.dockPanel1_Container.Size = new System.Drawing.Size(237, 686);
             this.dockPanel1_Container.TabIndex = 0;
             // 
             // accordionControl
@@ -134,7 +135,7 @@
             this.accordionControl.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Flat;
             this.accordionControl.LookAndFeel.UseDefaultLookAndFeel = false;
             this.accordionControl.Name = "accordionControl";
-            this.accordionControl.Size = new System.Drawing.Size(237, 688);
+            this.accordionControl.Size = new System.Drawing.Size(237, 686);
             this.accordionControl.TabIndex = 3;
             this.accordionControl.SelectedElementChanged += new DevExpress.XtraBars.Navigation.SelectedElementChangedEventHandler(this.accordionControl_SelectedElementChanged);
             // 
@@ -172,14 +173,15 @@
             // accordionControlElement12
             // 
             this.accordionControlElement12.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
+            this.employeesAccordionControlElement,
+            this.customersAccordionControlElement,
             this.accordionControlElement2,
             this.accordionControlElement1,
             this.accordionControlElement8,
-            this.employeesAccordionControlElement,
             this.accordionControlElement9,
-            this.customersAccordionControlElement,
             this.accordionControlElement6,
             this.accordionControlElement4});
+            this.accordionControlElement12.Expanded = true;
             this.accordionControlElement12.ImageOptions.Image = global::SupportTools.Properties.Resources.apply_16x16;
             this.accordionControlElement12.Name = "accordionControlElement12";
             this.accordionControlElement12.Text = "ITS";
