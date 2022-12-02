@@ -58,6 +58,8 @@
             this.accordionControlElement5 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.documentManager = new DevExpress.XtraBars.Docking2010.DocumentManager(this.components);
             this.tabbedView = new DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView(this.components);
+            this.accordionControlElement19 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlElement20 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             ((System.ComponentModel.ISupportInitialize)(this.dockManager)).BeginInit();
             this.dockPanel1.SuspendLayout();
             this.dockPanel1_Container.SuspendLayout();
@@ -122,7 +124,9 @@
             this.accordionControlElement12,
             this.accordionControlElement13,
             this.accordionControlElement14,
-            this.Other});
+            this.Other,
+            this.accordionControlElement19,
+            this.accordionControlElement20});
             this.accordionControl.Location = new System.Drawing.Point(0, 0);
             this.accordionControl.LookAndFeel.SkinMaskColor = System.Drawing.SystemColors.Menu;
             this.accordionControl.LookAndFeel.SkinMaskColor2 = System.Drawing.SystemColors.ButtonFace;
@@ -314,6 +318,18 @@
             this.tabbedView.AppearancePage.HeaderActive.Options.UseBackColor = true;
             this.tabbedView.DocumentClosed += new DevExpress.XtraBars.Docking2010.Views.DocumentEventHandler(this.tabbedView_DocumentClosed);
             // 
+            // accordionControlElement19
+            // 
+            this.accordionControlElement19.Name = "accordionControlElement19";
+            this.accordionControlElement19.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlElement19.Text = "Hello";
+            // 
+            // accordionControlElement20
+            // 
+            this.accordionControlElement20.Name = "accordionControlElement20";
+            this.accordionControlElement20.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlElement20.Text = "Element20";
+            // 
             // Main
             // 
             this.Appearance.BackColor = System.Drawing.SystemColors.Menu;
@@ -371,6 +387,8 @@
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement16;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement17;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement18;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement19;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement20;
     }
 }
 
