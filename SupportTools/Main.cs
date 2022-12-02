@@ -13,18 +13,8 @@ namespace SupportTools
 {
     public partial class Main : DevExpress.XtraEditors.XtraForm
     {
-        XtraUserControl _Control1;
-        XtraUserControl _Control2;
-        XtraUserControl _Control3;
-        XtraUserControl _Control4;
-        XtraUserControl _Control5;
-        XtraUserControl _Control6;
-        XtraUserControl _Control7;
-        XtraUserControl _Control8;
-        XtraUserControl _Control9;
-        XtraUserControl _Control10;
-        XtraUserControl _Control11;
-        XtraUserControl _Control12;
+        XtraUserControl _Control1,_Control2, _Control3,_Control4,_Control5,_Control6,_Control7,_Control8,_Control9,_Control10,_Control11,_Control12;
+        XtraUserControl _Control13, _Control14, _Control15, _Control16;
         string suadonkyduyet = "Sửa đơn ký duyệt";
         string kiemtraluutrinh = "Kiểm tra lưu trình";
         string capnhatmavattu = "Cập nhật mã vật tư";
@@ -37,6 +27,10 @@ namespace SupportTools
         string thoigianlamviec = "Thời gian làm việc";
         string thietlapquyenhan = "Thiết lập quyền hạn";
         string xoainputchuyenmay = "Xóa input chuyền may";
+        string khovai = "Kho vải";
+        string khophulieu = "Kho phụ liệu";
+        string khothanhpham = "Kho thành phẩm";
+        string catsieuthi = "Cắt siêu thị";
         public Main()
         {
             InitializeComponent();
@@ -52,7 +46,11 @@ namespace SupportTools
             _Control10 = OpenControl10(thoigianlamviec);
             _Control11 = OpenControl11(thietlapquyenhan);
             _Control12 = OpenControl12(xoainputchuyenmay);
-            MessageBox.Show("He sờ lô he sờ lô ly","Ngạc nhiên chưa",MessageBoxButtons.OK);
+            _Control13 = OpenControl13(khovai);
+            _Control14 = OpenControl14(khophulieu);
+            _Control15 = OpenControl15(khothanhpham);
+            _Control16 = OpenControl16(catsieuthi);
+
         }
         XtraUserControl OpenControl1(string text)
         {
@@ -94,6 +92,7 @@ namespace SupportTools
             xtra.Parent = result;
             return result;
         }
+
         XtraUserControl OpenControl5(string text)
         {
             XtraUserControl result = new XtraUserControl();
@@ -174,6 +173,46 @@ namespace SupportTools
             xtra.Parent = result;
             return result;
         }
+        XtraUserControl OpenControl13(string text)
+        {
+            XtraUserControl result = new XtraUserControl();
+            result.Name = text.ToLower() + "UserControl";
+            result.Text = text;
+            XtraControl13 xtra = new XtraControl13();
+            xtra.Dock = System.Windows.Forms.DockStyle.Fill;
+            xtra.Parent = result;
+            return result;
+        }
+        XtraUserControl OpenControl14(string text)
+        {
+            XtraUserControl result = new XtraUserControl();
+            result.Name = text.ToLower() + "UserControl";
+            result.Text = text;
+            XtraControl14 xtra = new XtraControl14();
+            xtra.Dock = System.Windows.Forms.DockStyle.Fill;
+            xtra.Parent = result;
+            return result;
+        }
+        XtraUserControl OpenControl15(string text)
+        {
+            XtraUserControl result = new XtraUserControl();
+            result.Name = text.ToLower() + "UserControl";
+            result.Text = text;
+            XtraControl15 xtra = new XtraControl15();
+            xtra.Dock = System.Windows.Forms.DockStyle.Fill;
+            xtra.Parent = result;
+            return result;
+        }
+        XtraUserControl OpenControl16(string text)
+        {
+            XtraUserControl result = new XtraUserControl();
+            result.Name = text.ToLower() + "UserControl";
+            result.Text = text;
+            XtraControl16 xtra = new XtraControl16();
+            xtra.Dock = System.Windows.Forms.DockStyle.Fill;
+            xtra.Parent = result;
+            return result;
+        }
         private void accordionControl_SelectedElementChanged(object sender, DevExpress.XtraBars.Navigation.SelectedElementChangedEventArgs e)
         {
             if (e.Element == null) return;
@@ -237,6 +276,26 @@ namespace SupportTools
                 tabbedView.AddDocument(_Control12);
                 tabbedView.ActivateDocument(_Control12);
             }
+            if (e.Element.Text == khovai)
+            {
+                tabbedView.AddDocument(_Control13);
+                tabbedView.ActivateDocument(_Control13);
+            }
+            if (e.Element.Text == khophulieu)
+            {
+                tabbedView.AddDocument(_Control14);
+                tabbedView.ActivateDocument(_Control14);
+            }
+            if (e.Element.Text == khothanhpham)
+            {
+                tabbedView.AddDocument(_Control15);
+                tabbedView.ActivateDocument(_Control15);
+            }
+            if (e.Element.Text == catsieuthi)
+            {
+                tabbedView.AddDocument(_Control16);
+                tabbedView.ActivateDocument(_Control16);
+            }
         }
 
         private void tabbedView_DocumentClosed(object sender, DevExpress.XtraBars.Docking2010.Views.DocumentEventArgs e)
@@ -253,11 +312,14 @@ namespace SupportTools
             if (e.Document.Caption == thoigianlamviec) _Control10 = OpenControl10(thoigianlamviec);
             if (e.Document.Caption == thietlapquyenhan) _Control11 = OpenControl11(thietlapquyenhan);
             if (e.Document.Caption == xoainputchuyenmay) _Control12 = OpenControl12(xoainputchuyenmay);
+            if (e.Document.Caption == khovai) _Control13 = OpenControl13(khovai);
+            if (e.Document.Caption == khophulieu) _Control14 = OpenControl14(khophulieu);
+            if (e.Document.Caption == khothanhpham) _Control15 = OpenControl15(khothanhpham);
+            if (e.Document.Caption == catsieuthi) _Control16 = OpenControl16(catsieuthi);
+
+
         }
 
-        private void accordionControl_Click(object sender, EventArgs e)
-        {
 
-        }
     }
 }

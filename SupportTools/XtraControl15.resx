@@ -117,26 +117,24 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="actions_remove" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\actions_remove.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v22.1, Version=22.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="ic" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="IconTree" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\IconTree.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="add_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\add_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="insertcombobox" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\insertcombobox.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v22.1, Version=22.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="apply_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\apply_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="memoSQL.EditValue" xml:space="preserve">
+    <value>SELECT DISTINCT 
+odlist.OrderCode, pklist.ItemID PackageDetailPackageListID, pkdtl.ItemID PackageDetailPackageItemID
+FROM erpsvr.FEAStaging.dbo.PackingPlan pp 
+INNER JOIN erpsvr.FEAStaging.dbo.PackageDetailOrder odlist  on pp.PlanID = odlist.PlanID 
+AND pp.[Status] &lt;&gt; 'PP.DELETED'
+AND pp.IsPiece = 0
+AND odlist.[Status] &lt;&gt; 'PDO.DELETED'
+INNER JOIN erpsvr.FEAStaging.dbo.PackageDetailPackageList pklist  on pklist.PackageDetailID=odlist.PackageDetailID
+INNER JOIN erpsvr.FEAStaging.dbo.PackageDetailPackageItem pkdtl  on pkdtl.PackageDetailPackageListID=pklist.ItemID
+INNER JOIN erpsvr.FEAStaging.dbo.[Order] od  ON pkdtl.OrderID = od.OrderID 
+INNER JOIN erpsvr.FEAStaging.dbo.CustomerEntity ce  ON od.CustomerID = ce.CustomerID
+INNER JOIN erpsvr.FEAStaging.dbo.OrderShipment osh   ON osh.ItemID  = pkdtl.OrderShipmentID
+INNER JOIN erpsvr.FEAStaging.dbo.OrderColor ocol  ON ocol.ItemID = osh.OrderColorID
+INNER JOIN erpsvr.FEAStaging.dbo.ColorItem coli  ON ocol.ColorID  = coli.ColorID
+INNER JOIN erpsvr.FEAStaging.dbo.OrderSize orse ON orse.ItemID = pkdtl.OrderSizeID
+
+
+WHERE 1=1 AND odlist.OrderCode=</value>
   </data>
 </root>
