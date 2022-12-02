@@ -726,14 +726,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SupportTools.exe" size="540096">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SupportTools.exe" size="540608">
       <assemblyIdentity name="SupportTools" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>s36l1ImffULKgmLSy7yg1vF6dMq3FnrWbh9c7LtJFag=</dsig:DigestValue>
+        <dsig:DigestValue>6KRgx9QFBxgTDAMTwSvN/CeXQv4WlsdEp8TpjD8qFMc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
