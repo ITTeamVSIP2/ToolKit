@@ -52,7 +52,7 @@ namespace SupportTools
             _Control10 = OpenControl10(thoigianlamviec);
             _Control11 = OpenControl11(thietlapquyenhan);
             _Control12 = OpenControl12(xoainputchuyenmay);
-            MessageBox.Show("Hello", "alo");
+            MessageBox.Show("He sờ lô he sờ lô ly","Ngạc nhiên chưa",MessageBoxButtons.OK);
         }
         XtraUserControl OpenControl1(string text)
         {
