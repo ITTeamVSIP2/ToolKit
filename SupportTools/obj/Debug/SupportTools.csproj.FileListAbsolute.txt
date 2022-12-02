@@ -501,7 +501,6 @@ D:\Team\ToolKit\ToolKits\SupportTools\bin\Debug\ja\DevExpress.Pdf.v22.1.Core.res
 D:\Team\ToolKit\ToolKits\SupportTools\bin\Debug\de\DevExpress.XtraTreeList.v22.1.resources.dll
 D:\Team\ToolKit\ToolKits\SupportTools\bin\Debug\es\DevExpress.XtraTreeList.v22.1.resources.dll
 D:\Team\ToolKit\ToolKits\SupportTools\bin\Debug\ja\DevExpress.XtraTreeList.v22.1.resources.dll
-D:\Team\ToolKit\ToolKits\SupportTools\obj\Debug\SupportTools.csproj.AssemblyReference.cache
 D:\Team\ToolKit\ToolKits\SupportTools\obj\Debug\SupportTools.csproj.ResolveComReference.cache
 D:\Team\ToolKit\ToolKits\SupportTools\obj\Debug\SupportTools.Frm_EditERP.resources
 D:\Team\ToolKit\ToolKits\SupportTools\obj\Debug\SupportTools.Frm_FEPODetail.resources
