@@ -52,6 +52,9 @@
             // 
             // groupControl1
             // 
+            this.groupControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupControl1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.groupControl1.Controls.Add(this.gridControl1);
             this.groupControl1.Controls.Add(this.simpleButtonThem);
@@ -67,20 +70,23 @@
             this.groupControl1.Controls.Add(this.cbBoPhan);
             this.groupControl1.Controls.Add(this.labelControl6);
             this.groupControl1.Controls.Add(this.cbNguoiDuyet);
-            this.groupControl1.Location = new System.Drawing.Point(4, 4);
-            this.groupControl1.LookAndFeel.SkinName = "Office 2007 Blue";
+            this.groupControl1.Location = new System.Drawing.Point(4, 3);
+            this.groupControl1.LookAndFeel.SkinName = "Office 2010 Blue";
             this.groupControl1.LookAndFeel.UseDefaultLookAndFeel = false;
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(1157, 693);
+            this.groupControl1.Size = new System.Drawing.Size(1157, 694);
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "groupControl1";
             // 
             // gridControl1
             // 
+            this.gridControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.gridControl1.Location = new System.Drawing.Point(14, 106);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(1128, 572);
+            this.gridControl1.Size = new System.Drawing.Size(1128, 573);
             this.gridControl1.TabIndex = 89;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -95,11 +101,12 @@
             // 
             // simpleButtonThem
             // 
-            this.simpleButtonThem.Location = new System.Drawing.Point(870, 29);
+            this.simpleButtonThem.Location = new System.Drawing.Point(867, 15);
             this.simpleButtonThem.Name = "simpleButtonThem";
-            this.simpleButtonThem.Size = new System.Drawing.Size(108, 45);
+            this.simpleButtonThem.Size = new System.Drawing.Size(100, 40);
             this.simpleButtonThem.TabIndex = 87;
             this.simpleButtonThem.Text = "Thêm";
+            this.simpleButtonThem.Click += new System.EventHandler(this.simpleButtonThem_Click);
             // 
             // labelControl3
             // 
@@ -147,6 +154,7 @@
             this.cbUnit.Name = "cbUnit";
             this.cbUnit.Size = new System.Drawing.Size(251, 21);
             this.cbUnit.TabIndex = 84;
+            this.cbUnit.KeyDown += new System.Windows.Forms.KeyEventHandler(this.cbUnit_KeyDown);
             // 
             // txtTenVatPham
             // 
@@ -162,6 +170,7 @@
             this.cbNhomHangMuc.Name = "cbNhomHangMuc";
             this.cbNhomHangMuc.Size = new System.Drawing.Size(347, 21);
             this.cbNhomHangMuc.TabIndex = 78;
+            this.cbNhomHangMuc.KeyDown += new System.Windows.Forms.KeyEventHandler(this.cbNhomHangMuc_KeyDown);
             // 
             // labelControl8
             // 
@@ -178,6 +187,7 @@
             this.cbBoPhan.Name = "cbBoPhan";
             this.cbBoPhan.Size = new System.Drawing.Size(347, 21);
             this.cbBoPhan.TabIndex = 79;
+            this.cbBoPhan.KeyDown += new System.Windows.Forms.KeyEventHandler(this.cbBoPhan_KeyDown);
             // 
             // labelControl6
             // 
@@ -194,6 +204,7 @@
             this.cbNguoiDuyet.Name = "cbNguoiDuyet";
             this.cbNguoiDuyet.Size = new System.Drawing.Size(347, 21);
             this.cbNguoiDuyet.TabIndex = 81;
+            this.cbNguoiDuyet.KeyDown += new System.Windows.Forms.KeyEventHandler(this.cbNguoiDuyet_KeyDown);
             // 
             // KhuVucBaoVe
             // 

@@ -96,7 +96,7 @@
             this.groupControl1.Controls.Add(this.gctrlDR);
             this.groupControl1.Controls.Add(this.sBtnHoanThanh);
             this.groupControl1.Location = new System.Drawing.Point(3, 3);
-            this.groupControl1.LookAndFeel.SkinName = "Office 2007 Blue";
+            this.groupControl1.LookAndFeel.SkinName = "Office 2010 Blue";
             this.groupControl1.LookAndFeel.UseDefaultLookAndFeel = false;
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.ShowCaption = false;
@@ -112,6 +112,7 @@
             this.simplebtnPLMo.Size = new System.Drawing.Size(106, 23);
             this.simplebtnPLMo.TabIndex = 81;
             this.simplebtnPLMo.Text = "PL mở";
+            this.simplebtnPLMo.Click += new System.EventHandler(this.simplebtnPLMo_Click);
             // 
             // memoEdit1
             // 
@@ -129,6 +130,7 @@
             this.memoFEPO.Name = "memoFEPO";
             this.memoFEPO.Size = new System.Drawing.Size(131, 169);
             this.memoFEPO.TabIndex = 75;
+            this.memoFEPO.TextChanged += new System.EventHandler(this.memoFEPO_TextChanged);
             // 
             // labelControl1
             // 
@@ -146,6 +148,7 @@
             this.sBtnChoPhepFEPO.Size = new System.Drawing.Size(106, 23);
             this.sBtnChoPhepFEPO.TabIndex = 73;
             this.sBtnChoPhepFEPO.Text = "IT cho phép";
+            this.sBtnChoPhepFEPO.Click += new System.EventHandler(this.sBtnChoPhepFEPO_Click);
             // 
             // sBtnTruyVanFEPO
             // 
@@ -154,6 +157,7 @@
             this.sBtnTruyVanFEPO.Size = new System.Drawing.Size(106, 23);
             this.sBtnTruyVanFEPO.TabIndex = 72;
             this.sBtnTruyVanFEPO.Text = "Truy vấn";
+            this.sBtnTruyVanFEPO.Click += new System.EventHandler(this.sBtnTruyVanFEPO_Click);
             // 
             // simplebtnMRDong
             // 
@@ -163,6 +167,7 @@
             this.simplebtnMRDong.Size = new System.Drawing.Size(106, 23);
             this.simplebtnMRDong.TabIndex = 80;
             this.simplebtnMRDong.Text = "MR đóng";
+            this.simplebtnMRDong.Click += new System.EventHandler(this.simplebtnMRDong_Click);
             // 
             // simplebtnPLDong
             // 
@@ -172,6 +177,7 @@
             this.simplebtnPLDong.Size = new System.Drawing.Size(106, 23);
             this.simplebtnPLDong.TabIndex = 79;
             this.simplebtnPLDong.Text = "SX đóng";
+            this.simplebtnPLDong.Click += new System.EventHandler(this.simplebtnPLDong_Click);
             // 
             // labelControl3
             // 
@@ -201,10 +207,12 @@
             this.simplebtnMRMo.Size = new System.Drawing.Size(106, 23);
             this.simplebtnMRMo.TabIndex = 82;
             this.simplebtnMRMo.Text = "MR mở";
+            this.simplebtnMRMo.Click += new System.EventHandler(this.simplebtnMRMo_Click);
             // 
             // gctrlListFEPO
             // 
-            this.gctrlListFEPO.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.gctrlListFEPO.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gctrlListFEPO.Location = new System.Drawing.Point(23, 454);
             this.gctrlListFEPO.MainView = this.gridViewListFEPO;
@@ -229,6 +237,7 @@
             this.gridViewListFEPO.Name = "gridViewListFEPO";
             this.gridViewListFEPO.OptionsSelection.MultiSelect = true;
             this.gridViewListFEPO.OptionsSelection.MultiSelectMode = DevExpress.XtraGrid.Views.Grid.GridMultiSelectMode.CellSelect;
+            this.gridViewListFEPO.DoubleClick += new System.EventHandler(this.gridViewListFEPO_DoubleClick);
             // 
             // gridColumn12
             // 
@@ -321,11 +330,12 @@
             // 
             // sBtnTruyVan
             // 
-            this.sBtnTruyVan.Location = new System.Drawing.Point(262, 6);
+            this.sBtnTruyVan.Location = new System.Drawing.Point(258, 6);
             this.sBtnTruyVan.Name = "sBtnTruyVan";
-            this.sBtnTruyVan.Size = new System.Drawing.Size(120, 40);
+            this.sBtnTruyVan.Size = new System.Drawing.Size(100, 40);
             this.sBtnTruyVan.TabIndex = 67;
             this.sBtnTruyVan.Text = "Truy vấn";
+            this.sBtnTruyVan.Click += new System.EventHandler(this.sBtnTruyVan_Click);
             // 
             // gctrlDR
             // 
@@ -385,11 +395,12 @@
             // 
             // sBtnHoanThanh
             // 
-            this.sBtnHoanThanh.Location = new System.Drawing.Point(400, 6);
+            this.sBtnHoanThanh.Location = new System.Drawing.Point(364, 6);
             this.sBtnHoanThanh.Name = "sBtnHoanThanh";
-            this.sBtnHoanThanh.Size = new System.Drawing.Size(107, 40);
+            this.sBtnHoanThanh.Size = new System.Drawing.Size(100, 40);
             this.sBtnHoanThanh.TabIndex = 69;
             this.sBtnHoanThanh.Text = "Hoàn thành";
+            this.sBtnHoanThanh.Click += new System.EventHandler(this.sBtnHoanThanh_Click);
             // 
             // DongMoDonHang
             // 

@@ -55,11 +55,11 @@
             this.groupControl1.Controls.Add(this.txtMSNV);
             this.groupControl1.Controls.Add(this.groupBox1);
             this.groupControl1.Controls.Add(this.simplebtnLayMatKhau);
-            this.groupControl1.Location = new System.Drawing.Point(0, 0);
-            this.groupControl1.LookAndFeel.SkinName = "Office 2007 Blue";
+            this.groupControl1.Location = new System.Drawing.Point(3, 3);
+            this.groupControl1.LookAndFeel.SkinName = "Office 2010 Blue";
             this.groupControl1.LookAndFeel.UseDefaultLookAndFeel = false;
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(863, 574);
+            this.groupControl1.Size = new System.Drawing.Size(857, 568);
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "groupControl1";
             // 
@@ -152,11 +152,12 @@
             // 
             // simplebtnLayMatKhau
             // 
-            this.simplebtnLayMatKhau.Location = new System.Drawing.Point(337, 45);
+            this.simplebtnLayMatKhau.Location = new System.Drawing.Point(347, 49);
             this.simplebtnLayMatKhau.Name = "simplebtnLayMatKhau";
-            this.simplebtnLayMatKhau.Size = new System.Drawing.Size(137, 47);
+            this.simplebtnLayMatKhau.Size = new System.Drawing.Size(130, 40);
             this.simplebtnLayMatKhau.TabIndex = 19;
             this.simplebtnLayMatKhau.Text = "Lấy mật khẩu";
+            this.simplebtnLayMatKhau.Click += new System.EventHandler(this.simplebtnLayMatKhau_Click);
             // 
             // LayMatKhauMoi
             // 

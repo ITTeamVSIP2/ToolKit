@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.dgInvoice = new System.Windows.Forms.DataGridView();
             this.InvoiceNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -60,7 +61,7 @@
             this.groupControl1.Controls.Add(this.txt_Invoice);
             this.groupControl1.Controls.Add(this.labelControl9);
             this.groupControl1.Location = new System.Drawing.Point(3, 3);
-            this.groupControl1.LookAndFeel.SkinName = "Office 2007 Blue";
+            this.groupControl1.LookAndFeel.SkinName = "Office 2010 Blue";
             this.groupControl1.LookAndFeel.UseDefaultLookAndFeel = false;
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.Size = new System.Drawing.Size(1158, 694);
@@ -82,6 +83,14 @@
             this.TotalYards,
             this.TotalRoll,
             this.ScheduleCode});
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Tahoma", 8.25F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgInvoice.DefaultCellStyle = dataGridViewCellStyle6;
             this.dgInvoice.Location = new System.Drawing.Point(21, 66);
             this.dgInvoice.Name = "dgInvoice";
             this.dgInvoice.Size = new System.Drawing.Size(1116, 612);
@@ -137,32 +146,32 @@
             // 
             // simpleButtonDongBoInvoice
             // 
-            this.simpleButtonDongBoInvoice.Location = new System.Drawing.Point(401, 19);
+            this.simpleButtonDongBoInvoice.Location = new System.Drawing.Point(380, 6);
             this.simpleButtonDongBoInvoice.Margin = new System.Windows.Forms.Padding(0);
             this.simpleButtonDongBoInvoice.Name = "simpleButtonDongBoInvoice";
-            this.simpleButtonDongBoInvoice.Size = new System.Drawing.Size(135, 36);
+            this.simpleButtonDongBoInvoice.Size = new System.Drawing.Size(100, 40);
             this.simpleButtonDongBoInvoice.TabIndex = 61;
             this.simpleButtonDongBoInvoice.Text = "Đồng bộ invoice";
             // 
             // simplebtnTruyVan
             // 
-            this.simplebtnTruyVan.Location = new System.Drawing.Point(275, 19);
+            this.simplebtnTruyVan.Location = new System.Drawing.Point(274, 6);
             this.simplebtnTruyVan.Name = "simplebtnTruyVan";
-            this.simplebtnTruyVan.Size = new System.Drawing.Size(107, 36);
+            this.simplebtnTruyVan.Size = new System.Drawing.Size(100, 40);
             this.simplebtnTruyVan.TabIndex = 60;
             this.simplebtnTruyVan.Text = "Truy vấn";
             // 
             // txt_Invoice
             // 
             this.txt_Invoice.EditValue = "";
-            this.txt_Invoice.Location = new System.Drawing.Point(94, 19);
+            this.txt_Invoice.Location = new System.Drawing.Point(96, 7);
             this.txt_Invoice.Name = "txt_Invoice";
             this.txt_Invoice.Size = new System.Drawing.Size(162, 20);
             this.txt_Invoice.TabIndex = 59;
             // 
             // labelControl9
             // 
-            this.labelControl9.Location = new System.Drawing.Point(21, 22);
+            this.labelControl9.Location = new System.Drawing.Point(23, 10);
             this.labelControl9.Name = "labelControl9";
             this.labelControl9.Size = new System.Drawing.Size(67, 13);
             this.labelControl9.TabIndex = 58;
