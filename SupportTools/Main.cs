@@ -50,14 +50,14 @@ namespace SupportTools
             _Control14 = OpenControl14(khophulieu);
             _Control15 = OpenControl15(khothanhpham);
             _Control16 = OpenControl16(catsieuthi);
-
+            panelControl1.BackColor = Color.FromArgb(100, Color.Black);
         }
         XtraUserControl OpenControl1(string text)
         {
             XtraUserControl result = new XtraUserControl();
             result.Name = text.ToLower() + "UserControl";
             result.Text = text;
-            XtraControl1 xtra = new XtraControl1();
+            SuaDonKyDuyet xtra = new SuaDonKyDuyet();
             xtra.Dock = System.Windows.Forms.DockStyle.Fill;
             xtra.Parent = result;
             return result;
@@ -67,7 +67,7 @@ namespace SupportTools
             XtraUserControl result = new XtraUserControl();
             result.Name = text.ToLower() + "UserControl";
             result.Text = text;
-            XtraControl2 xtra = new XtraControl2();
+            KiemTraLuuTrinh xtra = new KiemTraLuuTrinh();
             xtra.Dock = System.Windows.Forms.DockStyle.Fill;
             xtra.Parent = result;
             return result;
@@ -77,7 +77,7 @@ namespace SupportTools
             XtraUserControl result = new XtraUserControl();
             result.Name = text.ToLower() + "UserControl";
             result.Text = text;
-            XtraControl3 xtra = new XtraControl3();
+            CapNhatMaVatTu xtra = new CapNhatMaVatTu();
             xtra.Dock = System.Windows.Forms.DockStyle.Fill;
             xtra.Parent = result;
             return result;
@@ -87,7 +87,7 @@ namespace SupportTools
             XtraUserControl result = new XtraUserControl();
             result.Name = text.ToLower() + "UserControl";
             result.Text = text;
-            XtraControl4 xtra = new XtraControl4();
+            CapNhatQCMPQ xtra = new CapNhatQCMPQ();
             xtra.Dock = System.Windows.Forms.DockStyle.Fill;
             xtra.Parent = result;
             return result;
@@ -98,7 +98,7 @@ namespace SupportTools
             XtraUserControl result = new XtraUserControl();
             result.Name = text.ToLower() + "UserControl";
             result.Text = text;
-            XtraControl5 xtra = new XtraControl5();
+            DongMoDonHang xtra = new DongMoDonHang();
             xtra.Dock = System.Windows.Forms.DockStyle.Fill;
             xtra.Parent = result;
             return result;
@@ -108,7 +108,7 @@ namespace SupportTools
             XtraUserControl result = new XtraUserControl();
             result.Name = text.ToLower() + "UserControl";
             result.Text = text;
-            XtraControl6 xtra = new XtraControl6();
+            DangXuatITS xtra = new DangXuatITS();
             xtra.Dock = System.Windows.Forms.DockStyle.Fill;
             xtra.Parent = result;
             return result;
@@ -118,7 +118,7 @@ namespace SupportTools
             XtraUserControl result = new XtraUserControl();
             result.Name = text.ToLower() + "UserControl";
             result.Text = text;
-            XtraControl7 xtra = new XtraControl7();
+            LayMatKhauMoi xtra = new LayMatKhauMoi();
             xtra.Dock = System.Windows.Forms.DockStyle.Fill;
             xtra.Parent = result;
             return result;
@@ -128,7 +128,7 @@ namespace SupportTools
             XtraUserControl result = new XtraUserControl();
             result.Name = text.ToLower() + "UserControl";
             result.Text = text;
-            XtraControl8 xtra = new XtraControl8();
+            KhuVucBaoVe xtra = new KhuVucBaoVe();
             xtra.Dock = System.Windows.Forms.DockStyle.Fill;
             xtra.Parent = result;
             return result;
@@ -138,7 +138,7 @@ namespace SupportTools
             XtraUserControl result = new XtraUserControl();
             result.Name = text.ToLower() + "UserControl";
             result.Text = text;
-            XtraControl9 xtra = new XtraControl9();
+            XoaPPASieuThi xtra = new XoaPPASieuThi();
             xtra.Dock = System.Windows.Forms.DockStyle.Fill;
             xtra.Parent = result;
             return result;
@@ -148,7 +148,7 @@ namespace SupportTools
             XtraUserControl result = new XtraUserControl();
             result.Name = text.ToLower() + "UserControl";
             result.Text = text;
-            XtraControl10 xtra = new XtraControl10();
+            ThoiGianLamViec xtra = new ThoiGianLamViec();
             xtra.Dock = System.Windows.Forms.DockStyle.Fill;
             xtra.Parent = result;
             return result;
@@ -158,7 +158,7 @@ namespace SupportTools
             XtraUserControl result = new XtraUserControl();
             result.Name = text.ToLower() + "UserControl";
             result.Text = text;
-            XtraControl11 xtra = new XtraControl11();
+            ThietLapQuyenHan xtra = new ThietLapQuyenHan();
             xtra.Dock = System.Windows.Forms.DockStyle.Fill;
             xtra.Parent = result;
             return result;
@@ -168,7 +168,7 @@ namespace SupportTools
             XtraUserControl result = new XtraUserControl();
             result.Name = text.ToLower() + "UserControl";
             result.Text = text;
-            XtraControl12 xtra = new XtraControl12();
+            XoaInputChuyenMay xtra = new XoaInputChuyenMay();
             xtra.Dock = System.Windows.Forms.DockStyle.Fill;
             xtra.Parent = result;
             return result;
@@ -178,7 +178,7 @@ namespace SupportTools
             XtraUserControl result = new XtraUserControl();
             result.Name = text.ToLower() + "UserControl";
             result.Text = text;
-            XtraControl13 xtra = new XtraControl13();
+            KhoVai xtra = new KhoVai();
             xtra.Dock = System.Windows.Forms.DockStyle.Fill;
             xtra.Parent = result;
             return result;
@@ -188,7 +188,7 @@ namespace SupportTools
             XtraUserControl result = new XtraUserControl();
             result.Name = text.ToLower() + "UserControl";
             result.Text = text;
-            XtraControl14 xtra = new XtraControl14();
+            KhoPhuLieu xtra = new KhoPhuLieu();
             xtra.Dock = System.Windows.Forms.DockStyle.Fill;
             xtra.Parent = result;
             return result;
@@ -198,7 +198,7 @@ namespace SupportTools
             XtraUserControl result = new XtraUserControl();
             result.Name = text.ToLower() + "UserControl";
             result.Text = text;
-            XtraControl15 xtra = new XtraControl15();
+            KhoThanhPham xtra = new KhoThanhPham();
             xtra.Dock = System.Windows.Forms.DockStyle.Fill;
             xtra.Parent = result;
             return result;
@@ -208,7 +208,7 @@ namespace SupportTools
             XtraUserControl result = new XtraUserControl();
             result.Name = text.ToLower() + "UserControl";
             result.Text = text;
-            XtraControl16 xtra = new XtraControl16();
+            CatSieuThi xtra = new CatSieuThi();
             xtra.Dock = System.Windows.Forms.DockStyle.Fill;
             xtra.Parent = result;
             return result;

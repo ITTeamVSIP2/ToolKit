@@ -28,8 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
-            this.dockManager = new DevExpress.XtraBars.Docking.DockManager();
+            this.dockManager = new DevExpress.XtraBars.Docking.DockManager(this.components);
             this.dockPanel1 = new DevExpress.XtraBars.Docking.DockPanel();
             this.dockPanel1_Container = new DevExpress.XtraBars.Docking.ControlContainer();
             this.accordionControl = new DevExpress.XtraBars.Navigation.AccordionControl();
@@ -38,12 +39,12 @@
             this.accordionControlElement7 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement10 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement12 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.employeesAccordionControlElement = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.customersAccordionControlElement = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement2 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement1 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement8 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.employeesAccordionControlElement = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement9 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.customersAccordionControlElement = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement6 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement4 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement13 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -55,17 +56,21 @@
             this.accordionControlElement18 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.Other = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement5 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.documentManager = new DevExpress.XtraBars.Docking2010.DocumentManager();
-            this.tabbedView = new DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView();
+            this.documentManager = new DevExpress.XtraBars.Docking2010.DocumentManager(this.components);
+            this.tabbedView = new DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView(this.components);
             this.accordionControlElement19 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement21 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement23 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             ((System.ComponentModel.ISupportInitialize)(this.dockManager)).BeginInit();
             this.dockPanel1.SuspendLayout();
             this.dockPanel1_Container.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.documentManager)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabbedView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.SuspendLayout();
             // 
             // dockManager
@@ -87,9 +92,9 @@
             // 
             // dockPanel1
             // 
+            this.dockPanel1.Appearance.BackColor = System.Drawing.Color.White;
+            this.dockPanel1.Appearance.Options.UseBackColor = true;
             this.dockPanel1.Controls.Add(this.dockPanel1_Container);
-            this.dockPanel1.CustomHeaderButtons.AddRange(new DevExpress.XtraBars.Docking2010.IButton[] {
-            new DevExpress.XtraBars.Docking.CustomHeaderButton()});
             this.dockPanel1.Dock = DevExpress.XtraBars.Docking.DockingStyle.Left;
             this.dockPanel1.ID = new System.Guid("f6ee0279-d9bf-4f50-9938-b8fa7f58c7db");
             this.dockPanel1.ImageOptions.AllowCustomHeaderButtonsGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
@@ -104,9 +109,9 @@
             // dockPanel1_Container
             // 
             this.dockPanel1_Container.Controls.Add(this.accordionControl);
-            this.dockPanel1_Container.Location = new System.Drawing.Point(7, 38);
+            this.dockPanel1_Container.Location = new System.Drawing.Point(7, 37);
             this.dockPanel1_Container.Name = "dockPanel1_Container";
-            this.dockPanel1_Container.Size = new System.Drawing.Size(237, 686);
+            this.dockPanel1_Container.Size = new System.Drawing.Size(237, 687);
             this.dockPanel1_Container.TabIndex = 0;
             // 
             // accordionControl
@@ -114,11 +119,11 @@
             this.accordionControl.AllowItemSelection = true;
             this.accordionControl.Appearance.Item.Disabled.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.accordionControl.Appearance.Item.Disabled.Options.UseBackColor = true;
-            this.accordionControl.Appearance.Item.Hovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(250)))), ((int)(((byte)(225)))));
+            this.accordionControl.Appearance.Item.Hovered.BackColor = System.Drawing.Color.LightSkyBlue;
             this.accordionControl.Appearance.Item.Hovered.Options.UseBackColor = true;
             this.accordionControl.Appearance.Item.Normal.BackColor = System.Drawing.Color.Transparent;
             this.accordionControl.Appearance.Item.Normal.Options.UseBackColor = true;
-            this.accordionControl.Appearance.Item.Pressed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(250)))), ((int)(((byte)(225)))));
+            this.accordionControl.Appearance.Item.Pressed.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.accordionControl.Appearance.Item.Pressed.Options.UseBackColor = true;
             this.accordionControl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.accordionControl.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
@@ -131,11 +136,11 @@
             this.accordionControl.Location = new System.Drawing.Point(0, 0);
             this.accordionControl.LookAndFeel.SkinMaskColor = System.Drawing.SystemColors.Menu;
             this.accordionControl.LookAndFeel.SkinMaskColor2 = System.Drawing.SystemColors.ButtonFace;
-            this.accordionControl.LookAndFeel.SkinName = "Metropolis Dark";
+            this.accordionControl.LookAndFeel.SkinName = "Office 2007 Blue";
             this.accordionControl.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Flat;
             this.accordionControl.LookAndFeel.UseDefaultLookAndFeel = false;
             this.accordionControl.Name = "accordionControl";
-            this.accordionControl.Size = new System.Drawing.Size(237, 686);
+            this.accordionControl.Size = new System.Drawing.Size(237, 687);
             this.accordionControl.TabIndex = 3;
             this.accordionControl.SelectedElementChanged += new DevExpress.XtraBars.Navigation.SelectedElementChangedEventHandler(this.accordionControl_SelectedElementChanged);
             // 
@@ -186,6 +191,20 @@
             this.accordionControlElement12.Name = "accordionControlElement12";
             this.accordionControlElement12.Text = "ITS";
             // 
+            // employeesAccordionControlElement
+            // 
+            this.employeesAccordionControlElement.ImageOptions.SvgImage = global::SupportTools.Properties.Resources.actions_remove;
+            this.employeesAccordionControlElement.Name = "employeesAccordionControlElement";
+            this.employeesAccordionControlElement.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.employeesAccordionControlElement.Text = "Sửa đơn ký duyệt";
+            // 
+            // customersAccordionControlElement
+            // 
+            this.customersAccordionControlElement.ImageOptions.SvgImage = global::SupportTools.Properties.Resources.actions_remove;
+            this.customersAccordionControlElement.Name = "customersAccordionControlElement";
+            this.customersAccordionControlElement.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.customersAccordionControlElement.Text = "Kiểm tra lưu trình";
+            // 
             // accordionControlElement2
             // 
             this.accordionControlElement2.ImageOptions.SvgImage = global::SupportTools.Properties.Resources.actions_remove;
@@ -207,26 +226,12 @@
             this.accordionControlElement8.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accordionControlElement8.Text = "Thời gian làm việc";
             // 
-            // employeesAccordionControlElement
-            // 
-            this.employeesAccordionControlElement.ImageOptions.SvgImage = global::SupportTools.Properties.Resources.actions_remove;
-            this.employeesAccordionControlElement.Name = "employeesAccordionControlElement";
-            this.employeesAccordionControlElement.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.employeesAccordionControlElement.Text = "Sửa đơn ký duyệt";
-            // 
             // accordionControlElement9
             // 
             this.accordionControlElement9.ImageOptions.SvgImage = global::SupportTools.Properties.Resources.actions_remove;
             this.accordionControlElement9.Name = "accordionControlElement9";
             this.accordionControlElement9.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accordionControlElement9.Text = "Thiết lập quyền hạn";
-            // 
-            // customersAccordionControlElement
-            // 
-            this.customersAccordionControlElement.ImageOptions.SvgImage = global::SupportTools.Properties.Resources.actions_remove;
-            this.customersAccordionControlElement.Name = "customersAccordionControlElement";
-            this.customersAccordionControlElement.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.customersAccordionControlElement.Text = "Kiểm tra lưu trình";
             // 
             // accordionControlElement6
             // 
@@ -246,6 +251,7 @@
             // 
             this.accordionControlElement13.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.accordionControlElement3});
+            this.accordionControlElement13.Expanded = true;
             this.accordionControlElement13.ImageOptions.Image = global::SupportTools.Properties.Resources.apply_16x16;
             this.accordionControlElement13.Name = "accordionControlElement13";
             this.accordionControlElement13.Text = "ERP";
@@ -322,7 +328,7 @@
             // 
             // tabbedView
             // 
-            this.tabbedView.AppearancePage.HeaderActive.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.tabbedView.AppearancePage.HeaderActive.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.tabbedView.AppearancePage.HeaderActive.Options.UseBackColor = true;
             this.tabbedView.DocumentClosed += new DevExpress.XtraBars.Docking2010.Views.DocumentEventHandler(this.tabbedView_DocumentClosed);
             // 
@@ -341,19 +347,46 @@
             this.accordionControlElement23.Name = "accordionControlElement23";
             this.accordionControlElement23.Text = "Element20";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Image = global::SupportTools.Properties.Resources._5;
+            this.pictureBox1.Location = new System.Drawing.Point(373, 111);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(893, 510);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
+            // panelControl1
+            // 
+            this.panelControl1.AutoSize = true;
+            this.panelControl1.ContentImage = global::SupportTools.Properties.Resources._5;
+            this.panelControl1.Location = new System.Drawing.Point(400, 149);
+            this.panelControl1.Name = "panelControl1";
+            this.panelControl1.Size = new System.Drawing.Size(695, 410);
+            this.panelControl1.TabIndex = 4;
+            // 
             // Main
             // 
-            this.Appearance.BackColor = System.Drawing.SystemColors.Menu;
+            this.ActiveGlowColor = System.Drawing.Color.White;
+            this.Appearance.BackColor = System.Drawing.Color.White;
             this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1384, 731);
+            this.AutoSize = true;
+            this.BackgroundImageLayoutStore = System.Windows.Forms.ImageLayout.Center;
+            this.BackgroundImageStore = global::SupportTools.Properties.Resources.bg;
+            this.ClientSize = new System.Drawing.Size(1444, 731);
+            this.Controls.Add(this.panelControl1);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dockPanel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.DoubleBuffered = true;
             this.IconOptions.Icon = ((System.Drawing.Icon)(resources.GetObject("Main.IconOptions.Icon")));
             this.IconOptions.Image = global::SupportTools.Properties.Resources._5;
             this.InactiveGlowColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.LookAndFeel.SkinName = "Foggy";
+            this.LookAndFeel.SkinName = "Seven";
             this.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Flat;
             this.LookAndFeel.TouchUIMode = DevExpress.Utils.DefaultBoolean.True;
             this.LookAndFeel.UseDefaultLookAndFeel = false;
@@ -366,7 +399,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.documentManager)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabbedView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -403,6 +439,8 @@
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement19;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement21;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement23;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private DevExpress.XtraEditors.PanelControl panelControl1;
     }
 }
 

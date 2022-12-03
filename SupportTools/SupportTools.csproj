@@ -111,12 +111,6 @@
     <Compile Include="Frm_FEPODetail.Designer.cs">
       <DependentUpon>Frm_FEPODetail.cs</DependentUpon>
     </Compile>
-    <Compile Include="Frm_Hello.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Frm_Hello.Designer.cs">
-      <DependentUpon>Frm_Hello.cs</DependentUpon>
-    </Compile>
     <Compile Include="MessageBoxx.cs" />
     <Compile Include="Models\DepartmentDTO.cs" />
     <Compile Include="Models\InvoiceDTO.cs" />
@@ -140,110 +134,107 @@
     <Compile Include="UpdateFEPO.designer.cs">
       <DependentUpon>UpdateFEPO.cs</DependentUpon>
     </Compile>
-    <Compile Include="XtraControl1.cs">
+    <Compile Include="UserControl\ITS\SuaDonKyDuyet.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="XtraControl1.Designer.cs">
-      <DependentUpon>XtraControl1.cs</DependentUpon>
+    <Compile Include="UserControl\ITS\SuaDonKyDuyet.Designer.cs">
+      <DependentUpon>SuaDonKyDuyet.cs</DependentUpon>
     </Compile>
-    <Compile Include="XtraControl10.cs">
+    <Compile Include="UserControl\ITS\ThoiGianLamViec.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="XtraControl10.Designer.cs">
-      <DependentUpon>XtraControl10.cs</DependentUpon>
+    <Compile Include="UserControl\ITS\ThoiGianLamViec.Designer.cs">
+      <DependentUpon>ThoiGianLamViec.cs</DependentUpon>
     </Compile>
-    <Compile Include="XtraControl11.cs">
+    <Compile Include="UserControl\ITS\ThietLapQuyenHan.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="XtraControl11.Designer.cs">
-      <DependentUpon>XtraControl11.cs</DependentUpon>
+    <Compile Include="UserControl\ITS\ThietLapQuyenHan.Designer.cs">
+      <DependentUpon>ThietLapQuyenHan.cs</DependentUpon>
     </Compile>
-    <Compile Include="XtraControl12.cs">
+    <Compile Include="UserControl\WTS\XoaInputChuyenMay.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="XtraControl12.Designer.cs">
-      <DependentUpon>XtraControl12.cs</DependentUpon>
+    <Compile Include="UserControl\WTS\XoaInputChuyenMay.Designer.cs">
+      <DependentUpon>XoaInputChuyenMay.cs</DependentUpon>
     </Compile>
-    <Compile Include="XtraControl13.cs">
+    <Compile Include="UserControl\WMS\KhoVai.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="XtraControl13.Designer.cs">
-      <DependentUpon>XtraControl13.cs</DependentUpon>
+    <Compile Include="UserControl\WMS\KhoVai.Designer.cs">
+      <DependentUpon>KhoVai.cs</DependentUpon>
     </Compile>
-    <Compile Include="XtraControl14.cs">
+    <Compile Include="UserControl\WMS\KhoPhuLieu.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="XtraControl14.Designer.cs">
-      <DependentUpon>XtraControl14.cs</DependentUpon>
+    <Compile Include="UserControl\WMS\KhoPhuLieu.Designer.cs">
+      <DependentUpon>KhoPhuLieu.cs</DependentUpon>
     </Compile>
-    <Compile Include="XtraControl15.cs">
+    <Compile Include="UserControl\WMS\KhoThanhPham.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="XtraControl15.Designer.cs">
-      <DependentUpon>XtraControl15.cs</DependentUpon>
+    <Compile Include="UserControl\WMS\KhoThanhPham.Designer.cs">
+      <DependentUpon>KhoThanhPham.cs</DependentUpon>
     </Compile>
-    <Compile Include="XtraControl16.cs">
+    <Compile Include="UserControl\WMS\CatSieuThi.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="XtraControl16.Designer.cs">
-      <DependentUpon>XtraControl16.cs</DependentUpon>
+    <Compile Include="UserControl\WMS\CatSieuThi.Designer.cs">
+      <DependentUpon>CatSieuThi.cs</DependentUpon>
     </Compile>
-    <Compile Include="XtraControl2.cs">
+    <Compile Include="UserControl\ITS\KiemTraLuuTrinh.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="XtraControl2.Designer.cs">
-      <DependentUpon>XtraControl2.cs</DependentUpon>
+    <Compile Include="UserControl\ITS\KiemTraLuuTrinh.Designer.cs">
+      <DependentUpon>KiemTraLuuTrinh.cs</DependentUpon>
     </Compile>
-    <Compile Include="XtraControl3.cs">
+    <Compile Include="UserControl\ITS\CapNhatMaVatTu.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="XtraControl3.Designer.cs">
-      <DependentUpon>XtraControl3.cs</DependentUpon>
+    <Compile Include="UserControl\ITS\CapNhatMaVatTu.Designer.cs">
+      <DependentUpon>CapNhatMaVatTu.cs</DependentUpon>
     </Compile>
-    <Compile Include="XtraControl4.cs">
+    <Compile Include="UserControl\ITS\CapNhatQCMPQ.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="XtraControl4.Designer.cs">
-      <DependentUpon>XtraControl4.cs</DependentUpon>
+    <Compile Include="UserControl\ITS\CapNhatQCMPQ.Designer.cs">
+      <DependentUpon>CapNhatQCMPQ.cs</DependentUpon>
     </Compile>
-    <Compile Include="XtraControl5.cs">
+    <Compile Include="UserControl\ERP\DongMoDonHang.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="XtraControl5.Designer.cs">
-      <DependentUpon>XtraControl5.cs</DependentUpon>
+    <Compile Include="UserControl\ERP\DongMoDonHang.Designer.cs">
+      <DependentUpon>DongMoDonHang.cs</DependentUpon>
     </Compile>
-    <Compile Include="XtraControl6.cs">
+    <Compile Include="UserControl\ITS\DangXuatITS.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="XtraControl6.Designer.cs">
-      <DependentUpon>XtraControl6.cs</DependentUpon>
+    <Compile Include="UserControl\ITS\DangXuatITS.Designer.cs">
+      <DependentUpon>DangXuatITS.cs</DependentUpon>
     </Compile>
-    <Compile Include="XtraControl7.cs">
+    <Compile Include="UserControl\Other\LayMatKhauMoi.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="XtraControl7.Designer.cs">
-      <DependentUpon>XtraControl7.cs</DependentUpon>
+    <Compile Include="UserControl\Other\LayMatKhauMoi.Designer.cs">
+      <DependentUpon>LayMatKhauMoi.cs</DependentUpon>
     </Compile>
-    <Compile Include="XtraControl8.cs">
+    <Compile Include="UserControl\ITS\KhuVucBaoVe.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="XtraControl8.Designer.cs">
-      <DependentUpon>XtraControl8.cs</DependentUpon>
+    <Compile Include="UserControl\ITS\KhuVucBaoVe.Designer.cs">
+      <DependentUpon>KhuVucBaoVe.cs</DependentUpon>
     </Compile>
-    <Compile Include="XtraControl9.cs">
+    <Compile Include="UserControl\WTS\XoaPPASieuThi.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="XtraControl9.Designer.cs">
-      <DependentUpon>XtraControl9.cs</DependentUpon>
+    <Compile Include="UserControl\WTS\XoaPPASieuThi.Designer.cs">
+      <DependentUpon>XoaPPASieuThi.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Frm_EditERP.resx">
       <DependentUpon>Frm_EditERP.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_FEPODetail.resx">
       <DependentUpon>Frm_FEPODetail.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Frm_Hello.resx">
-      <DependentUpon>Frm_Hello.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
@@ -262,53 +253,53 @@
     <EmbeddedResource Include="UpdateFEPO.resx">
       <DependentUpon>UpdateFEPO.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="XtraControl1.resx">
-      <DependentUpon>XtraControl1.cs</DependentUpon>
+    <EmbeddedResource Include="UserControl\ITS\SuaDonKyDuyet.resx">
+      <DependentUpon>SuaDonKyDuyet.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="XtraControl10.resx">
-      <DependentUpon>XtraControl10.cs</DependentUpon>
+    <EmbeddedResource Include="UserControl\ITS\ThoiGianLamViec.resx">
+      <DependentUpon>ThoiGianLamViec.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="XtraControl11.resx">
-      <DependentUpon>XtraControl11.cs</DependentUpon>
+    <EmbeddedResource Include="UserControl\ITS\ThietLapQuyenHan.resx">
+      <DependentUpon>ThietLapQuyenHan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="XtraControl12.resx">
-      <DependentUpon>XtraControl12.cs</DependentUpon>
+    <EmbeddedResource Include="UserControl\WTS\XoaInputChuyenMay.resx">
+      <DependentUpon>XoaInputChuyenMay.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="XtraControl13.resx">
-      <DependentUpon>XtraControl13.cs</DependentUpon>
+    <EmbeddedResource Include="UserControl\WMS\KhoVai.resx">
+      <DependentUpon>KhoVai.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="XtraControl14.resx">
-      <DependentUpon>XtraControl14.cs</DependentUpon>
+    <EmbeddedResource Include="UserControl\WMS\KhoPhuLieu.resx">
+      <DependentUpon>KhoPhuLieu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="XtraControl15.resx">
-      <DependentUpon>XtraControl15.cs</DependentUpon>
+    <EmbeddedResource Include="UserControl\WMS\KhoThanhPham.resx">
+      <DependentUpon>KhoThanhPham.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="XtraControl16.resx">
-      <DependentUpon>XtraControl16.cs</DependentUpon>
+    <EmbeddedResource Include="UserControl\WMS\CatSieuThi.resx">
+      <DependentUpon>CatSieuThi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="XtraControl2.resx">
-      <DependentUpon>XtraControl2.cs</DependentUpon>
+    <EmbeddedResource Include="UserControl\ITS\KiemTraLuuTrinh.resx">
+      <DependentUpon>KiemTraLuuTrinh.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="XtraControl3.resx">
-      <DependentUpon>XtraControl3.cs</DependentUpon>
+    <EmbeddedResource Include="UserControl\ITS\CapNhatMaVatTu.resx">
+      <DependentUpon>CapNhatMaVatTu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="XtraControl4.resx">
-      <DependentUpon>XtraControl4.cs</DependentUpon>
+    <EmbeddedResource Include="UserControl\ITS\CapNhatQCMPQ.resx">
+      <DependentUpon>CapNhatQCMPQ.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="XtraControl5.resx">
-      <DependentUpon>XtraControl5.cs</DependentUpon>
+    <EmbeddedResource Include="UserControl\ERP\DongMoDonHang.resx">
+      <DependentUpon>DongMoDonHang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="XtraControl6.resx">
-      <DependentUpon>XtraControl6.cs</DependentUpon>
+    <EmbeddedResource Include="UserControl\ITS\DangXuatITS.resx">
+      <DependentUpon>DangXuatITS.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="XtraControl7.resx">
-      <DependentUpon>XtraControl7.cs</DependentUpon>
+    <EmbeddedResource Include="UserControl\Other\LayMatKhauMoi.resx">
+      <DependentUpon>LayMatKhauMoi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="XtraControl8.resx">
-      <DependentUpon>XtraControl8.cs</DependentUpon>
+    <EmbeddedResource Include="UserControl\ITS\KhuVucBaoVe.resx">
+      <DependentUpon>KhuVucBaoVe.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="XtraControl9.resx">
-      <DependentUpon>XtraControl9.cs</DependentUpon>
+    <EmbeddedResource Include="UserControl\WTS\XoaPPASieuThi.resx">
+      <DependentUpon>XoaPPASieuThi.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="App.config" />
     <None Include="Properties\Settings.settings">
@@ -367,7 +358,8 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="it.ico" />
+    <Content Include="Resources\it.ico" />
+    <None Include="Resources\bg.png" />
     <None Include="Resources\apply_16x16.png" />
     <None Include="Resources\add_16x16.png" />
     <None Include="Resources\actions_remove.svg" />
@@ -375,6 +367,7 @@
     <None Include="Resources\ic.png" />
     <None Include="Resources\5.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
