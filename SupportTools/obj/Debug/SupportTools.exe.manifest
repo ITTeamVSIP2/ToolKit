@@ -726,18 +726,18 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SupportTools.exe" size="1349056">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SupportTools.exe" size="1404864">
       <assemblyIdentity name="SupportTools" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>ztysWZUuF687kbK4/yJ6QVa2DmmesDwagxoPJBOGneE=</dsig:DigestValue>
+        <dsig:DigestValue>2FiOnJmEMbibU+5idFM8iJPCtomhwSOMAWbmuFv0RGU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="it.ico" size="370070">
+  <file name="Resources\it.ico" size="370070">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
