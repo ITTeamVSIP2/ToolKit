@@ -36,7 +36,6 @@ namespace SupportTools
             this.groupControl6 = new DevExpress.XtraEditors.GroupControl();
             this.gridControlDataWMS2 = new DevExpress.XtraGrid.GridControl();
             this.gridViewDataWMS2 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.txtDaySync = new DevExpress.XtraEditors.TextEdit();
             this.txtOrderCode = new DevExpress.XtraEditors.TextEdit();
             this.btnUpdate1 = new DevExpress.XtraEditors.SimpleButton();
@@ -45,7 +44,6 @@ namespace SupportTools
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.gridControlDataWMS = new DevExpress.XtraGrid.GridControl();
             this.gridViewDataWMS = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
             this.gridControlDataStaging = new DevExpress.XtraGrid.GridControl();
@@ -65,6 +63,7 @@ namespace SupportTools
             this.btnSync2 = new DevExpress.XtraEditors.SimpleButton();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.groupControl7 = new DevExpress.XtraEditors.GroupControl();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).BeginInit();
@@ -96,6 +95,8 @@ namespace SupportTools
             this.tabPage2.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl7)).BeginInit();
+            this.groupControl7.SuspendLayout();
             this.SuspendLayout();
             // 
             // gridView1
@@ -107,20 +108,25 @@ namespace SupportTools
             // 
             // gridControl1
             // 
-            this.gridControl1.Location = new System.Drawing.Point(5, 23);
+            this.gridControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.gridControl1.Location = new System.Drawing.Point(5, 24);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(772, 126);
+            this.gridControl1.Size = new System.Drawing.Size(754, 97);
             this.gridControl1.TabIndex = 20;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
             // 
             // gridControl2
             // 
-            this.gridControl2.Location = new System.Drawing.Point(5, 23);
+            this.gridControl2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.gridControl2.Location = new System.Drawing.Point(5, 24);
             this.gridControl2.MainView = this.gridView2;
             this.gridControl2.Name = "gridControl2";
-            this.gridControl2.Size = new System.Drawing.Size(772, 126);
+            this.gridControl2.Size = new System.Drawing.Size(754, 125);
             this.gridControl2.TabIndex = 21;
             this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView2});
@@ -134,19 +140,23 @@ namespace SupportTools
             // 
             // groupControl6
             // 
+            this.groupControl6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupControl6.Controls.Add(this.gridControlDataWMS2);
             this.groupControl6.Location = new System.Drawing.Point(6, 77);
             this.groupControl6.Name = "groupControl6";
-            this.groupControl6.Size = new System.Drawing.Size(782, 154);
+            this.groupControl6.Size = new System.Drawing.Size(764, 154);
             this.groupControl6.TabIndex = 40;
             this.groupControl6.Text = "Dữ liệu WMS";
             // 
             // gridControlDataWMS2
             // 
-            this.gridControlDataWMS2.Location = new System.Drawing.Point(5, 23);
+            this.gridControlDataWMS2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.gridControlDataWMS2.Location = new System.Drawing.Point(5, 24);
             this.gridControlDataWMS2.MainView = this.gridViewDataWMS2;
             this.gridControlDataWMS2.Name = "gridControlDataWMS2";
-            this.gridControlDataWMS2.Size = new System.Drawing.Size(772, 126);
+            this.gridControlDataWMS2.Size = new System.Drawing.Size(754, 125);
             this.gridControlDataWMS2.TabIndex = 22;
             this.gridControlDataWMS2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewDataWMS2});
@@ -158,43 +168,33 @@ namespace SupportTools
             this.gridViewDataWMS2.OptionsBehavior.Editable = false;
             this.gridViewDataWMS2.OptionsView.ShowGroupPanel = false;
             // 
-            // labelControl3
-            // 
-            this.labelControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Location = new System.Drawing.Point(207, 15);
-            this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(394, 19);
-            this.labelControl3.TabIndex = 30;
-            this.labelControl3.Text = "CÀI ĐẶT XUẤT KHO KHÔNG HIỂN THỊ MÃ PHIẾU";
-            // 
             // txtDaySync
             // 
-            this.txtDaySync.Location = new System.Drawing.Point(458, 51);
+            this.txtDaySync.Location = new System.Drawing.Point(533, 16);
             this.txtDaySync.Name = "txtDaySync";
-            this.txtDaySync.Size = new System.Drawing.Size(28, 20);
+            this.txtDaySync.Size = new System.Drawing.Size(35, 20);
             this.txtDaySync.TabIndex = 29;
             // 
             // txtOrderCode
             // 
             this.txtOrderCode.EditValue = "";
-            this.txtOrderCode.Location = new System.Drawing.Point(59, 51);
+            this.txtOrderCode.Location = new System.Drawing.Point(58, 16);
             this.txtOrderCode.Name = "txtOrderCode";
             this.txtOrderCode.Size = new System.Drawing.Size(207, 20);
             this.txtOrderCode.TabIndex = 28;
             // 
             // btnUpdate1
             // 
-            this.btnUpdate1.Location = new System.Drawing.Point(340, 49);
+            this.btnUpdate1.Location = new System.Drawing.Point(387, 15);
             this.btnUpdate1.Name = "btnUpdate1";
-            this.btnUpdate1.Size = new System.Drawing.Size(112, 23);
+            this.btnUpdate1.Size = new System.Drawing.Size(140, 40);
             this.btnUpdate1.TabIndex = 27;
             this.btnUpdate1.Text = "Cập nhật CHECKED";
             this.btnUpdate1.Click += new System.EventHandler(this.btnUpdate1_Click);
             // 
             // labelControl1
             // 
-            this.labelControl1.Location = new System.Drawing.Point(6, 54);
+            this.labelControl1.Location = new System.Drawing.Point(5, 19);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(47, 13);
             this.labelControl1.TabIndex = 23;
@@ -202,28 +202,32 @@ namespace SupportTools
             // 
             // btnSync
             // 
-            this.btnSync.Location = new System.Drawing.Point(492, 49);
+            this.btnSync.Location = new System.Drawing.Point(574, 15);
             this.btnSync.Name = "btnSync";
-            this.btnSync.Size = new System.Drawing.Size(62, 23);
+            this.btnSync.Size = new System.Drawing.Size(100, 40);
             this.btnSync.TabIndex = 26;
             this.btnSync.Text = "Đồng bộ";
             this.btnSync.Click += new System.EventHandler(this.btnSync_Click);
             // 
             // groupControl1
             // 
+            this.groupControl1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupControl1.Controls.Add(this.gridControlDataWMS);
             this.groupControl1.Location = new System.Drawing.Point(6, 77);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(782, 154);
+            this.groupControl1.Size = new System.Drawing.Size(764, 154);
             this.groupControl1.TabIndex = 31;
             this.groupControl1.Text = "Dữ liệu WMS";
             // 
             // gridControlDataWMS
             // 
-            this.gridControlDataWMS.Location = new System.Drawing.Point(5, 23);
+            this.gridControlDataWMS.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.gridControlDataWMS.Location = new System.Drawing.Point(5, 24);
             this.gridControlDataWMS.MainView = this.gridViewDataWMS;
             this.gridControlDataWMS.Name = "gridControlDataWMS";
-            this.gridControlDataWMS.Size = new System.Drawing.Size(772, 126);
+            this.gridControlDataWMS.Size = new System.Drawing.Size(754, 125);
             this.gridControlDataWMS.TabIndex = 22;
             this.gridControlDataWMS.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewDataWMS});
@@ -235,38 +239,32 @@ namespace SupportTools
             this.gridViewDataWMS.OptionsBehavior.Editable = false;
             this.gridViewDataWMS.OptionsView.ShowGroupPanel = false;
             // 
-            // labelControl2
-            // 
-            this.labelControl2.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Location = new System.Drawing.Point(272, 15);
-            this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(277, 19);
-            this.labelControl2.TabIndex = 39;
-            this.labelControl2.Text = "IN GỘP KHÔNG HIỂN THỊ DỮ LIỆU";
-            // 
             // textEdit1
             // 
-            this.textEdit1.Location = new System.Drawing.Point(421, 51);
+            this.textEdit1.Location = new System.Drawing.Point(483, 16);
             this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Size = new System.Drawing.Size(28, 20);
+            this.textEdit1.Size = new System.Drawing.Size(35, 20);
             this.textEdit1.TabIndex = 38;
             // 
             // groupControl2
             // 
+            this.groupControl2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupControl2.Controls.Add(this.gridControlDataStaging);
             this.groupControl2.Location = new System.Drawing.Point(6, 237);
             this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(782, 154);
+            this.groupControl2.Size = new System.Drawing.Size(764, 154);
             this.groupControl2.TabIndex = 32;
             this.groupControl2.Text = "Dữ liệu Staging";
             // 
             // gridControlDataStaging
             // 
-            this.gridControlDataStaging.Location = new System.Drawing.Point(5, 23);
+            this.gridControlDataStaging.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.gridControlDataStaging.Location = new System.Drawing.Point(5, 24);
             this.gridControlDataStaging.MainView = this.gridViewDataStaging;
             this.gridControlDataStaging.Name = "gridControlDataStaging";
-            this.gridControlDataStaging.Size = new System.Drawing.Size(772, 126);
+            this.gridControlDataStaging.Size = new System.Drawing.Size(754, 125);
             this.gridControlDataStaging.TabIndex = 21;
             this.gridControlDataStaging.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewDataStaging});
@@ -281,35 +279,41 @@ namespace SupportTools
             // txtCodeee
             // 
             this.txtCodeee.EditValue = "PSCLI22A0159Z";
-            this.txtCodeee.Location = new System.Drawing.Point(72, 51);
+            this.txtCodeee.Location = new System.Drawing.Point(67, 16);
             this.txtCodeee.Name = "txtCodeee";
-            this.txtCodeee.Size = new System.Drawing.Size(207, 20);
+            this.txtCodeee.Size = new System.Drawing.Size(188, 20);
             this.txtCodeee.TabIndex = 37;
             // 
             // btnUpdate2
             // 
-            this.btnUpdate2.Location = new System.Drawing.Point(353, 49);
+            this.btnUpdate2.Location = new System.Drawing.Point(377, 15);
             this.btnUpdate2.Name = "btnUpdate2";
-            this.btnUpdate2.Size = new System.Drawing.Size(62, 23);
+            this.btnUpdate2.Size = new System.Drawing.Size(100, 40);
             this.btnUpdate2.TabIndex = 36;
             this.btnUpdate2.Text = "Cập nhật";
             this.btnUpdate2.Click += new System.EventHandler(this.btnUpdate2_Click);
             // 
             // groupControl3
             // 
+            this.groupControl3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupControl3.Controls.Add(this.gridControlDataERP);
             this.groupControl3.Location = new System.Drawing.Point(6, 397);
             this.groupControl3.Name = "groupControl3";
-            this.groupControl3.Size = new System.Drawing.Size(782, 154);
+            this.groupControl3.Size = new System.Drawing.Size(764, 126);
             this.groupControl3.TabIndex = 32;
             this.groupControl3.Text = "Dữ liệu ERP";
             // 
             // gridControlDataERP
             // 
-            this.gridControlDataERP.Location = new System.Drawing.Point(5, 23);
+            this.gridControlDataERP.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.gridControlDataERP.Location = new System.Drawing.Point(5, 24);
             this.gridControlDataERP.MainView = this.gridViewDataERP;
             this.gridControlDataERP.Name = "gridControlDataERP";
-            this.gridControlDataERP.Size = new System.Drawing.Size(772, 126);
+            this.gridControlDataERP.Size = new System.Drawing.Size(754, 97);
             this.gridControlDataERP.TabIndex = 20;
             this.gridControlDataERP.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewDataERP});
@@ -323,16 +327,18 @@ namespace SupportTools
             // 
             // groupControl5
             // 
+            this.groupControl5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupControl5.Controls.Add(this.gridControl2);
             this.groupControl5.Location = new System.Drawing.Point(6, 237);
             this.groupControl5.Name = "groupControl5";
-            this.groupControl5.Size = new System.Drawing.Size(782, 154);
+            this.groupControl5.Size = new System.Drawing.Size(764, 154);
             this.groupControl5.TabIndex = 42;
             this.groupControl5.Text = "Dữ liệu Staging";
             // 
             // labelControl4
             // 
-            this.labelControl4.Location = new System.Drawing.Point(6, 54);
+            this.labelControl4.Location = new System.Drawing.Point(5, 19);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(56, 13);
             this.labelControl4.TabIndex = 33;
@@ -340,48 +346,50 @@ namespace SupportTools
             // 
             // btnCheck2
             // 
-            this.btnCheck2.Location = new System.Drawing.Point(285, 49);
+            this.btnCheck2.Location = new System.Drawing.Point(271, 15);
             this.btnCheck2.Name = "btnCheck2";
-            this.btnCheck2.Size = new System.Drawing.Size(62, 23);
+            this.btnCheck2.Size = new System.Drawing.Size(100, 40);
             this.btnCheck2.TabIndex = 34;
             this.btnCheck2.Text = "Kiểm tra";
             this.btnCheck2.Click += new System.EventHandler(this.btnCheck2_Click);
             // 
             // btnCheck
             // 
-            this.btnCheck.Location = new System.Drawing.Point(272, 49);
+            this.btnCheck.Location = new System.Drawing.Point(281, 15);
             this.btnCheck.Name = "btnCheck";
-            this.btnCheck.Size = new System.Drawing.Size(62, 23);
+            this.btnCheck.Size = new System.Drawing.Size(100, 40);
             this.btnCheck.TabIndex = 25;
             this.btnCheck.Text = "Kiểm tra";
             this.btnCheck.Click += new System.EventHandler(this.btnCheck_Click);
             // 
             // btnUpdateFEPO2
             // 
-            this.btnUpdateFEPO2.Location = new System.Drawing.Point(523, 49);
+            this.btnUpdateFEPO2.Location = new System.Drawing.Point(630, 15);
             this.btnUpdateFEPO2.Name = "btnUpdateFEPO2";
-            this.btnUpdateFEPO2.Size = new System.Drawing.Size(89, 23);
+            this.btnUpdateFEPO2.Size = new System.Drawing.Size(140, 40);
             this.btnUpdateFEPO2.TabIndex = 43;
             this.btnUpdateFEPO2.Text = "Cập nhật FEPO";
             this.btnUpdateFEPO2.Click += new System.EventHandler(this.btnUpdateFEPO2_Click);
             // 
             // groupControl4
             // 
+            this.groupControl4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupControl4.Controls.Add(this.gridControl1);
             this.groupControl4.Location = new System.Drawing.Point(6, 397);
             this.groupControl4.Name = "groupControl4";
-            this.groupControl4.Size = new System.Drawing.Size(782, 154);
+            this.groupControl4.Size = new System.Drawing.Size(764, 126);
             this.groupControl4.TabIndex = 41;
             this.groupControl4.Text = "Dữ liệu ERP";
             // 
             // tabPage2
             // 
-            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
+            this.tabPage2.BackColor = System.Drawing.Color.White;
             this.tabPage2.Controls.Add(this.btnUpdateFEPO2);
             this.tabPage2.Controls.Add(this.groupControl4);
             this.tabPage2.Controls.Add(this.groupControl5);
             this.tabPage2.Controls.Add(this.groupControl6);
-            this.tabPage2.Controls.Add(this.labelControl2);
             this.tabPage2.Controls.Add(this.textEdit1);
             this.tabPage2.Controls.Add(this.txtCodeee);
             this.tabPage2.Controls.Add(this.btnUpdate2);
@@ -391,36 +399,38 @@ namespace SupportTools
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(797, 556);
+            this.tabPage2.Size = new System.Drawing.Size(776, 529);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "In gộp";
             // 
             // btnSync2
             // 
-            this.btnSync2.Location = new System.Drawing.Point(455, 49);
+            this.btnSync2.Location = new System.Drawing.Point(524, 15);
             this.btnSync2.Name = "btnSync2";
-            this.btnSync2.Size = new System.Drawing.Size(62, 23);
+            this.btnSync2.Size = new System.Drawing.Size(100, 40);
             this.btnSync2.TabIndex = 35;
             this.btnSync2.Text = "Đồng bộ";
             this.btnSync2.Click += new System.EventHandler(this.btnSync2_Click);
             // 
             // tabControl1
             // 
+            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(3, 3);
+            this.tabControl1.Location = new System.Drawing.Point(13, 14);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(805, 582);
+            this.tabControl1.Size = new System.Drawing.Size(784, 555);
             this.tabControl1.TabIndex = 1;
             // 
             // tabPage1
             // 
-            this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
+            this.tabPage1.BackColor = System.Drawing.Color.White;
             this.tabPage1.Controls.Add(this.groupControl3);
             this.tabPage1.Controls.Add(this.groupControl2);
             this.tabPage1.Controls.Add(this.groupControl1);
-            this.tabPage1.Controls.Add(this.labelControl3);
             this.tabPage1.Controls.Add(this.txtDaySync);
             this.tabPage1.Controls.Add(this.txtOrderCode);
             this.tabPage1.Controls.Add(this.btnUpdate1);
@@ -430,16 +440,33 @@ namespace SupportTools
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(797, 556);
+            this.tabPage1.Size = new System.Drawing.Size(776, 529);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Cài đặt xuất kho";
             // 
-            // XtraControl14
+            // groupControl7
             // 
+            this.groupControl7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupControl7.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.groupControl7.Controls.Add(this.tabControl1);
+            this.groupControl7.Location = new System.Drawing.Point(3, 3);
+            this.groupControl7.LookAndFeel.SkinName = "Office 2010 Blue";
+            this.groupControl7.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.groupControl7.Name = "groupControl7";
+            this.groupControl7.Size = new System.Drawing.Size(810, 583);
+            this.groupControl7.TabIndex = 2;
+            this.groupControl7.Text = "groupControl7";
+            // 
+            // KhoPhuLieu
+            // 
+            this.Appearance.BackColor = System.Drawing.Color.White;
+            this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.tabControl1);
-            this.Name = "XtraControl14";
+            this.Controls.Add(this.groupControl7);
+            this.Name = "KhoPhuLieu";
             this.Size = new System.Drawing.Size(816, 589);
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
@@ -474,6 +501,8 @@ namespace SupportTools
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl7)).EndInit();
+            this.groupControl7.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -487,7 +516,6 @@ namespace SupportTools
         private DevExpress.XtraEditors.GroupControl groupControl6;
         private DevExpress.XtraGrid.GridControl gridControlDataWMS2;
         private DevExpress.XtraGrid.Views.Grid.GridView gridViewDataWMS2;
-        private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.TextEdit txtDaySync;
         private DevExpress.XtraEditors.TextEdit txtOrderCode;
         private DevExpress.XtraEditors.SimpleButton btnUpdate1;
@@ -496,7 +524,6 @@ namespace SupportTools
         private DevExpress.XtraEditors.GroupControl groupControl1;
         private DevExpress.XtraGrid.GridControl gridControlDataWMS;
         private DevExpress.XtraGrid.Views.Grid.GridView gridViewDataWMS;
-        private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.TextEdit textEdit1;
         private DevExpress.XtraEditors.GroupControl groupControl2;
         private DevExpress.XtraGrid.GridControl gridControlDataStaging;
@@ -516,5 +543,6 @@ namespace SupportTools
         private DevExpress.XtraEditors.SimpleButton btnSync2;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
+        private DevExpress.XtraEditors.GroupControl groupControl7;
     }
 }

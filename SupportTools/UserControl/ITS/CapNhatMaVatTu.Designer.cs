@@ -47,7 +47,7 @@
             this.groupControl1.Controls.Add(this.labelControl9);
             this.groupControl1.Controls.Add(this.rtbItemDetail);
             this.groupControl1.Location = new System.Drawing.Point(3, 3);
-            this.groupControl1.LookAndFeel.SkinName = "Office 2007 Blue";
+            this.groupControl1.LookAndFeel.SkinName = "Office 2010 Blue";
             this.groupControl1.LookAndFeel.UseDefaultLookAndFeel = false;
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.ShowCaption = false;
@@ -67,9 +67,10 @@
             // 
             this.simplebtnCapNhat.Location = new System.Drawing.Point(263, 69);
             this.simplebtnCapNhat.Name = "simplebtnCapNhat";
-            this.simplebtnCapNhat.Size = new System.Drawing.Size(97, 43);
+            this.simplebtnCapNhat.Size = new System.Drawing.Size(100, 40);
             this.simplebtnCapNhat.TabIndex = 61;
             this.simplebtnCapNhat.Text = "Cập nhật";
+            this.simplebtnCapNhat.Click += new System.EventHandler(this.simplebtnCapNhat_Click);
             // 
             // labelControl1
             // 

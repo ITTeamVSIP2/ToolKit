@@ -46,26 +46,27 @@
             this.groupControl1.Controls.Add(this.simplebtnDangxuat);
             this.groupControl1.Controls.Add(this.labelControl2);
             this.groupControl1.Controls.Add(this.txtMSNV);
-            this.groupControl1.Location = new System.Drawing.Point(0, 0);
+            this.groupControl1.Location = new System.Drawing.Point(3, 3);
             this.groupControl1.LookAndFeel.SkinName = "Office 2007 Blue";
             this.groupControl1.LookAndFeel.UseDefaultLookAndFeel = false;
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.ShowCaption = false;
-            this.groupControl1.Size = new System.Drawing.Size(604, 383);
+            this.groupControl1.Size = new System.Drawing.Size(598, 377);
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "groupControl1";
             // 
             // simplebtnDangxuat
             // 
-            this.simplebtnDangxuat.Location = new System.Drawing.Point(173, 22);
+            this.simplebtnDangxuat.Location = new System.Drawing.Point(176, 6);
             this.simplebtnDangxuat.Name = "simplebtnDangxuat";
-            this.simplebtnDangxuat.Size = new System.Drawing.Size(107, 38);
+            this.simplebtnDangxuat.Size = new System.Drawing.Size(100, 40);
             this.simplebtnDangxuat.TabIndex = 17;
             this.simplebtnDangxuat.Text = "Đăng xuất";
+            this.simplebtnDangxuat.Click += new System.EventHandler(this.simplebtnDangxuat_Click);
             // 
             // labelControl2
             // 
-            this.labelControl2.Location = new System.Drawing.Point(30, 26);
+            this.labelControl2.Location = new System.Drawing.Point(23, 10);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(31, 13);
             this.labelControl2.TabIndex = 16;
@@ -73,7 +74,7 @@
             // 
             // txtMSNV
             // 
-            this.txtMSNV.Location = new System.Drawing.Point(67, 23);
+            this.txtMSNV.Location = new System.Drawing.Point(60, 7);
             this.txtMSNV.Name = "txtMSNV";
             this.txtMSNV.Size = new System.Drawing.Size(100, 20);
             this.txtMSNV.TabIndex = 15;

@@ -35,6 +35,8 @@
             this.gridView4 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.simpleButtonCapNhatERP = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
+            this.gridControl3 = new DevExpress.XtraGrid.GridControl();
+            this.gridView3 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridControl2 = new DevExpress.XtraGrid.GridControl();
             this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.labelControlLoaiDon = new DevExpress.XtraEditors.LabelControl();
@@ -56,12 +58,12 @@
             this.simplebtnKiemTra_1 = new DevExpress.XtraEditors.SimpleButton();
             this.txtMaDon = new DevExpress.XtraEditors.TextEdit();
             this.imageCollection1 = new DevExpress.Utils.ImageCollection(this.components);
-            this.gridView3 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.gridControl3 = new DevExpress.XtraGrid.GridControl();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
@@ -71,8 +73,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.memoEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMaDon.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl3)).BeginInit();
             this.SuspendLayout();
             // 
             // groupControl1
@@ -103,11 +103,11 @@
             this.groupControl1.Controls.Add(this.labelControl1);
             this.groupControl1.Controls.Add(this.simplebtnKiemTra_1);
             this.groupControl1.Controls.Add(this.txtMaDon);
-            this.groupControl1.Location = new System.Drawing.Point(0, 0);
-            this.groupControl1.LookAndFeel.SkinName = "Office 2007 Blue";
+            this.groupControl1.Location = new System.Drawing.Point(3, 3);
+            this.groupControl1.LookAndFeel.SkinName = "Office 2010 Blue";
             this.groupControl1.LookAndFeel.UseDefaultLookAndFeel = false;
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(1164, 700);
+            this.groupControl1.Size = new System.Drawing.Size(1158, 694);
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "groupControl1";
             // 
@@ -119,7 +119,7 @@
             this.gridControl4.MainView = this.gridView4;
             this.gridControl4.Margin = new System.Windows.Forms.Padding(0);
             this.gridControl4.Name = "gridControl4";
-            this.gridControl4.Size = new System.Drawing.Size(188, 273);
+            this.gridControl4.Size = new System.Drawing.Size(182, 273);
             this.gridControl4.TabIndex = 81;
             this.gridControl4.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView4});
@@ -131,23 +131,47 @@
             this.gridView4.OptionsBehavior.ReadOnly = true;
             this.gridView4.OptionsSelection.MultiSelect = true;
             this.gridView4.OptionsSelection.MultiSelectMode = DevExpress.XtraGrid.Views.Grid.GridMultiSelectMode.CellSelect;
+            this.gridView4.Click += new System.EventHandler(this.gridView4_Click);
             // 
             // simpleButtonCapNhatERP
             // 
             this.simpleButtonCapNhatERP.Enabled = false;
-            this.simpleButtonCapNhatERP.Location = new System.Drawing.Point(500, 18);
+            this.simpleButtonCapNhatERP.Location = new System.Drawing.Point(477, 6);
             this.simpleButtonCapNhatERP.Name = "simpleButtonCapNhatERP";
-            this.simpleButtonCapNhatERP.Size = new System.Drawing.Size(134, 35);
+            this.simpleButtonCapNhatERP.Size = new System.Drawing.Size(119, 40);
             this.simpleButtonCapNhatERP.TabIndex = 80;
             this.simpleButtonCapNhatERP.Text = "Cập nhật ERP";
+            this.simpleButtonCapNhatERP.Click += new System.EventHandler(this.simpleButtonCapNhatERP_Click);
             // 
             // labelControl9
             // 
-            this.labelControl9.Location = new System.Drawing.Point(19, 24);
+            this.labelControl9.Location = new System.Drawing.Point(23, 10);
             this.labelControl9.Name = "labelControl9";
             this.labelControl9.Size = new System.Drawing.Size(39, 13);
             this.labelControl9.TabIndex = 79;
             this.labelControl9.Text = "Mã đơn:";
+            // 
+            // gridControl3
+            // 
+            this.gridControl3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.gridControl3.Location = new System.Drawing.Point(19, 396);
+            this.gridControl3.MainView = this.gridView3;
+            this.gridControl3.Name = "gridControl3";
+            this.gridControl3.Size = new System.Drawing.Size(930, 286);
+            this.gridControl3.TabIndex = 63;
+            this.gridControl3.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView3});
+            // 
+            // gridView3
+            // 
+            this.gridView3.GridControl = this.gridControl3;
+            this.gridView3.Name = "gridView3";
+            this.gridView3.OptionsBehavior.ReadOnly = true;
+            this.gridView3.OptionsSelection.MultiSelect = true;
+            this.gridView3.OptionsSelection.MultiSelectMode = DevExpress.XtraGrid.Views.Grid.GridMultiSelectMode.CellSelect;
+            this.gridView3.OptionsView.ColumnAutoWidth = false;
+            this.gridView3.PopupMenuShowing += new DevExpress.XtraGrid.Views.Grid.PopupMenuShowingEventHandler(this.gridView3_PopupMenuShowing);
             // 
             // gridControl2
             // 
@@ -166,10 +190,11 @@
             this.gridView2.OptionsBehavior.ReadOnly = true;
             this.gridView2.OptionsSelection.MultiSelect = true;
             this.gridView2.OptionsSelection.MultiSelectMode = DevExpress.XtraGrid.Views.Grid.GridMultiSelectMode.CellSelect;
+            this.gridView2.PopupMenuShowing += new DevExpress.XtraGrid.Views.Grid.PopupMenuShowingEventHandler(this.gridView2_PopupMenuShowing);
             // 
             // labelControlLoaiDon
             // 
-            this.labelControlLoaiDon.Location = new System.Drawing.Point(560, 24);
+            this.labelControlLoaiDon.Location = new System.Drawing.Point(602, 10);
             this.labelControlLoaiDon.Name = "labelControlLoaiDon";
             this.labelControlLoaiDon.Size = new System.Drawing.Size(0, 13);
             this.labelControlLoaiDon.TabIndex = 82;
@@ -191,6 +216,7 @@
             this.gridView1.OptionsBehavior.ReadOnly = true;
             this.gridView1.OptionsSelection.MultiSelect = true;
             this.gridView1.OptionsSelection.MultiSelectMode = DevExpress.XtraGrid.Views.Grid.GridMultiSelectMode.CellSelect;
+            this.gridView1.PopupMenuShowing += new DevExpress.XtraGrid.Views.Grid.PopupMenuShowingEventHandler(this.gridView1_PopupMenuShowing);
             // 
             // labelControl7
             // 
@@ -213,24 +239,25 @@
             // simplebtnKiemTraChiTiet_1
             // 
             this.simplebtnKiemTraChiTiet_1.Enabled = false;
-            this.simplebtnKiemTraChiTiet_1.Location = new System.Drawing.Point(354, 19);
+            this.simplebtnKiemTraChiTiet_1.Location = new System.Drawing.Point(352, 6);
             this.simplebtnKiemTraChiTiet_1.Name = "simplebtnKiemTraChiTiet_1";
-            this.simplebtnKiemTraChiTiet_1.Size = new System.Drawing.Size(140, 34);
+            this.simplebtnKiemTraChiTiet_1.Size = new System.Drawing.Size(119, 40);
             this.simplebtnKiemTraChiTiet_1.TabIndex = 76;
             this.simplebtnKiemTraChiTiet_1.Text = "Kiểm tra chi tiết";
+            this.simplebtnKiemTraChiTiet_1.Click += new System.EventHandler(this.simplebtnKiemTraChiTiet_1_Click);
             // 
             // labelControlName
             // 
             this.labelControlName.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControlName.Appearance.Options.UseFont = true;
-            this.labelControlName.Location = new System.Drawing.Point(895, 46);
+            this.labelControlName.Location = new System.Drawing.Point(849, 66);
             this.labelControlName.Name = "labelControlName";
             this.labelControlName.Size = new System.Drawing.Size(0, 13);
             this.labelControlName.TabIndex = 75;
             // 
             // labelControl6
             // 
-            this.labelControl6.Location = new System.Drawing.Point(850, 24);
+            this.labelControl6.Location = new System.Drawing.Point(993, 10);
             this.labelControl6.Name = "labelControl6";
             this.labelControl6.Size = new System.Drawing.Size(33, 13);
             this.labelControl6.TabIndex = 74;
@@ -238,7 +265,7 @@
             // 
             // labelControl5
             // 
-            this.labelControl5.Location = new System.Drawing.Point(693, 24);
+            this.labelControl5.Location = new System.Drawing.Point(785, 10);
             this.labelControl5.Name = "labelControl5";
             this.labelControl5.Size = new System.Drawing.Size(58, 13);
             this.labelControl5.TabIndex = 73;
@@ -246,7 +273,7 @@
             // 
             // labelControl4
             // 
-            this.labelControl4.Location = new System.Drawing.Point(781, 46);
+            this.labelControl4.Location = new System.Drawing.Point(955, 10);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(32, 13);
             this.labelControl4.TabIndex = 72;
@@ -255,26 +282,29 @@
             // txtMSNV
             // 
             this.txtMSNV.EditValue = "";
-            this.txtMSNV.Location = new System.Drawing.Point(675, 43);
+            this.txtMSNV.Location = new System.Drawing.Point(849, 7);
             this.txtMSNV.Name = "txtMSNV";
             this.txtMSNV.Size = new System.Drawing.Size(100, 20);
             this.txtMSNV.TabIndex = 71;
+            this.txtMSNV.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtMSNV_KeyDown);
             // 
             // txtIDNV
             // 
             this.txtIDNV.EditValue = "";
-            this.txtIDNV.Location = new System.Drawing.Point(819, 43);
+            this.txtIDNV.Location = new System.Drawing.Point(1032, 7);
             this.txtIDNV.Name = "txtIDNV";
             this.txtIDNV.Size = new System.Drawing.Size(100, 20);
             this.txtIDNV.TabIndex = 70;
+            this.txtIDNV.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtIDNV_KeyDown);
             // 
             // memoEdit1
             // 
-            this.memoEdit1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.memoEdit1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.memoEdit1.Location = new System.Drawing.Point(958, 395);
             this.memoEdit1.Name = "memoEdit1";
-            this.memoEdit1.Size = new System.Drawing.Size(188, 287);
+            this.memoEdit1.Size = new System.Drawing.Size(182, 287);
             this.memoEdit1.TabIndex = 69;
             // 
             // labelControl3
@@ -309,44 +339,27 @@
             // 
             // simplebtnKiemTra_1
             // 
-            this.simplebtnKiemTra_1.Location = new System.Drawing.Point(232, 19);
+            this.simplebtnKiemTra_1.Location = new System.Drawing.Point(246, 6);
             this.simplebtnKiemTra_1.Name = "simplebtnKiemTra_1";
-            this.simplebtnKiemTra_1.Size = new System.Drawing.Size(116, 34);
+            this.simplebtnKiemTra_1.Size = new System.Drawing.Size(100, 40);
             this.simplebtnKiemTra_1.TabIndex = 65;
             this.simplebtnKiemTra_1.Text = "Kiểm tra";
+            this.simplebtnKiemTra_1.Click += new System.EventHandler(this.simplebtnKiemTra_1_Click);
             // 
             // txtMaDon
             // 
             this.txtMaDon.EditValue = "";
-            this.txtMaDon.Location = new System.Drawing.Point(64, 21);
+            this.txtMaDon.Location = new System.Drawing.Point(68, 7);
             this.txtMaDon.Name = "txtMaDon";
             this.txtMaDon.Size = new System.Drawing.Size(162, 20);
             this.txtMaDon.TabIndex = 61;
+            this.txtMaDon.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtMaDon_KeyDown);
             // 
             // imageCollection1
             // 
             this.imageCollection1.ImageStream = ((DevExpress.Utils.ImageCollectionStreamer)(resources.GetObject("imageCollection1.ImageStream")));
             this.imageCollection1.Images.SetKeyName(0, "refresh256_24854.png");
             this.imageCollection1.Images.SetKeyName(1, "delete_256_icon-icons.com_75991.png");
-            // 
-            // gridView3
-            // 
-            this.gridView3.GridControl = this.gridControl3;
-            this.gridView3.Name = "gridView3";
-            this.gridView3.OptionsBehavior.ReadOnly = true;
-            this.gridView3.OptionsSelection.MultiSelect = true;
-            this.gridView3.OptionsSelection.MultiSelectMode = DevExpress.XtraGrid.Views.Grid.GridMultiSelectMode.CellSelect;
-            this.gridView3.OptionsView.ColumnAutoWidth = false;
-            // 
-            // gridControl3
-            // 
-            this.gridControl3.Location = new System.Drawing.Point(19, 396);
-            this.gridControl3.MainView = this.gridView3;
-            this.gridControl3.Name = "gridControl3";
-            this.gridControl3.Size = new System.Drawing.Size(930, 286);
-            this.gridControl3.TabIndex = 63;
-            this.gridControl3.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView3});
             // 
             // SuaDonKyDuyet
             // 
@@ -362,6 +375,8 @@
             this.groupControl1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
@@ -371,8 +386,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.memoEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMaDon.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl3)).EndInit();
             this.ResumeLayout(false);
 
         }

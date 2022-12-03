@@ -35,9 +35,6 @@
             this.dockPanel1_Container = new DevExpress.XtraBars.Docking.ControlContainer();
             this.accordionControl = new DevExpress.XtraBars.Navigation.AccordionControl();
             this.mainAccordionGroup = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement11 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement7 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement10 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement12 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.employeesAccordionControlElement = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.customersAccordionControlElement = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -47,6 +44,9 @@
             this.accordionControlElement9 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement6 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement4 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlElement11 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlElement7 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlElement10 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement13 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement3 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement14 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -63,6 +63,9 @@
             this.accordionControlElement23 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
+            this.accordionControlElement20 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlElement22 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlElement24 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             ((System.ComponentModel.ISupportInitialize)(this.dockManager)).BeginInit();
             this.dockPanel1.SuspendLayout();
             this.dockPanel1_Container.SuspendLayout();
@@ -103,15 +106,15 @@
             this.dockPanel1.Options.ShowAutoHideButton = false;
             this.dockPanel1.Options.ShowCloseButton = false;
             this.dockPanel1.Options.ShowMaximizeButton = false;
-            this.dockPanel1.OriginalSize = new System.Drawing.Size(256, 200);
-            this.dockPanel1.Size = new System.Drawing.Size(256, 731);
+            this.dockPanel1.OriginalSize = new System.Drawing.Size(275, 200);
+            this.dockPanel1.Size = new System.Drawing.Size(275, 731);
             // 
             // dockPanel1_Container
             // 
             this.dockPanel1_Container.Controls.Add(this.accordionControl);
             this.dockPanel1_Container.Location = new System.Drawing.Point(7, 37);
             this.dockPanel1_Container.Name = "dockPanel1_Container";
-            this.dockPanel1_Container.Size = new System.Drawing.Size(237, 687);
+            this.dockPanel1_Container.Size = new System.Drawing.Size(256, 687);
             this.dockPanel1_Container.TabIndex = 0;
             // 
             // accordionControl
@@ -128,8 +131,8 @@
             this.accordionControl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.accordionControl.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.mainAccordionGroup,
-            this.accordionControlElement11,
             this.accordionControlElement12,
+            this.accordionControlElement11,
             this.accordionControlElement13,
             this.accordionControlElement14,
             this.Other});
@@ -140,7 +143,7 @@
             this.accordionControl.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Flat;
             this.accordionControl.LookAndFeel.UseDefaultLookAndFeel = false;
             this.accordionControl.Name = "accordionControl";
-            this.accordionControl.Size = new System.Drawing.Size(237, 687);
+            this.accordionControl.Size = new System.Drawing.Size(256, 687);
             this.accordionControl.TabIndex = 3;
             this.accordionControl.SelectedElementChanged += new DevExpress.XtraBars.Navigation.SelectedElementChangedEventHandler(this.accordionControl_SelectedElementChanged);
             // 
@@ -151,30 +154,6 @@
             this.mainAccordionGroup.Name = "mainAccordionGroup";
             this.mainAccordionGroup.Text = "mainGroup";
             // 
-            // accordionControlElement11
-            // 
-            this.accordionControlElement11.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
-            this.accordionControlElement7,
-            this.accordionControlElement10});
-            this.accordionControlElement11.Expanded = true;
-            this.accordionControlElement11.ImageOptions.Image = global::SupportTools.Properties.Resources.apply_16x16;
-            this.accordionControlElement11.Name = "accordionControlElement11";
-            this.accordionControlElement11.Text = "WTS";
-            // 
-            // accordionControlElement7
-            // 
-            this.accordionControlElement7.ImageOptions.SvgImage = global::SupportTools.Properties.Resources.actions_remove;
-            this.accordionControlElement7.Name = "accordionControlElement7";
-            this.accordionControlElement7.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement7.Text = "Xóa PPA siêu thị";
-            // 
-            // accordionControlElement10
-            // 
-            this.accordionControlElement10.ImageOptions.SvgImage = global::SupportTools.Properties.Resources.actions_remove;
-            this.accordionControlElement10.Name = "accordionControlElement10";
-            this.accordionControlElement10.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement10.Text = "Xóa input chuyền may";
-            // 
             // accordionControlElement12
             // 
             this.accordionControlElement12.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
@@ -182,11 +161,11 @@
             this.customersAccordionControlElement,
             this.accordionControlElement2,
             this.accordionControlElement1,
-            this.accordionControlElement8,
-            this.accordionControlElement9,
             this.accordionControlElement6,
-            this.accordionControlElement4});
-            this.accordionControlElement12.Expanded = true;
+            this.accordionControlElement8,
+            this.accordionControlElement4,
+            this.accordionControlElement9,
+            this.accordionControlElement20});
             this.accordionControlElement12.ImageOptions.Image = global::SupportTools.Properties.Resources.apply_16x16;
             this.accordionControlElement12.Name = "accordionControlElement12";
             this.accordionControlElement12.Text = "ITS";
@@ -247,11 +226,34 @@
             this.accordionControlElement4.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accordionControlElement4.Text = "Đăng xuất ITS";
             // 
+            // accordionControlElement11
+            // 
+            this.accordionControlElement11.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
+            this.accordionControlElement7,
+            this.accordionControlElement10});
+            this.accordionControlElement11.ImageOptions.Image = global::SupportTools.Properties.Resources.apply_16x16;
+            this.accordionControlElement11.Name = "accordionControlElement11";
+            this.accordionControlElement11.Text = "WTS";
+            // 
+            // accordionControlElement7
+            // 
+            this.accordionControlElement7.ImageOptions.SvgImage = global::SupportTools.Properties.Resources.actions_remove;
+            this.accordionControlElement7.Name = "accordionControlElement7";
+            this.accordionControlElement7.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlElement7.Text = "Xóa PPA siêu thị";
+            // 
+            // accordionControlElement10
+            // 
+            this.accordionControlElement10.ImageOptions.SvgImage = global::SupportTools.Properties.Resources.actions_remove;
+            this.accordionControlElement10.Name = "accordionControlElement10";
+            this.accordionControlElement10.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlElement10.Text = "Xóa input chuyền may";
+            // 
             // accordionControlElement13
             // 
             this.accordionControlElement13.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
-            this.accordionControlElement3});
-            this.accordionControlElement13.Expanded = true;
+            this.accordionControlElement3,
+            this.accordionControlElement22});
             this.accordionControlElement13.ImageOptions.Image = global::SupportTools.Properties.Resources.apply_16x16;
             this.accordionControlElement13.Name = "accordionControlElement13";
             this.accordionControlElement13.Text = "ERP";
@@ -270,7 +272,6 @@
             this.accordionControlElement16,
             this.accordionControlElement17,
             this.accordionControlElement18});
-            this.accordionControlElement14.Expanded = true;
             this.accordionControlElement14.ImageOptions.Image = global::SupportTools.Properties.Resources.apply_16x16;
             this.accordionControlElement14.Name = "accordionControlElement14";
             this.accordionControlElement14.Text = "WMS";
@@ -306,8 +307,8 @@
             // Other
             // 
             this.Other.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
-            this.accordionControlElement5});
-            this.Other.Expanded = true;
+            this.accordionControlElement5,
+            this.accordionControlElement24});
             this.Other.ImageOptions.Image = global::SupportTools.Properties.Resources.apply_16x16;
             this.Other.Name = "Other";
             this.Other.Text = "Other";
@@ -368,6 +369,27 @@
             this.panelControl1.Size = new System.Drawing.Size(695, 410);
             this.panelControl1.TabIndex = 4;
             // 
+            // accordionControlElement20
+            // 
+            this.accordionControlElement20.ImageOptions.SvgImage = global::SupportTools.Properties.Resources.actions_remove;
+            this.accordionControlElement20.Name = "accordionControlElement20";
+            this.accordionControlElement20.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlElement20.Text = "Sửa thông tin đơn điều động";
+            // 
+            // accordionControlElement22
+            // 
+            this.accordionControlElement22.ImageOptions.SvgImage = global::SupportTools.Properties.Resources.actions_remove;
+            this.accordionControlElement22.Name = "accordionControlElement22";
+            this.accordionControlElement22.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlElement22.Text = "Cập nhật DetailBarcode Needle";
+            // 
+            // accordionControlElement24
+            // 
+            this.accordionControlElement24.ImageOptions.SvgImage = global::SupportTools.Properties.Resources.actions_remove;
+            this.accordionControlElement24.Name = "accordionControlElement24";
+            this.accordionControlElement24.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlElement24.Text = "Tạo tài khoản AGP";
+            // 
             // Main
             // 
             this.ActiveGlowColor = System.Drawing.Color.White;
@@ -393,6 +415,7 @@
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "IT Toolkits";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.dockManager)).EndInit();
             this.dockPanel1.ResumeLayout(false);
             this.dockPanel1_Container.ResumeLayout(false);
@@ -441,6 +464,9 @@
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement23;
         private System.Windows.Forms.PictureBox pictureBox1;
         private DevExpress.XtraEditors.PanelControl panelControl1;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement20;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement22;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement24;
     }
 }
 

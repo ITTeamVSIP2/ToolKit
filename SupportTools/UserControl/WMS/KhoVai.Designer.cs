@@ -34,12 +34,11 @@ namespace SupportTools
             this.accordionControl = new DevExpress.XtraBars.Navigation.AccordionControl();
             this.mainAccordionGroup = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.documentManager = new DevExpress.XtraBars.Docking2010.DocumentManager(this.components);
-            this.tabbedView = new DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView(this.components);
             this.noDocumentsView1 = new DevExpress.XtraBars.Docking2010.Views.NoDocuments.NoDocumentsView(this.components);
+            this.tabbedView = new DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView(this.components);
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
             this.gridControlShowFEPO = new DevExpress.XtraGrid.GridControl();
             this.gridViewShowFEPO = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
             this.gridControlDataERP = new DevExpress.XtraGrid.GridControl();
@@ -50,7 +49,6 @@ namespace SupportTools
             this.groupControl6 = new DevExpress.XtraEditors.GroupControl();
             this.gridControlDataWMS = new DevExpress.XtraGrid.GridControl();
             this.gridViewDataWMS = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
             this.gridControlShowBarcode = new DevExpress.XtraGrid.GridControl();
             this.gridViewShowBarcode = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -62,7 +60,6 @@ namespace SupportTools
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.btnUpdate1 = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.btnSelect = new DevExpress.XtraEditors.SimpleButton();
@@ -73,7 +70,7 @@ namespace SupportTools
             this.btnShowBarcode = new DevExpress.XtraEditors.SimpleButton();
             this.txtFEPO = new DevExpress.XtraEditors.TextEdit();
             this.btnShowFEPO = new DevExpress.XtraEditors.SimpleButton();
-            this.groupControl7 = new DevExpress.XtraEditors.GroupControl();
+            this.groupControl8 = new DevExpress.XtraEditors.GroupControl();
             this.txtDaySync = new DevExpress.XtraEditors.TextEdit();
             this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
@@ -83,8 +80,8 @@ namespace SupportTools
             ((System.ComponentModel.ISupportInitialize)(this.dockManager)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.documentManager)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tabbedView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.noDocumentsView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tabbedView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlShowFEPO)).BeginInit();
@@ -115,8 +112,8 @@ namespace SupportTools
             ((System.ComponentModel.ISupportInitialize)(this.txtOrderCode.Properties)).BeginInit();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtFEPO.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl7)).BeginInit();
-            this.groupControl7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl8)).BeginInit();
+            this.groupControl8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtDaySync.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             this.SuspendLayout();
@@ -165,24 +162,28 @@ namespace SupportTools
             // 
             this.documentManager.View = this.noDocumentsView1;
             this.documentManager.ViewCollection.AddRange(new DevExpress.XtraBars.Docking2010.Views.BaseView[] {
-            this.tabbedView,
-            this.noDocumentsView1});
+            this.noDocumentsView1,
+            this.tabbedView});
             // 
             // groupControl2
             // 
+            this.groupControl2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.groupControl2.Controls.Add(this.gridControlShowFEPO);
             this.groupControl2.Location = new System.Drawing.Point(6, 77);
             this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(335, 474);
+            this.groupControl2.Size = new System.Drawing.Size(335, 488);
             this.groupControl2.TabIndex = 15;
             this.groupControl2.Text = "Danh sách FEPO";
             // 
             // gridControlShowFEPO
             // 
-            this.gridControlShowFEPO.Location = new System.Drawing.Point(5, 23);
+            this.gridControlShowFEPO.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.gridControlShowFEPO.Location = new System.Drawing.Point(5, 24);
             this.gridControlShowFEPO.MainView = this.gridViewShowFEPO;
             this.gridControlShowFEPO.Name = "gridControlShowFEPO";
-            this.gridControlShowFEPO.Size = new System.Drawing.Size(325, 446);
+            this.gridControlShowFEPO.Size = new System.Drawing.Size(325, 459);
             this.gridControlShowFEPO.TabIndex = 10;
             this.gridControlShowFEPO.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewShowFEPO});
@@ -195,27 +196,22 @@ namespace SupportTools
             this.gridViewShowFEPO.OptionsView.ShowGroupPanel = false;
             this.gridViewShowFEPO.Click += new System.EventHandler(this.gridViewShowFEPO_Click);
             // 
-            // labelControl4
-            // 
-            this.labelControl4.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl4.Appearance.Options.UseFont = true;
-            this.labelControl4.Location = new System.Drawing.Point(287, 16);
-            this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(226, 19);
-            this.labelControl4.TabIndex = 13;
-            this.labelControl4.Text = "CẬP NHẬT BARCODE VÀ SN";
-            // 
             // tabPage3
             // 
-            this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
-            this.tabPage3.Controls.Add(this.groupControl7);
+            this.tabPage3.BackColor = System.Drawing.Color.White;
+            this.tabPage3.Controls.Add(this.txtDaySync);
+            this.tabPage3.Controls.Add(this.textEdit1);
+            this.tabPage3.Controls.Add(this.simpleButton1);
+            this.tabPage3.Controls.Add(this.labelControl8);
+            this.tabPage3.Controls.Add(this.btnSync);
+            this.tabPage3.Controls.Add(this.simpleButton2);
             this.tabPage3.Controls.Add(this.groupControl4);
             this.tabPage3.Controls.Add(this.groupControl5);
             this.tabPage3.Controls.Add(this.groupControl6);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(958, 606);
+            this.tabPage3.Size = new System.Drawing.Size(925, 571);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Đồng bộ Barcode từ ERP";
             // 
@@ -297,31 +293,27 @@ namespace SupportTools
             this.gridViewDataWMS.OptionsBehavior.Editable = false;
             this.gridViewDataWMS.OptionsView.ShowGroupPanel = false;
             // 
-            // labelControl7
-            // 
-            this.labelControl7.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl7.Appearance.Options.UseFont = true;
-            this.labelControl7.Location = new System.Drawing.Point(229, 15);
-            this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(228, 19);
-            this.labelControl7.TabIndex = 39;
-            this.labelControl7.Text = "KHÔNG HIỂN THỊ MÃ PHIẾU";
-            // 
             // groupControl3
             // 
+            this.groupControl3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupControl3.Controls.Add(this.gridControlShowBarcode);
             this.groupControl3.Location = new System.Drawing.Point(347, 77);
             this.groupControl3.Name = "groupControl3";
-            this.groupControl3.Size = new System.Drawing.Size(441, 474);
+            this.groupControl3.Size = new System.Drawing.Size(572, 488);
             this.groupControl3.TabIndex = 16;
             this.groupControl3.Text = "Danh sách Barcode và SN";
             // 
             // gridControlShowBarcode
             // 
-            this.gridControlShowBarcode.Location = new System.Drawing.Point(5, 23);
+            this.gridControlShowBarcode.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.gridControlShowBarcode.Location = new System.Drawing.Point(5, 24);
             this.gridControlShowBarcode.MainView = this.gridViewShowBarcode;
             this.gridControlShowBarcode.Name = "gridControlShowBarcode";
-            this.gridControlShowBarcode.Size = new System.Drawing.Size(431, 446);
+            this.gridControlShowBarcode.Size = new System.Drawing.Size(562, 459);
             this.gridControlShowBarcode.TabIndex = 14;
             this.gridControlShowBarcode.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewShowBarcode});
@@ -335,19 +327,22 @@ namespace SupportTools
             // 
             // btnUpdate2
             // 
-            this.btnUpdate2.Location = new System.Drawing.Point(713, 49);
+            this.btnUpdate2.Location = new System.Drawing.Point(772, 15);
             this.btnUpdate2.Name = "btnUpdate2";
-            this.btnUpdate2.Size = new System.Drawing.Size(75, 23);
+            this.btnUpdate2.Size = new System.Drawing.Size(100, 40);
             this.btnUpdate2.TabIndex = 9;
             this.btnUpdate2.Text = "Cập nhật";
             this.btnUpdate2.Click += new System.EventHandler(this.btnUpdate2_Click);
             // 
             // gridControlListOrderCode
             // 
-            this.gridControlListOrderCode.Location = new System.Drawing.Point(5, 23);
+            this.gridControlListOrderCode.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.gridControlListOrderCode.Location = new System.Drawing.Point(5, 24);
             this.gridControlListOrderCode.MainView = this.gridViewListOrderCode;
             this.gridControlListOrderCode.Name = "gridControlListOrderCode";
-            this.gridControlListOrderCode.Size = new System.Drawing.Size(772, 446);
+            this.gridControlListOrderCode.Size = new System.Drawing.Size(903, 459);
             this.gridControlListOrderCode.TabIndex = 11;
             this.gridControlListOrderCode.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewListOrderCode});
@@ -362,23 +357,24 @@ namespace SupportTools
             // 
             // tabControl1
             // 
+            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl1.Location = new System.Drawing.Point(0, 0);
+            this.tabControl1.Location = new System.Drawing.Point(13, 14);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(966, 632);
+            this.tabControl1.Size = new System.Drawing.Size(933, 597);
             this.tabControl1.TabIndex = 6;
             // 
             // tabPage1
             // 
-            this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
+            this.tabPage1.BackColor = System.Drawing.Color.White;
             this.tabPage1.Controls.Add(this.groupControl1);
             this.tabPage1.Controls.Add(this.labelControl6);
             this.tabPage1.Controls.Add(this.labelControl5);
-            this.tabPage1.Controls.Add(this.labelControl3);
             this.tabPage1.Controls.Add(this.btnUpdate1);
             this.tabPage1.Controls.Add(this.labelControl1);
             this.tabPage1.Controls.Add(this.btnSelect);
@@ -387,22 +383,25 @@ namespace SupportTools
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(794, 557);
+            this.tabPage1.Size = new System.Drawing.Size(925, 571);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Cập nhật MaterialID";
             // 
             // groupControl1
             // 
+            this.groupControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupControl1.Controls.Add(this.gridControlListOrderCode);
             this.groupControl1.Location = new System.Drawing.Point(6, 77);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(782, 474);
+            this.groupControl1.Size = new System.Drawing.Size(913, 488);
             this.groupControl1.TabIndex = 15;
             this.groupControl1.Text = "Danh sách MaterialID";
             // 
             // labelControl6
             // 
-            this.labelControl6.Location = new System.Drawing.Point(502, 39);
+            this.labelControl6.Location = new System.Drawing.Point(625, 28);
             this.labelControl6.Name = "labelControl6";
             this.labelControl6.Size = new System.Drawing.Size(63, 13);
             this.labelControl6.TabIndex = 14;
@@ -410,34 +409,24 @@ namespace SupportTools
             // 
             // labelControl5
             // 
-            this.labelControl5.Location = new System.Drawing.Point(502, 58);
+            this.labelControl5.Location = new System.Drawing.Point(625, 47);
             this.labelControl5.Name = "labelControl5";
             this.labelControl5.Size = new System.Drawing.Size(63, 13);
             this.labelControl5.TabIndex = 13;
             this.labelControl5.Text = "labelControl5";
             // 
-            // labelControl3
-            // 
-            this.labelControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Location = new System.Drawing.Point(307, 16);
-            this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(197, 19);
-            this.labelControl3.TabIndex = 12;
-            this.labelControl3.Text = "CẬP NHẬT MATERIALID";
-            // 
             // btnUpdate1
             // 
-            this.btnUpdate1.Location = new System.Drawing.Point(408, 49);
+            this.btnUpdate1.Location = new System.Drawing.Point(493, 15);
             this.btnUpdate1.Name = "btnUpdate1";
-            this.btnUpdate1.Size = new System.Drawing.Size(62, 23);
+            this.btnUpdate1.Size = new System.Drawing.Size(100, 40);
             this.btnUpdate1.TabIndex = 4;
             this.btnUpdate1.Text = "Cập nhật";
             this.btnUpdate1.Click += new System.EventHandler(this.btnUpdate1_Click);
             // 
             // labelControl1
             // 
-            this.labelControl1.Location = new System.Drawing.Point(6, 54);
+            this.labelControl1.Location = new System.Drawing.Point(5, 19);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(47, 13);
             this.labelControl1.TabIndex = 0;
@@ -445,35 +434,34 @@ namespace SupportTools
             // 
             // btnSelect
             // 
-            this.btnSelect.Location = new System.Drawing.Point(340, 49);
+            this.btnSelect.Location = new System.Drawing.Point(387, 15);
             this.btnSelect.Name = "btnSelect";
-            this.btnSelect.Size = new System.Drawing.Size(62, 23);
+            this.btnSelect.Size = new System.Drawing.Size(100, 40);
             this.btnSelect.TabIndex = 3;
             this.btnSelect.Text = "Truy vấn";
             this.btnSelect.Click += new System.EventHandler(this.btnSelect_Click);
             // 
             // txtOrderCode
             // 
-            this.txtOrderCode.Location = new System.Drawing.Point(59, 51);
+            this.txtOrderCode.Location = new System.Drawing.Point(58, 16);
             this.txtOrderCode.Name = "txtOrderCode";
             this.txtOrderCode.Size = new System.Drawing.Size(207, 20);
             this.txtOrderCode.TabIndex = 1;
             // 
             // btnCheck
             // 
-            this.btnCheck.Location = new System.Drawing.Point(272, 49);
+            this.btnCheck.Location = new System.Drawing.Point(281, 15);
             this.btnCheck.Name = "btnCheck";
-            this.btnCheck.Size = new System.Drawing.Size(62, 23);
+            this.btnCheck.Size = new System.Drawing.Size(100, 40);
             this.btnCheck.TabIndex = 2;
             this.btnCheck.Text = "Kiểm tra";
             this.btnCheck.Click += new System.EventHandler(this.btnCheck_Click);
             // 
             // tabPage2
             // 
-            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
+            this.tabPage2.BackColor = System.Drawing.Color.White;
             this.tabPage2.Controls.Add(this.groupControl3);
             this.tabPage2.Controls.Add(this.groupControl2);
-            this.tabPage2.Controls.Add(this.labelControl4);
             this.tabPage2.Controls.Add(this.btnUpdate2);
             this.tabPage2.Controls.Add(this.labelControl2);
             this.tabPage2.Controls.Add(this.btnShowBarcode);
@@ -482,13 +470,13 @@ namespace SupportTools
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(794, 557);
+            this.tabPage2.Size = new System.Drawing.Size(925, 571);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Cập nhật Barcode và SN";
             // 
             // labelControl2
             // 
-            this.labelControl2.Location = new System.Drawing.Point(6, 54);
+            this.labelControl2.Location = new System.Drawing.Point(5, 19);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(30, 13);
             this.labelControl2.TabIndex = 5;
@@ -496,112 +484,111 @@ namespace SupportTools
             // 
             // btnShowBarcode
             // 
-            this.btnShowBarcode.Location = new System.Drawing.Point(632, 49);
+            this.btnShowBarcode.Location = new System.Drawing.Point(666, 15);
             this.btnShowBarcode.Name = "btnShowBarcode";
-            this.btnShowBarcode.Size = new System.Drawing.Size(75, 23);
+            this.btnShowBarcode.Size = new System.Drawing.Size(100, 40);
             this.btnShowBarcode.TabIndex = 8;
             this.btnShowBarcode.Text = "Hiện Barcode";
             this.btnShowBarcode.Click += new System.EventHandler(this.btnShowBarcode_Click);
             // 
             // txtFEPO
             // 
-            this.txtFEPO.Location = new System.Drawing.Point(42, 51);
+            this.txtFEPO.Location = new System.Drawing.Point(41, 16);
             this.txtFEPO.Name = "txtFEPO";
             this.txtFEPO.Size = new System.Drawing.Size(503, 20);
             this.txtFEPO.TabIndex = 6;
             // 
             // btnShowFEPO
             // 
-            this.btnShowFEPO.Location = new System.Drawing.Point(551, 49);
+            this.btnShowFEPO.Location = new System.Drawing.Point(560, 15);
             this.btnShowFEPO.Name = "btnShowFEPO";
-            this.btnShowFEPO.Size = new System.Drawing.Size(75, 23);
+            this.btnShowFEPO.Size = new System.Drawing.Size(100, 40);
             this.btnShowFEPO.TabIndex = 7;
             this.btnShowFEPO.Text = "Hiện FEPO";
             this.btnShowFEPO.Click += new System.EventHandler(this.btnShowFEPO_Click);
             // 
-            // groupControl7
+            // groupControl8
             // 
-            this.groupControl7.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.groupControl7.Appearance.Options.UseBackColor = true;
-            this.groupControl7.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.groupControl7.Controls.Add(this.txtDaySync);
-            this.groupControl7.Controls.Add(this.textEdit1);
-            this.groupControl7.Controls.Add(this.simpleButton1);
-            this.groupControl7.Controls.Add(this.labelControl8);
-            this.groupControl7.Controls.Add(this.labelControl7);
-            this.groupControl7.Controls.Add(this.btnSync);
-            this.groupControl7.Controls.Add(this.simpleButton2);
-            this.groupControl7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupControl7.Location = new System.Drawing.Point(3, 3);
-            this.groupControl7.Name = "groupControl7";
-            this.groupControl7.ShowCaption = false;
-            this.groupControl7.Size = new System.Drawing.Size(952, 86);
-            this.groupControl7.TabIndex = 43;
+            this.groupControl8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupControl8.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.groupControl8.Controls.Add(this.tabControl1);
+            this.groupControl8.Location = new System.Drawing.Point(3, 3);
+            this.groupControl8.LookAndFeel.SkinName = "Office 2010 Blue";
+            this.groupControl8.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.groupControl8.Name = "groupControl8";
+            this.groupControl8.Size = new System.Drawing.Size(960, 626);
+            this.groupControl8.TabIndex = 7;
+            this.groupControl8.Text = "groupControl8";
             // 
             // txtDaySync
             // 
-            this.txtDaySync.Location = new System.Drawing.Point(491, 51);
+            this.txtDaySync.Location = new System.Drawing.Point(484, 56);
             this.txtDaySync.Name = "txtDaySync";
             this.txtDaySync.Size = new System.Drawing.Size(28, 20);
-            this.txtDaySync.TabIndex = 44;
+            this.txtDaySync.TabIndex = 50;
             // 
             // textEdit1
             // 
             this.textEdit1.EditValue = "";
-            this.textEdit1.Location = new System.Drawing.Point(142, 51);
+            this.textEdit1.Location = new System.Drawing.Point(135, 56);
             this.textEdit1.Name = "textEdit1";
             this.textEdit1.Size = new System.Drawing.Size(207, 20);
-            this.textEdit1.TabIndex = 43;
+            this.textEdit1.TabIndex = 49;
             // 
             // simpleButton1
             // 
-            this.simpleButton1.Location = new System.Drawing.Point(423, 49);
+            this.simpleButton1.Location = new System.Drawing.Point(416, 54);
             this.simpleButton1.Name = "simpleButton1";
             this.simpleButton1.Size = new System.Drawing.Size(62, 23);
-            this.simpleButton1.TabIndex = 42;
+            this.simpleButton1.TabIndex = 48;
             this.simpleButton1.Text = "Cập nhật";
             // 
             // labelControl8
             // 
-            this.labelControl8.Location = new System.Drawing.Point(87, 51);
+            this.labelControl8.Location = new System.Drawing.Point(80, 56);
             this.labelControl8.Name = "labelControl8";
             this.labelControl8.Size = new System.Drawing.Size(47, 13);
-            this.labelControl8.TabIndex = 39;
+            this.labelControl8.TabIndex = 45;
             this.labelControl8.Text = "Mã phiếu:";
             // 
             // btnSync
             // 
-            this.btnSync.Location = new System.Drawing.Point(525, 49);
+            this.btnSync.Location = new System.Drawing.Point(518, 54);
             this.btnSync.Name = "btnSync";
             this.btnSync.Size = new System.Drawing.Size(62, 23);
-            this.btnSync.TabIndex = 41;
+            this.btnSync.TabIndex = 47;
             this.btnSync.Text = "Đồng bộ";
             // 
             // simpleButton2
             // 
-            this.simpleButton2.Location = new System.Drawing.Point(355, 49);
+            this.simpleButton2.Location = new System.Drawing.Point(348, 54);
             this.simpleButton2.Name = "simpleButton2";
             this.simpleButton2.Size = new System.Drawing.Size(62, 23);
-            this.simpleButton2.TabIndex = 40;
+            this.simpleButton2.TabIndex = 46;
             this.simpleButton2.Text = "Kiểm tra";
             // 
-            // XtraControl13
+            // KhoVai
             // 
+            this.Appearance.BackColor = System.Drawing.Color.White;
+            this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.tabControl1);
-            this.Name = "XtraControl13";
+            this.Controls.Add(this.groupControl8);
+            this.Name = "KhoVai";
             this.Size = new System.Drawing.Size(966, 632);
             ((System.ComponentModel.ISupportInitialize)(this.dockManager)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.documentManager)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tabbedView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.noDocumentsView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tabbedView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControlShowFEPO)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewShowFEPO)).EndInit();
             this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).EndInit();
             this.groupControl4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControlDataERP)).EndInit();
@@ -629,9 +616,8 @@ namespace SupportTools
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtFEPO.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl7)).EndInit();
-            this.groupControl7.ResumeLayout(false);
-            this.groupControl7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl8)).EndInit();
+            this.groupControl8.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.txtDaySync.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
             this.ResumeLayout(false);
@@ -648,7 +634,6 @@ namespace SupportTools
         private DevExpress.XtraEditors.GroupControl groupControl2;
         private DevExpress.XtraGrid.GridControl gridControlShowFEPO;
         private DevExpress.XtraGrid.Views.Grid.GridView gridViewShowFEPO;
-        private DevExpress.XtraEditors.LabelControl labelControl4;
         private System.Windows.Forms.TabPage tabPage3;
         private DevExpress.XtraEditors.GroupControl groupControl4;
         private DevExpress.XtraGrid.GridControl gridControlDataERP;
@@ -659,7 +644,6 @@ namespace SupportTools
         private DevExpress.XtraEditors.GroupControl groupControl6;
         private DevExpress.XtraGrid.GridControl gridControlDataWMS;
         private DevExpress.XtraGrid.Views.Grid.GridView gridViewDataWMS;
-        private DevExpress.XtraEditors.LabelControl labelControl7;
         private DevExpress.XtraEditors.GroupControl groupControl3;
         private DevExpress.XtraGrid.GridControl gridControlShowBarcode;
         private DevExpress.XtraGrid.Views.Grid.GridView gridViewShowBarcode;
@@ -671,7 +655,6 @@ namespace SupportTools
         private DevExpress.XtraEditors.GroupControl groupControl1;
         private DevExpress.XtraEditors.LabelControl labelControl6;
         private DevExpress.XtraEditors.LabelControl labelControl5;
-        private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.SimpleButton btnUpdate1;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.SimpleButton btnSelect;
@@ -683,7 +666,7 @@ namespace SupportTools
         private DevExpress.XtraEditors.TextEdit txtFEPO;
         private DevExpress.XtraEditors.SimpleButton btnShowFEPO;
         private DevExpress.XtraBars.Docking2010.Views.NoDocuments.NoDocumentsView noDocumentsView1;
-        private DevExpress.XtraEditors.GroupControl groupControl7;
+        private DevExpress.XtraEditors.GroupControl groupControl8;
         private DevExpress.XtraEditors.TextEdit txtDaySync;
         private DevExpress.XtraEditors.TextEdit textEdit1;
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
