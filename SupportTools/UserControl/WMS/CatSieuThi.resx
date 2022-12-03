@@ -117,27 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="memoSQLDataGongPion.EditValue" xml:space="preserve">
-    <value>SELECT TOP 1
-       pcpd.sBarCode,
-       fcl.iCardID,
-       pcph.sStyleNo,
-       pcpd.sFEPoNo,
-       pcpd.sCombName,
-       pcpd.sModifySize,
-       pcpd.sPackageNo,
-       fcl.sPartNo,
-       fcl.sPartName,
-       pcpd.iPackageQty,
-       pcpd.ippCutPackageHdrID
-FROM ppCutPackageDtl AS pcpd (NOLOCK) --分包明细 -- FEPO+COMB+单SIZE
-    JOIN ppCutPackageHdr AS pcph (NOLOCK) --分包头 -- 款+单SIZE+comb+色号+面料
-        ON pcph.iId = pcpd.ippCutPackageHdrID
-    JOIN RFIDCardList AS fcl (NOLOCK)
-        ON fcl.sRefBarCode = pcpd.sBarCode
-
-WHERE  CAST(fcl.iCardID AS VARCHAR(20)) =</value>
-  </data>
   <data name="memoSQL.EditValue" xml:space="preserve">
     <value>SELECT TOP 1
        pcpd.sBarCode,
@@ -158,5 +137,26 @@ FROM erpsvr.FEAStaging.WTSAV.ppCutPackageDtl AS pcpd (NOLOCK) --分包明细 -- 
         ON fcl.sRefBarCode = pcpd.sBarCode
 
 WHERE CAST(fcl.iCardID AS VARCHAR(20)) =</value>
+  </data>
+  <data name="memoSQLDataGongPion.EditValue" xml:space="preserve">
+    <value>SELECT TOP 1
+       pcpd.sBarCode,
+       fcl.iCardID,
+       pcph.sStyleNo,
+       pcpd.sFEPoNo,
+       pcpd.sCombName,
+       pcpd.sModifySize,
+       pcpd.sPackageNo,
+       fcl.sPartNo,
+       fcl.sPartName,
+       pcpd.iPackageQty,
+       pcpd.ippCutPackageHdrID
+FROM ppCutPackageDtl AS pcpd (NOLOCK) --分包明细 -- FEPO+COMB+单SIZE
+    JOIN ppCutPackageHdr AS pcph (NOLOCK) --分包头 -- 款+单SIZE+comb+色号+面料
+        ON pcph.iId = pcpd.ippCutPackageHdrID
+    JOIN RFIDCardList AS fcl (NOLOCK)
+        ON fcl.sRefBarCode = pcpd.sBarCode
+
+WHERE  CAST(fcl.iCardID AS VARCHAR(20)) =</value>
   </data>
 </root>

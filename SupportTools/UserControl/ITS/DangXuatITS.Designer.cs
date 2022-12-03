@@ -28,56 +28,77 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.simplebtnDangxuat = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.txtMSNV = new DevExpress.XtraEditors.TextEdit();
-            this.simplebtnDangxuat = new DevExpress.XtraEditors.SimpleButton();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
+            this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtMSNV.Properties)).BeginInit();
             this.SuspendLayout();
             // 
+            // groupControl1
+            // 
+            this.groupControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupControl1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.groupControl1.Controls.Add(this.simplebtnDangxuat);
+            this.groupControl1.Controls.Add(this.labelControl2);
+            this.groupControl1.Controls.Add(this.txtMSNV);
+            this.groupControl1.Location = new System.Drawing.Point(0, 0);
+            this.groupControl1.LookAndFeel.SkinName = "Office 2007 Blue";
+            this.groupControl1.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.groupControl1.Name = "groupControl1";
+            this.groupControl1.ShowCaption = false;
+            this.groupControl1.Size = new System.Drawing.Size(604, 383);
+            this.groupControl1.TabIndex = 0;
+            this.groupControl1.Text = "groupControl1";
+            // 
+            // simplebtnDangxuat
+            // 
+            this.simplebtnDangxuat.Location = new System.Drawing.Point(173, 22);
+            this.simplebtnDangxuat.Name = "simplebtnDangxuat";
+            this.simplebtnDangxuat.Size = new System.Drawing.Size(107, 38);
+            this.simplebtnDangxuat.TabIndex = 17;
+            this.simplebtnDangxuat.Text = "Đăng xuất";
+            // 
             // labelControl2
             // 
-            this.labelControl2.Location = new System.Drawing.Point(24, 24);
+            this.labelControl2.Location = new System.Drawing.Point(30, 26);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(31, 13);
-            this.labelControl2.TabIndex = 13;
+            this.labelControl2.TabIndex = 16;
             this.labelControl2.Text = "MSNV:";
             // 
             // txtMSNV
             // 
-            this.txtMSNV.Location = new System.Drawing.Point(61, 21);
+            this.txtMSNV.Location = new System.Drawing.Point(67, 23);
             this.txtMSNV.Name = "txtMSNV";
             this.txtMSNV.Size = new System.Drawing.Size(100, 20);
-            this.txtMSNV.TabIndex = 12;
+            this.txtMSNV.TabIndex = 15;
             // 
-            // simplebtnDangxuat
-            // 
-            this.simplebtnDangxuat.Location = new System.Drawing.Point(167, 19);
-            this.simplebtnDangxuat.Name = "simplebtnDangxuat";
-            this.simplebtnDangxuat.Size = new System.Drawing.Size(75, 23);
-            this.simplebtnDangxuat.TabIndex = 14;
-            this.simplebtnDangxuat.Text = "Đăng xuất";
-            this.simplebtnDangxuat.Click += new System.EventHandler(this.simplebtnDangxuat_Click);
-            // 
-            // XtraControl6
+            // DangXuatITS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(250)))), ((int)(((byte)(225)))));
-            this.Controls.Add(this.simplebtnDangxuat);
-            this.Controls.Add(this.labelControl2);
-            this.Controls.Add(this.txtMSNV);
-            this.Name = "XtraControl6";
-            this.Size = new System.Drawing.Size(1164, 700);
+            this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.groupControl1);
+            this.Name = "DangXuatITS";
+            this.Size = new System.Drawing.Size(604, 383);
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
+            this.groupControl1.ResumeLayout(false);
+            this.groupControl1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtMSNV.Properties)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
+        private DevExpress.XtraEditors.GroupControl groupControl1;
+        private DevExpress.XtraEditors.SimpleButton simplebtnDangxuat;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.TextEdit txtMSNV;
-        private DevExpress.XtraEditors.SimpleButton simplebtnDangxuat;
     }
 }

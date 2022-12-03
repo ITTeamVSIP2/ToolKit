@@ -28,10 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
-            this.txt_Invoice = new DevExpress.XtraEditors.TextEdit();
-            this.simplebtnTruyVan = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButtonDongBoInvoice = new DevExpress.XtraEditors.SimpleButton();
+            this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.dgInvoice = new System.Windows.Forms.DataGridView();
             this.InvoiceNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CustomerName = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -41,43 +38,34 @@
             this.TotalYards = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TotalRoll = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ScheduleCode = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_Invoice.Properties)).BeginInit();
+            this.simpleButtonDongBoInvoice = new DevExpress.XtraEditors.SimpleButton();
+            this.simplebtnTruyVan = new DevExpress.XtraEditors.SimpleButton();
+            this.txt_Invoice = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
+            this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgInvoice)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_Invoice.Properties)).BeginInit();
             this.SuspendLayout();
             // 
-            // labelControl9
+            // groupControl1
             // 
-            this.labelControl9.Location = new System.Drawing.Point(24, 24);
-            this.labelControl9.Name = "labelControl9";
-            this.labelControl9.Size = new System.Drawing.Size(67, 13);
-            this.labelControl9.TabIndex = 53;
-            this.labelControl9.Text = "Nhập Invoice:";
-            // 
-            // txt_Invoice
-            // 
-            this.txt_Invoice.EditValue = "";
-            this.txt_Invoice.Location = new System.Drawing.Point(97, 21);
-            this.txt_Invoice.Name = "txt_Invoice";
-            this.txt_Invoice.Size = new System.Drawing.Size(162, 20);
-            this.txt_Invoice.TabIndex = 54;
-            // 
-            // simplebtnTruyVan
-            // 
-            this.simplebtnTruyVan.Location = new System.Drawing.Point(265, 19);
-            this.simplebtnTruyVan.Name = "simplebtnTruyVan";
-            this.simplebtnTruyVan.Size = new System.Drawing.Size(75, 23);
-            this.simplebtnTruyVan.TabIndex = 55;
-            this.simplebtnTruyVan.Text = "Truy vấn";
-            this.simplebtnTruyVan.Click += new System.EventHandler(this.simplebtnTruyVan_Click);
-            // 
-            // simpleButtonDongBoInvoice
-            // 
-            this.simpleButtonDongBoInvoice.Location = new System.Drawing.Point(346, 19);
-            this.simpleButtonDongBoInvoice.Name = "simpleButtonDongBoInvoice";
-            this.simpleButtonDongBoInvoice.Size = new System.Drawing.Size(101, 23);
-            this.simpleButtonDongBoInvoice.TabIndex = 56;
-            this.simpleButtonDongBoInvoice.Text = "Đồng bộ invoice";
-            this.simpleButtonDongBoInvoice.Click += new System.EventHandler(this.simpleButtonDongBoInvoice_Click);
+            this.groupControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupControl1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.groupControl1.Controls.Add(this.dgInvoice);
+            this.groupControl1.Controls.Add(this.simpleButtonDongBoInvoice);
+            this.groupControl1.Controls.Add(this.simplebtnTruyVan);
+            this.groupControl1.Controls.Add(this.txt_Invoice);
+            this.groupControl1.Controls.Add(this.labelControl9);
+            this.groupControl1.Location = new System.Drawing.Point(3, 3);
+            this.groupControl1.LookAndFeel.SkinName = "Office 2007 Blue";
+            this.groupControl1.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.groupControl1.Name = "groupControl1";
+            this.groupControl1.Size = new System.Drawing.Size(1158, 694);
+            this.groupControl1.TabIndex = 0;
+            this.groupControl1.Text = "groupControl1";
             // 
             // dgInvoice
             // 
@@ -94,10 +82,10 @@
             this.TotalYards,
             this.TotalRoll,
             this.ScheduleCode});
-            this.dgInvoice.Location = new System.Drawing.Point(24, 48);
+            this.dgInvoice.Location = new System.Drawing.Point(21, 66);
             this.dgInvoice.Name = "dgInvoice";
-            this.dgInvoice.Size = new System.Drawing.Size(1117, 632);
-            this.dgInvoice.TabIndex = 57;
+            this.dgInvoice.Size = new System.Drawing.Size(1116, 612);
+            this.dgInvoice.TabIndex = 62;
             // 
             // InvoiceNo
             // 
@@ -147,33 +135,60 @@
             this.ScheduleCode.HeaderText = "Tình Trạng";
             this.ScheduleCode.Name = "ScheduleCode";
             // 
-            // XtraControl4
+            // simpleButtonDongBoInvoice
             // 
-            this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(250)))), ((int)(((byte)(225)))));
+            this.simpleButtonDongBoInvoice.Location = new System.Drawing.Point(401, 19);
+            this.simpleButtonDongBoInvoice.Margin = new System.Windows.Forms.Padding(0);
+            this.simpleButtonDongBoInvoice.Name = "simpleButtonDongBoInvoice";
+            this.simpleButtonDongBoInvoice.Size = new System.Drawing.Size(135, 36);
+            this.simpleButtonDongBoInvoice.TabIndex = 61;
+            this.simpleButtonDongBoInvoice.Text = "Đồng bộ invoice";
+            // 
+            // simplebtnTruyVan
+            // 
+            this.simplebtnTruyVan.Location = new System.Drawing.Point(275, 19);
+            this.simplebtnTruyVan.Name = "simplebtnTruyVan";
+            this.simplebtnTruyVan.Size = new System.Drawing.Size(107, 36);
+            this.simplebtnTruyVan.TabIndex = 60;
+            this.simplebtnTruyVan.Text = "Truy vấn";
+            // 
+            // txt_Invoice
+            // 
+            this.txt_Invoice.EditValue = "";
+            this.txt_Invoice.Location = new System.Drawing.Point(94, 19);
+            this.txt_Invoice.Name = "txt_Invoice";
+            this.txt_Invoice.Size = new System.Drawing.Size(162, 20);
+            this.txt_Invoice.TabIndex = 59;
+            // 
+            // labelControl9
+            // 
+            this.labelControl9.Location = new System.Drawing.Point(21, 22);
+            this.labelControl9.Name = "labelControl9";
+            this.labelControl9.Size = new System.Drawing.Size(67, 13);
+            this.labelControl9.TabIndex = 58;
+            this.labelControl9.Text = "Nhập Invoice:";
+            // 
+            // CapNhatQCMPQ
+            // 
+            this.Appearance.BackColor = System.Drawing.Color.White;
             this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.dgInvoice);
-            this.Controls.Add(this.simpleButtonDongBoInvoice);
-            this.Controls.Add(this.simplebtnTruyVan);
-            this.Controls.Add(this.txt_Invoice);
-            this.Controls.Add(this.labelControl9);
-            this.Name = "XtraControl4";
+            this.Controls.Add(this.groupControl1);
+            this.Name = "CapNhatQCMPQ";
             this.Size = new System.Drawing.Size(1164, 700);
-            ((System.ComponentModel.ISupportInitialize)(this.txt_Invoice.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
+            this.groupControl1.ResumeLayout(false);
+            this.groupControl1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgInvoice)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_Invoice.Properties)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private DevExpress.XtraEditors.LabelControl labelControl9;
-        private DevExpress.XtraEditors.TextEdit txt_Invoice;
-        private DevExpress.XtraEditors.SimpleButton simplebtnTruyVan;
-        private DevExpress.XtraEditors.SimpleButton simpleButtonDongBoInvoice;
-        private System.Windows.Forms.DataGridView dgInvoice;
+        private DevExpress.XtraEditors.GroupControl groupControl1;
         private System.Windows.Forms.DataGridViewTextBoxColumn InvoiceNo;
         private System.Windows.Forms.DataGridViewTextBoxColumn CustomerName;
         private System.Windows.Forms.DataGridViewTextBoxColumn UserName;
@@ -182,5 +197,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn TotalYards;
         private System.Windows.Forms.DataGridViewTextBoxColumn TotalRoll;
         private System.Windows.Forms.DataGridViewTextBoxColumn ScheduleCode;
+        private DevExpress.XtraEditors.SimpleButton simpleButtonDongBoInvoice;
+        private DevExpress.XtraEditors.SimpleButton simplebtnTruyVan;
+        private DevExpress.XtraEditors.TextEdit txt_Invoice;
+        private DevExpress.XtraEditors.LabelControl labelControl9;
+        private System.Windows.Forms.DataGridView dgInvoice;
     }
 }

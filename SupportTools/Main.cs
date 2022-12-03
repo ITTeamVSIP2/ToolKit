@@ -50,7 +50,6 @@ namespace SupportTools
             _Control14 = OpenControl14(khophulieu);
             _Control15 = OpenControl15(khothanhpham);
             _Control16 = OpenControl16(catsieuthi);
-            panelControl1.BackColor = Color.FromArgb(100, Color.Black);
         }
         XtraUserControl OpenControl1(string text)
         {
