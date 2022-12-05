@@ -111,12 +111,6 @@
     <Compile Include="Frm_FEPODetail.Designer.cs">
       <DependentUpon>Frm_FEPODetail.cs</DependentUpon>
     </Compile>
-    <Compile Include="KiemTraLuuTrinh_edit.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="KiemTraLuuTrinh_edit.Designer.cs">
-      <DependentUpon>KiemTraLuuTrinh_edit.cs</DependentUpon>
-    </Compile>
     <Compile Include="MessageBoxx.cs" />
     <Compile Include="Models\DepartmentDTO.cs" />
     <Compile Include="Models\InvoiceDTO.cs" />
@@ -253,9 +247,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_FEPODetail.resx">
       <DependentUpon>Frm_FEPODetail.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="KiemTraLuuTrinh_edit.resx">
-      <DependentUpon>KiemTraLuuTrinh_edit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
