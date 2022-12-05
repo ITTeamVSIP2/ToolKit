@@ -298,7 +298,7 @@
             this.accordionControlElement25.ImageOptions.SvgImage = global::SupportTools.Properties.Resources.actions_remove;
             this.accordionControlElement25.Name = "accordionControlElement25";
             this.accordionControlElement25.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement25.Text = "Tách bundle tiket";
+            this.accordionControlElement25.Text = "Tách bundle ticket";
             // 
             // accordionControlElement14
             // 
