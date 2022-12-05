@@ -13,8 +13,8 @@ namespace SupportTools
 {
     public partial class Main : DevExpress.XtraEditors.XtraForm
     {
-        XtraUserControl _Control1,_Control2, _Control3,_Control4,_Control5,_Control6,_Control7,_Control8,_Control9,_Control10,_Control11,_Control12;
-        XtraUserControl _Control13, _Control14, _Control15, _Control16;
+        XtraUserControl _Control1, _Control2, _Control3, _Control4, _Control5, _Control6, _Control7, _Control8, _Control9, _Control10, _Control11, _Control12;
+        XtraUserControl _Control13, _Control14, _Control15, _Control16, _Control17, _Control18;
         string suadonkyduyet = "Sửa đơn ký duyệt";
         string kiemtraluutrinh = "Kiểm tra lưu trình";
         string capnhatmavattu = "Cập nhật mã vật tư";
@@ -31,6 +31,8 @@ namespace SupportTools
         string khophulieu = "Kho phụ liệu";
         string khothanhpham = "Kho thành phẩm";
         string catsieuthi = "Cắt siêu thị";
+        string tachbundleticket = "Tách bundle ticket";
+        string themdautickgp = "Thêm dấu tick GP";
         public Main()
         {
             InitializeComponent();
@@ -40,7 +42,7 @@ namespace SupportTools
             _Control4 = OpenControl4(capnhatQCMPQ);
             _Control5 = OpenControl5(dongmodonhang);
             _Control6 = OpenControl6(dangxuatITS);
-            _Control7 = OpenControl7(laymatkhaumoi); 
+            _Control7 = OpenControl7(laymatkhaumoi);
             _Control8 = OpenControl8(khuvucbaove);
             _Control9 = OpenControl9(xoaPPAsieuthi);
             _Control10 = OpenControl10(thoigianlamviec);
@@ -50,6 +52,8 @@ namespace SupportTools
             _Control14 = OpenControl14(khophulieu);
             _Control15 = OpenControl15(khothanhpham);
             _Control16 = OpenControl16(catsieuthi);
+            _Control17 = OpenControl17(tachbundleticket);
+            _Control18 = OpenControl18(themdautickgp);
         }
         XtraUserControl OpenControl1(string text)
         {
@@ -212,6 +216,26 @@ namespace SupportTools
             xtra.Parent = result;
             return result;
         }
+        XtraUserControl OpenControl17(string text)
+        {
+            XtraUserControl result = new XtraUserControl();
+            result.Name = text.ToLower() + "UserControl";
+            result.Text = text;
+            TachBundleTicket xtra = new TachBundleTicket();
+            xtra.Dock = System.Windows.Forms.DockStyle.Fill;
+            xtra.Parent = result;
+            return result;
+        }
+        XtraUserControl OpenControl18(string text)
+        {
+            XtraUserControl result = new XtraUserControl();
+            result.Name = text.ToLower() + "UserControl";
+            result.Text = text;
+            ThemTickGP xtra = new ThemTickGP();
+            xtra.Dock = System.Windows.Forms.DockStyle.Fill;
+            xtra.Parent = result;
+            return result;
+        }
         private void accordionControl_SelectedElementChanged(object sender, DevExpress.XtraBars.Navigation.SelectedElementChangedEventArgs e)
         {
             if (e.Element == null) return;
@@ -295,6 +319,16 @@ namespace SupportTools
                 tabbedView.AddDocument(_Control16);
                 tabbedView.ActivateDocument(_Control16);
             }
+            if (e.Element.Text == tachbundleticket)
+            {
+                tabbedView.AddDocument(_Control17);
+                tabbedView.ActivateDocument(_Control17);
+            }
+            if (e.Element.Text == themdautickgp)
+            {
+                tabbedView.AddDocument(_Control18);
+                tabbedView.ActivateDocument(_Control18);
+            }
         }
 
         private void tabbedView_DocumentClosed(object sender, DevExpress.XtraBars.Docking2010.Views.DocumentEventArgs e)
@@ -315,7 +349,8 @@ namespace SupportTools
             if (e.Document.Caption == khophulieu) _Control14 = OpenControl14(khophulieu);
             if (e.Document.Caption == khothanhpham) _Control15 = OpenControl15(khothanhpham);
             if (e.Document.Caption == catsieuthi) _Control16 = OpenControl16(catsieuthi);
-
+            if (e.Document.Caption == tachbundleticket) _Control17 = OpenControl17(tachbundleticket);
+            if (e.Document.Caption == themdautickgp) _Control18 = OpenControl18(themdautickgp);
 
         }
 

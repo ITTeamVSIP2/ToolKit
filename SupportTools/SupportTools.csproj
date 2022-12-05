@@ -134,6 +134,18 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Models\SQL_Control1.cs" />
     <Compile Include="Models\SQL_Control2.cs" />
+    <Compile Include="TachBundleTicket.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TachBundleTicket.designer.cs">
+      <DependentUpon>TachBundleTicket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThemTickGP.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ThemTickGP.designer.cs">
+      <DependentUpon>ThemTickGP.cs</DependentUpon>
+    </Compile>
     <Compile Include="UpdateFEPO.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -259,6 +271,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="TachBundleTicket.resx">
+      <DependentUpon>TachBundleTicket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThemTickGP.resx">
+      <DependentUpon>ThemTickGP.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UpdateFEPO.resx">
       <DependentUpon>UpdateFEPO.cs</DependentUpon>
     </EmbeddedResource>
