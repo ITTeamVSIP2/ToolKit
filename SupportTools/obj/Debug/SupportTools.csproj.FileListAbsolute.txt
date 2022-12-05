@@ -753,3 +753,4 @@ D:\Team\A\ToolKit\SupportTools\obj\Debug\SupportTools.application
 D:\Team\A\ToolKit\SupportTools\obj\Debug\SupportTools.csproj.CopyComplete
 D:\Team\A\ToolKit\SupportTools\obj\Debug\SupportTools.exe
 D:\Team\A\ToolKit\SupportTools\obj\Debug\SupportTools.pdb
+D:\Team\A\ToolKit\SupportTools\obj\Debug\SupportTools.csproj.AssemblyReference.cache
