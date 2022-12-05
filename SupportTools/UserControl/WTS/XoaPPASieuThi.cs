@@ -19,7 +19,7 @@ namespace SupportTools
 {
     public partial class XoaPPASieuThi : DevExpress.XtraEditors.XtraUserControl
     {
-        int ColumnsCount;
+        int ColumnsCount, x;
         public XoaPPASieuThi()
         {
             InitializeComponent();
@@ -56,6 +56,7 @@ namespace SupportTools
                 gridControl1.DataSource = dt;
                 gridView1.Columns["tInTime"].DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
                 gridView1.Columns["tInTime"].DisplayFormat.FormatString = "yyyy-MM-dd HH:mm:ss.fff";
+                x = gridView1.RowCount;
             }
             catch// (Exception ex)
             {
@@ -101,6 +102,14 @@ namespace SupportTools
                 gridView1.Columns["dOutputDate"].DisplayFormat.FormatString = "yyyy-MM-dd HH:mm:ss.fff";
                 gridView1.Columns["tCreateTime"].DisplayFormat.FormatString = "yyyy-MM-dd HH:mm:ss.fff";
                 gridControl1.DataSource = dt;
+                if (x == 1)
+                {
+                    simpleButtonXoaPPA.Enabled = false;
+                }
+                if (x != 1)
+                {
+                    simpleButtonXoaPPA.Enabled = true;
+                }
             }
             catch //(Exception ex)
             {
