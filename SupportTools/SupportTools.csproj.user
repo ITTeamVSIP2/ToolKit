@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <PublishUrlHistory>\\fv2it010\IT-Team%28Share%29\ToolKits\|\\fv2it010\IT-Team%28Share%29\Tool Kit\|\\fv2it010\IT-Team%28Share%29\</PublishUrlHistory>
-    <InstallUrlHistory>\\fv2it010\IT-Team%28Share%29\ToolKits\|\\fv2it010\IT-Team%28Share%29\Tool Kit\</InstallUrlHistory>
+    <PublishUrlHistory>\\fv2it010\IT-Team%28Share%29\Tool Kit\|\\fv2it010\IT-Team%28Share%29\ToolKits\|\\fv2it010\IT-Team%28Share%29\</PublishUrlHistory>
+    <InstallUrlHistory>\\fv2it010\IT-Team%28Share%29\Tool Kit\|\\fv2it010\IT-Team%28Share%29\ToolKits\</InstallUrlHistory>
     <SupportUrlHistory />
     <UpdateUrlHistory>\\fv2it010\IT-Team%28Share%29\Tool Kit\|\\fv2it010\IT-Team%28Share%29\Update Tool Kit\</UpdateUrlHistory>
     <BootstrapperUrlHistory />

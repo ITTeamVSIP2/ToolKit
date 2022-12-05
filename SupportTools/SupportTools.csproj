@@ -13,7 +13,7 @@
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>\\fv2it010\IT-Team%28Share%29\ToolKits\</PublishUrl>
+    <PublishUrl>\\fv2it010\IT-Team%28Share%29\Tool Kit\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Unc</InstallFrom>
     <UpdateEnabled>true</UpdateEnabled>
@@ -23,11 +23,11 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>true</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <InstallUrl>\\fv2it010\IT-Team%28Share%29\ToolKits\</InstallUrl>
+    <InstallUrl>\\fv2it010\IT-Team%28Share%29\Tool Kit\</InstallUrl>
     <UpdateUrl>\\fv2it010\IT-Team%28Share%29\Tool Kit\</UpdateUrl>
     <MinimumRequiredVersion>1.0.0.0</MinimumRequiredVersion>
     <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
-    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationRevision>4</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
