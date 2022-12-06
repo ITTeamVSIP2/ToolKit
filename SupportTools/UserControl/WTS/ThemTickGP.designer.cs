@@ -29,7 +29,6 @@ namespace SupportTools
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
             this.btnCapNhatTick0 = new DevExpress.XtraEditors.SimpleButton();
             this.gridControl2 = new DevExpress.XtraGrid.GridControl();
@@ -38,27 +37,12 @@ namespace SupportTools
             this.btnCapNhatTick = new DevExpress.XtraEditors.SimpleButton();
             this.memoBarcode = new DevExpress.XtraEditors.MemoEdit();
             this.bthKiemTraTick = new DevExpress.XtraEditors.SimpleButton();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
-            this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.memoBarcode.Properties)).BeginInit();
             this.SuspendLayout();
-            // 
-            // groupControl1
-            // 
-            this.groupControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupControl1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.groupControl1.Controls.Add(this.groupControl2);
-            this.groupControl1.Location = new System.Drawing.Point(0, 0);
-            this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(756, 276);
-            this.groupControl1.TabIndex = 0;
-            this.groupControl1.Text = "groupControl1";
             // 
             // groupControl2
             // 
@@ -72,29 +56,32 @@ namespace SupportTools
             this.groupControl2.Controls.Add(this.btnCapNhatTick);
             this.groupControl2.Controls.Add(this.memoBarcode);
             this.groupControl2.Controls.Add(this.bthKiemTraTick);
-            this.groupControl2.Location = new System.Drawing.Point(14, 12);
+            this.groupControl2.Location = new System.Drawing.Point(3, 3);
             this.groupControl2.LookAndFeel.SkinName = "Office 2010 Blue";
             this.groupControl2.LookAndFeel.UseDefaultLookAndFeel = false;
             this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(732, 256);
-            this.groupControl2.TabIndex = 2;
+            this.groupControl2.Size = new System.Drawing.Size(750, 279);
+            this.groupControl2.TabIndex = 3;
             this.groupControl2.Text = "Thêm dấu tick GP";
             // 
             // btnCapNhatTick0
             // 
-            this.btnCapNhatTick0.Location = new System.Drawing.Point(390, 15);
+            this.btnCapNhatTick0.Location = new System.Drawing.Point(414, 6);
             this.btnCapNhatTick0.Name = "btnCapNhatTick0";
-            this.btnCapNhatTick0.Size = new System.Drawing.Size(129, 37);
+            this.btnCapNhatTick0.Size = new System.Drawing.Size(129, 40);
             this.btnCapNhatTick0.TabIndex = 60;
             this.btnCapNhatTick0.Text = "Chưa đẩy ERP";
             this.btnCapNhatTick0.Click += new System.EventHandler(this.btnCapNhatTick0_Click);
             // 
             // gridControl2
             // 
-            this.gridControl2.Location = new System.Drawing.Point(167, 58);
+            this.gridControl2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.gridControl2.Location = new System.Drawing.Point(191, 52);
             this.gridControl2.MainView = this.gridView2;
             this.gridControl2.Name = "gridControl2";
-            this.gridControl2.Size = new System.Drawing.Size(560, 194);
+            this.gridControl2.Size = new System.Drawing.Size(545, 213);
             this.gridControl2.TabIndex = 6;
             this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView2});
@@ -114,26 +101,28 @@ namespace SupportTools
             // 
             // btnCapNhatTick
             // 
-            this.btnCapNhatTick.Location = new System.Drawing.Point(273, 15);
+            this.btnCapNhatTick.Location = new System.Drawing.Point(297, 6);
             this.btnCapNhatTick.Name = "btnCapNhatTick";
-            this.btnCapNhatTick.Size = new System.Drawing.Size(111, 37);
+            this.btnCapNhatTick.Size = new System.Drawing.Size(111, 40);
             this.btnCapNhatTick.TabIndex = 7;
             this.btnCapNhatTick.Text = "Đã đẩy ERP";
             this.btnCapNhatTick.Click += new System.EventHandler(this.btnCapNhatTick_Click);
             // 
             // memoBarcode
             // 
+            this.memoBarcode.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.memoBarcode.EditValue = "Nhập barcode:";
-            this.memoBarcode.Location = new System.Drawing.Point(5, 16);
+            this.memoBarcode.Location = new System.Drawing.Point(16, 6);
             this.memoBarcode.Name = "memoBarcode";
-            this.memoBarcode.Size = new System.Drawing.Size(156, 236);
-            this.memoBarcode.TabIndex = 59;
+            this.memoBarcode.Size = new System.Drawing.Size(169, 259);
+            this.memoBarcode.TabIndex = 1;
             // 
             // bthKiemTraTick
             // 
-            this.bthKiemTraTick.Location = new System.Drawing.Point(167, 15);
+            this.bthKiemTraTick.Location = new System.Drawing.Point(191, 6);
             this.bthKiemTraTick.Name = "bthKiemTraTick";
-            this.bthKiemTraTick.Size = new System.Drawing.Size(100, 37);
+            this.bthKiemTraTick.Size = new System.Drawing.Size(100, 40);
             this.bthKiemTraTick.TabIndex = 6;
             this.bthKiemTraTick.Text = "Kiểm tra";
             this.bthKiemTraTick.Click += new System.EventHandler(this.bthKiemTraTick_Click);
@@ -144,11 +133,9 @@ namespace SupportTools
             this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.groupControl1);
+            this.Controls.Add(this.groupControl2);
             this.Name = "ThemTickGP";
             this.Size = new System.Drawing.Size(756, 285);
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
-            this.groupControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);
             this.groupControl2.PerformLayout();
@@ -161,7 +148,6 @@ namespace SupportTools
 
         #endregion
 
-        private DevExpress.XtraEditors.GroupControl groupControl1;
         private DevExpress.XtraEditors.GroupControl groupControl2;
         private DevExpress.XtraEditors.SimpleButton btnCapNhatTick0;
         private DevExpress.XtraGrid.GridControl gridControl2;

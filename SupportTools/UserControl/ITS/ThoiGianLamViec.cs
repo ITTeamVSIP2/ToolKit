@@ -15,6 +15,7 @@ namespace SupportTools
 {
     public partial class ThoiGianLamViec : DevExpress.XtraEditors.XtraUserControl
     {
+        string AttDate;
         public ThoiGianLamViec()
         {
             InitializeComponent();
@@ -28,7 +29,7 @@ namespace SupportTools
             { XtraMessageBox.Show("Vui lòng chọn ngày.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error); }
             else
             {
-                string AttDate = dateEditDate.Text;
+                AttDate = dateEditDate.Text;
                 string connString = ConfigurationManager.ConnectionStrings["ITS_Server"].ConnectionString;
                 var connection = new SqlConnection(connString);
                 string a = memoMSNV.Text.TrimEnd().ToString().Replace("\r\n", ",");
@@ -110,6 +111,29 @@ namespace SupportTools
 
                     }
                 }
+            }
+        }
+
+        private void simpleButtonDongbo_Click(object sender, EventArgs e)
+        {
+            string connString = ConfigurationManager.ConnectionStrings["ITS_Server"].ConnectionString;
+            var connection = new SqlConnection(connString);
+            try
+            {
+                connection.Open();
+                SqlCommand command = new SqlCommand("sp_IEUpdateAttRecord_VSIP2", connection);
+                command.CommandType = CommandType.StoredProcedure;
+                command.Parameters.AddWithValue("@BeginDate", AttDate);
+                command.Parameters.AddWithValue("@EndDate", AttDate);
+                command.CommandTimeout = 0;
+                command.ExecuteNonQuery();
+                connection.Close();
+                XtraMessageBox.Show("Đồng bộ thành công.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                connection.Close();
+                XtraMessageBox.Show(ex.Message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

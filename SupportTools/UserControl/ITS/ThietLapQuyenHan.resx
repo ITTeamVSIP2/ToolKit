@@ -117,4 +117,45 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="memoInsertFunc.EditValue" xml:space="preserve">
+    <value>INSERT INTO dbo.UserFunction
+(
+ ID,
+ ObjectTab,
+ Object,
+ ObjectNameVI,
+ ObjectNameEN,
+ ObjectNameCN,
+ UserID,
+ UserGroupID,
+ SiteFunctionID,
+ FromDate,
+ ToDate,
+ Status,
+ CreatorID,
+ CreateDate,
+ LastUpdateID,
+ LastUpdateDate,
+ CompanyCode
+)
+VALUES
+( NEWID(), -- ID - nvarchar(36)
+ N'', -- ObjectTab - nvarchar(255)
+ N'_SHOW', -- Object - nvarchar(255)
+ N'', -- ObjectNameVI - nvarchar(100)
+ N'', -- ObjectNameEN - nvarchar(100)
+ N'', -- ObjectNameCN - nvarchar(100)
+ '',-- UserID - int (CHANGE)
+ '', -- UserGroupID - int (CHANGE)
+ '', -- SiteFunctionID - nvarchar(36) (CHANGE)
+ NULL, -- FromDate - datetime
+ NULL, -- ToDate - datetime
+ 1, -- Status - int
+ 000000, -- CreatorID - int
+ GETDATE(), -- CreateDate - datetime
+ 000000, -- LastUpdateID - int
+ GETDATE(), -- LastUpdateDate - datetime
+ 79101 -- CompanyCode - int
+ )</value>
+  </data>
 </root>

@@ -34,7 +34,6 @@
             this.simpleButtonKiemTraInput = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButtonKiemTraPPA = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButtonXoaPPA = new DevExpress.XtraEditors.SimpleButton();
-            this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.simpleButtonXuatExcel = new DevExpress.XtraEditors.SimpleButton();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -50,15 +49,15 @@
             // 
             this.memoBarcode.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.memoBarcode.EditValue = "";
-            this.memoBarcode.Location = new System.Drawing.Point(23, 29);
+            this.memoBarcode.EditValue = "Nhập barcode:";
+            this.memoBarcode.Location = new System.Drawing.Point(16, 6);
             this.memoBarcode.Name = "memoBarcode";
-            this.memoBarcode.Size = new System.Drawing.Size(159, 517);
+            this.memoBarcode.Size = new System.Drawing.Size(169, 539);
             this.memoBarcode.TabIndex = 67;
             // 
             // simpleButtonKiemTraInput
             // 
-            this.simpleButtonKiemTraInput.Location = new System.Drawing.Point(188, 5);
+            this.simpleButtonKiemTraInput.Location = new System.Drawing.Point(188, 6);
             this.simpleButtonKiemTraInput.Name = "simpleButtonKiemTraInput";
             this.simpleButtonKiemTraInput.Size = new System.Drawing.Size(120, 40);
             this.simpleButtonKiemTraInput.TabIndex = 68;
@@ -67,7 +66,7 @@
             // 
             // simpleButtonKiemTraPPA
             // 
-            this.simpleButtonKiemTraPPA.Location = new System.Drawing.Point(314, 5);
+            this.simpleButtonKiemTraPPA.Location = new System.Drawing.Point(314, 6);
             this.simpleButtonKiemTraPPA.Name = "simpleButtonKiemTraPPA";
             this.simpleButtonKiemTraPPA.Size = new System.Drawing.Size(120, 40);
             this.simpleButtonKiemTraPPA.TabIndex = 69;
@@ -76,25 +75,16 @@
             // 
             // simpleButtonXoaPPA
             // 
-            this.simpleButtonXoaPPA.Location = new System.Drawing.Point(546, 5);
+            this.simpleButtonXoaPPA.Location = new System.Drawing.Point(546, 6);
             this.simpleButtonXoaPPA.Name = "simpleButtonXoaPPA";
             this.simpleButtonXoaPPA.Size = new System.Drawing.Size(100, 40);
             this.simpleButtonXoaPPA.TabIndex = 70;
             this.simpleButtonXoaPPA.Text = "Xóa PPA";
             this.simpleButtonXoaPPA.Click += new System.EventHandler(this.simpleButtonXoaPPA_Click);
             // 
-            // labelControl9
-            // 
-            this.labelControl9.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.labelControl9.Location = new System.Drawing.Point(23, 10);
-            this.labelControl9.Name = "labelControl9";
-            this.labelControl9.Size = new System.Drawing.Size(71, 13);
-            this.labelControl9.TabIndex = 71;
-            this.labelControl9.Text = "Nhập barcode:";
-            // 
             // simpleButtonXuatExcel
             // 
-            this.simpleButtonXuatExcel.Location = new System.Drawing.Point(440, 5);
+            this.simpleButtonXuatExcel.Location = new System.Drawing.Point(440, 6);
             this.simpleButtonXuatExcel.Name = "simpleButtonXuatExcel";
             this.simpleButtonXuatExcel.Size = new System.Drawing.Size(100, 40);
             this.simpleButtonXuatExcel.TabIndex = 72;
@@ -106,10 +96,10 @@
             this.gridControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.gridControl1.Location = new System.Drawing.Point(188, 51);
+            this.gridControl1.Location = new System.Drawing.Point(191, 52);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(1104, 495);
+            this.gridControl1.Size = new System.Drawing.Size(1100, 493);
             this.gridControl1.TabIndex = 73;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -131,7 +121,6 @@
             this.groupControl1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.groupControl1.Controls.Add(this.gridControl1);
             this.groupControl1.Controls.Add(this.simpleButtonXuatExcel);
-            this.groupControl1.Controls.Add(this.labelControl9);
             this.groupControl1.Controls.Add(this.simpleButtonXoaPPA);
             this.groupControl1.Controls.Add(this.simpleButtonKiemTraPPA);
             this.groupControl1.Controls.Add(this.simpleButtonKiemTraInput);
@@ -162,7 +151,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
-            this.groupControl1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -173,7 +161,6 @@
         private DevExpress.XtraEditors.SimpleButton simpleButtonKiemTraInput;
         private DevExpress.XtraEditors.SimpleButton simpleButtonKiemTraPPA;
         private DevExpress.XtraEditors.SimpleButton simpleButtonXoaPPA;
-        private DevExpress.XtraEditors.LabelControl labelControl9;
         private DevExpress.XtraEditors.SimpleButton simpleButtonXuatExcel;
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;

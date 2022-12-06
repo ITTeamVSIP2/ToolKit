@@ -307,7 +307,6 @@
             this.accordionControlElement16,
             this.accordionControlElement17,
             this.accordionControlElement18});
-            this.accordionControlElement14.Expanded = true;
             this.accordionControlElement14.ImageOptions.Image = global::SupportTools.Properties.Resources.apply_16x16;
             this.accordionControlElement14.Name = "accordionControlElement14";
             this.accordionControlElement14.Text = "WMS";
