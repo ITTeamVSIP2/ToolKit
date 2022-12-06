@@ -27,7 +27,7 @@
     <UpdateUrl>\\fv2it010\IT-Team%28Share%29\Tool Kit\</UpdateUrl>
     <MinimumRequiredVersion>1.0.0.0</MinimumRequiredVersion>
     <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
-    <ApplicationRevision>4</ApplicationRevision>
+    <ApplicationRevision>6</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -66,24 +66,30 @@
     <SignManifests>true</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>5.ico</ApplicationIcon>
+    <ApplicationIcon>Resources\5.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DevExpress.BonusSkins.v22.1" />
+    <Reference Include="DevExpress.CodeParser.v22.1, Version=22.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v22.1, Version=22.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Drawing.v22.1" />
     <Reference Include="DevExpress.Data.v22.1" />
+    <Reference Include="DevExpress.ExpressApp.v22.1, Version=22.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Office.v22.1.Core, Version=22.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Persistent.Base.v22.1, Version=22.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.RichEdit.v22.1.Core, Version=22.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.RichEdit.v22.1.Export, Version=22.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Printing.v22.1.Core, Version=22.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Data.Desktop.v22.1" />
     <Reference Include="DevExpress.Utils.v22.1" />
     <Reference Include="DevExpress.Sparkline.v22.1.Core" />
+    <Reference Include="DevExpress.Xpo.v22.1, Version=22.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraBars.v22.1, Version=22.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraEditors.v22.1" />
     <Reference Include="DevExpress.XtraGrid.v22.1, Version=22.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraLayout.v22.1, Version=22.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraPrinting.v22.1, Version=22.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v22.1, Version=22.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
@@ -98,16 +104,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Frm_EditERP.cs">
+    <Compile Include="UserControl\ITS\Frm_EditERP.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frm_EditERP.Designer.cs">
+    <Compile Include="UserControl\ITS\Frm_EditERP.Designer.cs">
       <DependentUpon>Frm_EditERP.cs</DependentUpon>
     </Compile>
-    <Compile Include="Frm_FEPODetail.cs">
+    <Compile Include="UserControl\ERP\Frm_FEPODetail.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frm_FEPODetail.Designer.cs">
+    <Compile Include="UserControl\ERP\Frm_FEPODetail.Designer.cs">
       <DependentUpon>Frm_FEPODetail.cs</DependentUpon>
     </Compile>
     <Compile Include="MessageBoxx.cs" />
@@ -139,10 +145,10 @@
     <Compile Include="UserControl\WTS\ThemTickGP.designer.cs">
       <DependentUpon>ThemTickGP.cs</DependentUpon>
     </Compile>
-    <Compile Include="UpdateFEPO.cs">
+    <Compile Include="UserControl\WMS\UpdateFEPO.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UpdateFEPO.designer.cs">
+    <Compile Include="UserControl\WMS\UpdateFEPO.designer.cs">
       <DependentUpon>UpdateFEPO.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControl\ITS\SuaDonKyDuyet.cs">
@@ -241,10 +247,10 @@
     <Compile Include="UserControl\WTS\XoaPPASieuThi.Designer.cs">
       <DependentUpon>XoaPPASieuThi.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Frm_EditERP.resx">
+    <EmbeddedResource Include="UserControl\ITS\Frm_EditERP.resx">
       <DependentUpon>Frm_EditERP.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frm_FEPODetail.resx">
+    <EmbeddedResource Include="UserControl\ERP\Frm_FEPODetail.resx">
       <DependentUpon>Frm_FEPODetail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
@@ -267,7 +273,7 @@
     <EmbeddedResource Include="UserControl\WTS\ThemTickGP.resx">
       <DependentUpon>ThemTickGP.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UpdateFEPO.resx">
+    <EmbeddedResource Include="UserControl\WMS\UpdateFEPO.resx">
       <DependentUpon>UpdateFEPO.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl\ITS\SuaDonKyDuyet.resx">
@@ -328,7 +334,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="SupportTools_TemporaryKey.pfx" />
+    <None Include="Key\SupportTools_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <COMReference Include="Microsoft.Office.Core">
@@ -380,7 +386,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="5.ico" />
+    <Content Include="Resources\5.ico" />
     <Content Include="Resources\it.ico" />
     <None Include="Resources\bg.png" />
     <None Include="Resources\apply_16x16.png" />

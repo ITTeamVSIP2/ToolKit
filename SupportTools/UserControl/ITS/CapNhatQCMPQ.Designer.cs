@@ -28,25 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.components = new System.ComponentModel.Container();
+            DevExpress.DataAccess.Sql.CustomSqlQuery customSqlQuery2 = new DevExpress.DataAccess.Sql.CustomSqlQuery();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CapNhatQCMPQ));
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.dgInvoice = new System.Windows.Forms.DataGridView();
-            this.InvoiceNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CustomerName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.UserName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CreateDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ImportPassel = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TotalYards = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TotalRoll = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ScheduleCode = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgInvoice = new DevExpress.XtraGrid.GridControl();
+            this.sqlDataSource3 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colInvoiceNo = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCustomerID = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCustomerName = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colUserID = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colUserName = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCreateDate = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colImportPassel = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colTotalYards = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colTotalRoll = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colScheduleCode = new DevExpress.XtraGrid.Columns.GridColumn();
             this.simpleButtonDongBoInvoice = new DevExpress.XtraEditors.SimpleButton();
             this.simplebtnTruyVan = new DevExpress.XtraEditors.SimpleButton();
             this.txt_Invoice = new DevExpress.XtraEditors.TextEdit();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
+            this.collectionDataSource1 = new DevExpress.Persistent.Base.ReportsV2.CollectionDataSource();
+            this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
+            this.sqlDataSource2 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgInvoice)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Invoice.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.collectionDataSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupControl1
@@ -73,85 +84,130 @@
             this.dgInvoice.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgInvoice.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgInvoice.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.InvoiceNo,
-            this.CustomerName,
-            this.UserName,
-            this.CreateDate,
-            this.ImportPassel,
-            this.TotalYards,
-            this.TotalRoll,
-            this.ScheduleCode});
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Tahoma", 8.25F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgInvoice.DefaultCellStyle = dataGridViewCellStyle6;
-            this.dgInvoice.Location = new System.Drawing.Point(21, 66);
+            this.dgInvoice.DataMember = "Query";
+            this.dgInvoice.DataSource = this.sqlDataSource3;
+            this.dgInvoice.Location = new System.Drawing.Point(13, 62);
+            this.dgInvoice.MainView = this.gridView1;
             this.dgInvoice.Name = "dgInvoice";
-            this.dgInvoice.Size = new System.Drawing.Size(1116, 612);
-            this.dgInvoice.TabIndex = 62;
+            this.dgInvoice.Size = new System.Drawing.Size(1132, 615);
+            this.dgInvoice.TabIndex = 63;
+            this.dgInvoice.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView1});
             // 
-            // InvoiceNo
+            // sqlDataSource3
             // 
-            this.InvoiceNo.DataPropertyName = "InvoiceNo";
-            this.InvoiceNo.HeaderText = "Invoice";
-            this.InvoiceNo.Name = "InvoiceNo";
+            this.sqlDataSource3.ConnectionName = "localhost_FEAERP_VN_Connection";
+            this.sqlDataSource3.Name = "sqlDataSource3";
+            customSqlQuery2.Name = "Query";
+            customSqlQuery2.Sql = resources.GetString("customSqlQuery2.Sql");
+            this.sqlDataSource3.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
+            customSqlQuery2});
+            this.sqlDataSource3.ResultSchemaSerializable = resources.GetString("sqlDataSource3.ResultSchemaSerializable");
             // 
-            // CustomerName
+            // gridView1
             // 
-            this.CustomerName.DataPropertyName = "CustomerName";
-            this.CustomerName.HeaderText = "Nhà cung cấp";
-            this.CustomerName.Name = "CustomerName";
+            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colInvoiceNo,
+            this.colCustomerID,
+            this.colCustomerName,
+            this.colUserID,
+            this.colUserName,
+            this.colCreateDate,
+            this.colImportPassel,
+            this.colTotalYards,
+            this.colTotalRoll,
+            this.colScheduleCode});
+            this.gridView1.GridControl = this.dgInvoice;
+            this.gridView1.Name = "gridView1";
             // 
-            // UserName
+            // colInvoiceNo
             // 
-            this.UserName.DataPropertyName = "UserName";
-            this.UserName.HeaderText = "Người đổ";
-            this.UserName.Name = "UserName";
+            this.colInvoiceNo.Caption = "Invoice";
+            this.colInvoiceNo.FieldName = "InvoiceNo";
+            this.colInvoiceNo.Name = "colInvoiceNo";
+            this.colInvoiceNo.Visible = true;
+            this.colInvoiceNo.VisibleIndex = 0;
             // 
-            // CreateDate
+            // colCustomerID
             // 
-            this.CreateDate.DataPropertyName = "CreateDate";
-            this.CreateDate.HeaderText = "Ngày đổ";
-            this.CreateDate.Name = "CreateDate";
+            this.colCustomerID.Caption = "Mã nhà cung cấp";
+            this.colCustomerID.FieldName = "CustomerID";
+            this.colCustomerID.Name = "colCustomerID";
+            this.colCustomerID.Visible = true;
+            this.colCustomerID.VisibleIndex = 1;
             // 
-            // ImportPassel
+            // colCustomerName
             // 
-            this.ImportPassel.DataPropertyName = "ImportPassel";
-            this.ImportPassel.HeaderText = "Mã lô";
-            this.ImportPassel.Name = "ImportPassel";
+            this.colCustomerName.Caption = "Tên nhà cung cấp";
+            this.colCustomerName.FieldName = "CustomerName";
+            this.colCustomerName.Name = "colCustomerName";
+            this.colCustomerName.Visible = true;
+            this.colCustomerName.VisibleIndex = 2;
             // 
-            // TotalYards
+            // colUserID
             // 
-            this.TotalYards.DataPropertyName = "TotalYards";
-            this.TotalYards.HeaderText = "Tổng yards";
-            this.TotalYards.Name = "TotalYards";
+            this.colUserID.FieldName = "UserID";
+            this.colUserID.Name = "colUserID";
+            this.colUserID.Visible = true;
+            this.colUserID.VisibleIndex = 3;
             // 
-            // TotalRoll
+            // colUserName
             // 
-            this.TotalRoll.DataPropertyName = "TotalRoll";
-            this.TotalRoll.HeaderText = "Tổng roll";
-            this.TotalRoll.Name = "TotalRoll";
+            this.colUserName.Caption = "Người đổ";
+            this.colUserName.FieldName = "UserName";
+            this.colUserName.Name = "colUserName";
+            this.colUserName.Visible = true;
+            this.colUserName.VisibleIndex = 4;
             // 
-            // ScheduleCode
+            // colCreateDate
             // 
-            this.ScheduleCode.DataPropertyName = "ScheduleCode";
-            this.ScheduleCode.HeaderText = "Tình Trạng";
-            this.ScheduleCode.Name = "ScheduleCode";
+            this.colCreateDate.Caption = "Ngày đổ";
+            this.colCreateDate.FieldName = "CreateDate";
+            this.colCreateDate.Name = "colCreateDate";
+            this.colCreateDate.Visible = true;
+            this.colCreateDate.VisibleIndex = 5;
+            // 
+            // colImportPassel
+            // 
+            this.colImportPassel.Caption = "Mã lô";
+            this.colImportPassel.FieldName = "ImportPassel";
+            this.colImportPassel.Name = "colImportPassel";
+            this.colImportPassel.Visible = true;
+            this.colImportPassel.VisibleIndex = 6;
+            // 
+            // colTotalYards
+            // 
+            this.colTotalYards.Caption = "Tổng yards";
+            this.colTotalYards.FieldName = "TotalYards";
+            this.colTotalYards.Name = "colTotalYards";
+            this.colTotalYards.Visible = true;
+            this.colTotalYards.VisibleIndex = 7;
+            // 
+            // colTotalRoll
+            // 
+            this.colTotalRoll.Caption = "Tổng roll";
+            this.colTotalRoll.FieldName = "TotalRoll";
+            this.colTotalRoll.Name = "colTotalRoll";
+            this.colTotalRoll.Visible = true;
+            this.colTotalRoll.VisibleIndex = 8;
+            // 
+            // colScheduleCode
+            // 
+            this.colScheduleCode.Caption = "Tình trạng";
+            this.colScheduleCode.FieldName = "ScheduleCode";
+            this.colScheduleCode.Name = "colScheduleCode";
+            this.colScheduleCode.Visible = true;
+            this.colScheduleCode.VisibleIndex = 9;
             // 
             // simpleButtonDongBoInvoice
             // 
             this.simpleButtonDongBoInvoice.Location = new System.Drawing.Point(380, 6);
             this.simpleButtonDongBoInvoice.Margin = new System.Windows.Forms.Padding(0);
             this.simpleButtonDongBoInvoice.Name = "simpleButtonDongBoInvoice";
-            this.simpleButtonDongBoInvoice.Size = new System.Drawing.Size(100, 40);
+            this.simpleButtonDongBoInvoice.Size = new System.Drawing.Size(150, 40);
             this.simpleButtonDongBoInvoice.TabIndex = 61;
             this.simpleButtonDongBoInvoice.Text = "Đồng bộ invoice";
+            this.simpleButtonDongBoInvoice.Click += new System.EventHandler(this.simpleButtonDongBoInvoice_Click);
             // 
             // simplebtnTruyVan
             // 
@@ -160,6 +216,7 @@
             this.simplebtnTruyVan.Size = new System.Drawing.Size(100, 40);
             this.simplebtnTruyVan.TabIndex = 60;
             this.simplebtnTruyVan.Text = "Truy vấn";
+            this.simplebtnTruyVan.Click += new System.EventHandler(this.simplebtnTruyVan_Click);
             // 
             // txt_Invoice
             // 
@@ -177,6 +234,20 @@
             this.labelControl9.TabIndex = 58;
             this.labelControl9.Text = "Nhập Invoice:";
             // 
+            // collectionDataSource1
+            // 
+            this.collectionDataSource1.Name = "collectionDataSource1";
+            this.collectionDataSource1.ObjectTypeName = null;
+            this.collectionDataSource1.TopReturnedRecords = 0;
+            // 
+            // sqlDataSource1
+            // 
+            this.sqlDataSource1.Name = "sqlDataSource1";
+            // 
+            // sqlDataSource2
+            // 
+            this.sqlDataSource2.Name = "sqlDataSource2";
+            // 
             // CapNhatQCMPQ
             // 
             this.Appearance.BackColor = System.Drawing.Color.White;
@@ -190,7 +261,9 @@
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgInvoice)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Invoice.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.collectionDataSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -198,18 +271,25 @@
         #endregion
 
         private DevExpress.XtraEditors.GroupControl groupControl1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn InvoiceNo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CustomerName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn UserName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CreateDate;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ImportPassel;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TotalYards;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TotalRoll;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ScheduleCode;
         private DevExpress.XtraEditors.SimpleButton simpleButtonDongBoInvoice;
         private DevExpress.XtraEditors.SimpleButton simplebtnTruyVan;
         private DevExpress.XtraEditors.TextEdit txt_Invoice;
         private DevExpress.XtraEditors.LabelControl labelControl9;
-        private System.Windows.Forms.DataGridView dgInvoice;
+        private DevExpress.Persistent.Base.ReportsV2.CollectionDataSource collectionDataSource1;
+        private DevExpress.XtraGrid.GridControl dgInvoice;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource1;
+        private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource2;
+        private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource3;
+        private DevExpress.XtraGrid.Columns.GridColumn colInvoiceNo;
+        private DevExpress.XtraGrid.Columns.GridColumn colCustomerID;
+        private DevExpress.XtraGrid.Columns.GridColumn colCustomerName;
+        private DevExpress.XtraGrid.Columns.GridColumn colUserID;
+        private DevExpress.XtraGrid.Columns.GridColumn colUserName;
+        private DevExpress.XtraGrid.Columns.GridColumn colCreateDate;
+        private DevExpress.XtraGrid.Columns.GridColumn colImportPassel;
+        private DevExpress.XtraGrid.Columns.GridColumn colTotalYards;
+        private DevExpress.XtraGrid.Columns.GridColumn colTotalRoll;
+        private DevExpress.XtraGrid.Columns.GridColumn colScheduleCode;
     }
 }
