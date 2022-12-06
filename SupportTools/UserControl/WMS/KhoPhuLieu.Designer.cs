@@ -167,6 +167,7 @@ namespace SupportTools
             this.gridViewDataWMS2.Name = "gridViewDataWMS2";
             this.gridViewDataWMS2.OptionsBehavior.Editable = false;
             this.gridViewDataWMS2.OptionsView.ShowGroupPanel = false;
+            this.gridViewDataWMS2.Click += new System.EventHandler(this.gridViewDataWMS2_Click);
             // 
             // txtDaySync
             // 
