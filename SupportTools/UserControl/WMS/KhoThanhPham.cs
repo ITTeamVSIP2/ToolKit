@@ -81,7 +81,7 @@ namespace SupportTools
                 connection.Open();
                 SqlCommand command = new SqlCommand("DELETE ProductPackageDetailItem WHERE OrderCode = 'PDO-" + txtPDO.Text + "'", connection);
                 command.ExecuteNonQuery();
-                XtraMessageBox.Show("xóa thành công.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                XtraMessageBox.Show("Xóa thành công.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {

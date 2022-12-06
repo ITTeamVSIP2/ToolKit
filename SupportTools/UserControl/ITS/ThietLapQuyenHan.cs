@@ -12,6 +12,7 @@ using System.Configuration;
 using SupportTools.Models;
 using DevExpress.XtraGrid.Views.Grid;
 using DevExpress.XtraGrid.Views.Grid.ViewInfo;
+using System.Data.SqlClient;
 
 namespace SupportTools
 {
@@ -112,6 +113,23 @@ namespace SupportTools
             }
         }
 
-
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            string connString = ConfigurationManager.ConnectionStrings["ITS_Server"].ConnectionString;
+            var connection = new SqlConnection(connString);
+            string sqlInsertFunc = memoInsertFunc.Text;
+            try
+            {
+                connection.Open();
+                SqlCommand command = new SqlCommand(sqlInsertFunc, connection);
+                command.ExecuteNonQuery();
+                XtraMessageBox.Show("Thêm thành công.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                connection.Close();
+            }
+            catch (Exception ex)
+            {
+                XtraMessageBox.Show(ex.Message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

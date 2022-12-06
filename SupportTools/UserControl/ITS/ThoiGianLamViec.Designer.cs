@@ -42,6 +42,7 @@
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.comboBoxEditCongTy = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.simpleButtonDongbo = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gctrlDuLieuITS)).BeginInit();
@@ -60,6 +61,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupControl1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.groupControl1.Controls.Add(this.simpleButtonDongbo);
             this.groupControl1.Controls.Add(this.gctrlDuLieuITS);
             this.groupControl1.Controls.Add(this.simpleButtonTra);
             this.groupControl1.Controls.Add(this.labelControl2);
@@ -206,6 +208,15 @@
             this.comboBoxEditCongTy.Size = new System.Drawing.Size(130, 20);
             this.comboBoxEditCongTy.TabIndex = 87;
             // 
+            // simpleButtonDongbo
+            // 
+            this.simpleButtonDongbo.Location = new System.Drawing.Point(560, 28);
+            this.simpleButtonDongbo.Name = "simpleButtonDongbo";
+            this.simpleButtonDongbo.Size = new System.Drawing.Size(100, 40);
+            this.simpleButtonDongbo.TabIndex = 88;
+            this.simpleButtonDongbo.Text = "Đồng bộ";
+            this.simpleButtonDongbo.Click += new System.EventHandler(this.simpleButtonDongbo_Click);
+            // 
             // ThoiGianLamViec
             // 
             this.Appearance.BackColor = System.Drawing.Color.White;
@@ -248,5 +259,6 @@
         private DevExpress.XtraEditors.LabelControl labelControl4;
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.ComboBoxEdit comboBoxEditCongTy;
+        private DevExpress.XtraEditors.SimpleButton simpleButtonDongbo;
     }
 }
