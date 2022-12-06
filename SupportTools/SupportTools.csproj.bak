@@ -25,9 +25,9 @@
     <MapFileExtensions>true</MapFileExtensions>
     <InstallUrl>\\fv2it010\IT-Team%28Share%29\Tool Kit\</InstallUrl>
     <UpdateUrl>\\fv2it010\IT-Team%28Share%29\Tool Kit\</UpdateUrl>
-    <MinimumRequiredVersion>1.0.0.0</MinimumRequiredVersion>
-    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
-    <ApplicationRevision>1</ApplicationRevision>
+    <MinimumRequiredVersion>1.0.0.1</MinimumRequiredVersion>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>2</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -66,42 +66,23 @@
     <SignManifests>true</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Resources\5.ico</ApplicationIcon>
+    <ApplicationIcon>
+    </ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.BonusSkins.v19.2" />
-    <Reference Include="DevExpress.CodeParser.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Data.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.DataAccess.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Drawing.v19.2" />
-    <Reference Include="DevExpress.Data.v19.2" />
-    <Reference Include="DevExpress.ExpressApp.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Office.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Persistent.Base.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Printing.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.RichEdit.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.RichEdit.v19.2.Export, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Printing.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Data.Desktop.v19.2" />
-    <Reference Include="DevExpress.Sparkline.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Utils.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Utils.v19.2" />
-    <Reference Include="DevExpress.Sparkline.v19.2.Core" />
-    <Reference Include="DevExpress.Xpo.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraBars.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraEditors.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraEditors.v19.2" />
-    <Reference Include="DevExpress.XtraGrid.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraLayout.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraPrinting.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Charts.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraCharts.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraReports.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.BonusSkins.v16.1" />
+    <Reference Include="DevExpress.Data.v16.1" />
+    <Reference Include="DevExpress.Printing.v16.1.Core, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v16.1" />
+    <Reference Include="DevExpress.Sparkline.v16.1.Core" />
+    <Reference Include="DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v16.1" />
+    <Reference Include="DevExpress.XtraGrid.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="System" />
-    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -113,23 +94,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="UserControl\ITS\SuaThongTinDonDieuDong.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControl\ITS\SuaThongTinDonDieuDong.Designer.cs">
-      <DependentUpon>SuaThongTinDonDieuDong.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControl\ITS\Frm_EditERP.cs">
+    <Compile Include="Frm_EditERP.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UserControl\ITS\Frm_EditERP.Designer.cs">
+    <Compile Include="Frm_EditERP.Designer.cs">
       <DependentUpon>Frm_EditERP.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControl\ERP\Frm_FEPODetail.cs">
+    <Compile Include="Frm_FEPODetail.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UserControl\ERP\Frm_FEPODetail.Designer.cs">
+    <Compile Include="Frm_FEPODetail.Designer.cs">
       <DependentUpon>Frm_FEPODetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Hello.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Hello.Designer.cs">
+      <DependentUpon>Frm_Hello.cs</DependentUpon>
     </Compile>
     <Compile Include="MessageBoxx.cs" />
     <Compile Include="Models\DepartmentDTO.cs" />
@@ -148,128 +129,86 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Models\SQL_Control1.cs" />
     <Compile Include="Models\SQL_Control2.cs" />
-    <Compile Include="UserControl\ERP\TachBundleTicket.cs">
+    <Compile Include="XtraControl1.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControl\ERP\TachBundleTicket.designer.cs">
-      <DependentUpon>TachBundleTicket.cs</DependentUpon>
+    <Compile Include="XtraControl1.Designer.cs">
+      <DependentUpon>XtraControl1.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControl\WTS\ThemTickGP.cs">
+    <Compile Include="XtraControl10.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControl\WTS\ThemTickGP.designer.cs">
-      <DependentUpon>ThemTickGP.cs</DependentUpon>
+    <Compile Include="XtraControl10.Designer.cs">
+      <DependentUpon>XtraControl10.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControl\WMS\UpdateFEPO.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UserControl\WMS\UpdateFEPO.designer.cs">
-      <DependentUpon>UpdateFEPO.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControl\ITS\SuaDonKyDuyet.cs">
+    <Compile Include="XtraControl11.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControl\ITS\SuaDonKyDuyet.Designer.cs">
-      <DependentUpon>SuaDonKyDuyet.cs</DependentUpon>
+    <Compile Include="XtraControl11.Designer.cs">
+      <DependentUpon>XtraControl11.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControl\ITS\ThoiGianLamViec.cs">
+    <Compile Include="XtraControl12.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControl\ITS\ThoiGianLamViec.Designer.cs">
-      <DependentUpon>ThoiGianLamViec.cs</DependentUpon>
+    <Compile Include="XtraControl12.Designer.cs">
+      <DependentUpon>XtraControl12.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControl\ITS\ThietLapQuyenHan.cs">
+    <Compile Include="XtraControl2.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControl\ITS\ThietLapQuyenHan.Designer.cs">
-      <DependentUpon>ThietLapQuyenHan.cs</DependentUpon>
+    <Compile Include="XtraControl2.Designer.cs">
+      <DependentUpon>XtraControl2.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControl\WTS\XoaInputChuyenMay.cs">
+    <Compile Include="XtraControl3.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControl\WTS\XoaInputChuyenMay.Designer.cs">
-      <DependentUpon>XoaInputChuyenMay.cs</DependentUpon>
+    <Compile Include="XtraControl3.Designer.cs">
+      <DependentUpon>XtraControl3.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControl\WMS\KhoVai.cs">
+    <Compile Include="XtraControl4.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControl\WMS\KhoVai.Designer.cs">
-      <DependentUpon>KhoVai.cs</DependentUpon>
+    <Compile Include="XtraControl4.Designer.cs">
+      <DependentUpon>XtraControl4.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControl\WMS\KhoPhuLieu.cs">
+    <Compile Include="XtraControl5.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControl\WMS\KhoPhuLieu.Designer.cs">
-      <DependentUpon>KhoPhuLieu.cs</DependentUpon>
+    <Compile Include="XtraControl5.Designer.cs">
+      <DependentUpon>XtraControl5.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControl\WMS\KhoThanhPham.cs">
+    <Compile Include="XtraControl6.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControl\WMS\KhoThanhPham.Designer.cs">
-      <DependentUpon>KhoThanhPham.cs</DependentUpon>
+    <Compile Include="XtraControl6.Designer.cs">
+      <DependentUpon>XtraControl6.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControl\WMS\CatSieuThi.cs">
+    <Compile Include="XtraControl7.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControl\WMS\CatSieuThi.Designer.cs">
-      <DependentUpon>CatSieuThi.cs</DependentUpon>
+    <Compile Include="XtraControl7.Designer.cs">
+      <DependentUpon>XtraControl7.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControl\ITS\KiemTraLuuTrinh.cs">
+    <Compile Include="XtraControl8.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControl\ITS\KiemTraLuuTrinh.Designer.cs">
-      <DependentUpon>KiemTraLuuTrinh.cs</DependentUpon>
+    <Compile Include="XtraControl8.Designer.cs">
+      <DependentUpon>XtraControl8.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControl\ITS\CapNhatMaVatTu.cs">
+    <Compile Include="XtraControl9.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControl\ITS\CapNhatMaVatTu.Designer.cs">
-      <DependentUpon>CapNhatMaVatTu.cs</DependentUpon>
+    <Compile Include="XtraControl9.Designer.cs">
+      <DependentUpon>XtraControl9.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControl\ITS\CapNhatQCMPQ.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControl\ITS\CapNhatQCMPQ.Designer.cs">
-      <DependentUpon>CapNhatQCMPQ.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControl\ERP\DongMoDonHang.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControl\ERP\DongMoDonHang.Designer.cs">
-      <DependentUpon>DongMoDonHang.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControl\ITS\DangXuatITS.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControl\ITS\DangXuatITS.Designer.cs">
-      <DependentUpon>DangXuatITS.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControl\Other\LayMatKhauMoi.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControl\Other\LayMatKhauMoi.Designer.cs">
-      <DependentUpon>LayMatKhauMoi.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControl\ITS\KhuVucBaoVe.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControl\ITS\KhuVucBaoVe.Designer.cs">
-      <DependentUpon>KhuVucBaoVe.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControl\WTS\XoaPPASieuThi.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControl\WTS\XoaPPASieuThi.Designer.cs">
-      <DependentUpon>XoaPPASieuThi.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="UserControl\ITS\SuaThongTinDonDieuDong.resx">
-      <DependentUpon>SuaThongTinDonDieuDong.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControl\ITS\Frm_EditERP.resx">
+    <EmbeddedResource Include="Frm_EditERP.resx">
       <DependentUpon>Frm_EditERP.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControl\ERP\Frm_FEPODetail.resx">
+    <EmbeddedResource Include="Frm_FEPODetail.resx">
       <DependentUpon>Frm_FEPODetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Hello.resx">
+      <DependentUpon>Frm_Hello.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
@@ -285,62 +224,41 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="UserControl\ERP\TachBundleTicket.resx">
-      <DependentUpon>TachBundleTicket.cs</DependentUpon>
+    <EmbeddedResource Include="XtraControl1.resx">
+      <DependentUpon>XtraControl1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControl\WTS\ThemTickGP.resx">
-      <DependentUpon>ThemTickGP.cs</DependentUpon>
+    <EmbeddedResource Include="XtraControl10.resx">
+      <DependentUpon>XtraControl10.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControl\WMS\UpdateFEPO.resx">
-      <DependentUpon>UpdateFEPO.cs</DependentUpon>
+    <EmbeddedResource Include="XtraControl11.resx">
+      <DependentUpon>XtraControl11.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControl\ITS\SuaDonKyDuyet.resx">
-      <DependentUpon>SuaDonKyDuyet.cs</DependentUpon>
+    <EmbeddedResource Include="XtraControl12.resx">
+      <DependentUpon>XtraControl12.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControl\ITS\ThoiGianLamViec.resx">
-      <DependentUpon>ThoiGianLamViec.cs</DependentUpon>
+    <EmbeddedResource Include="XtraControl2.resx">
+      <DependentUpon>XtraControl2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControl\ITS\ThietLapQuyenHan.resx">
-      <DependentUpon>ThietLapQuyenHan.cs</DependentUpon>
+    <EmbeddedResource Include="XtraControl3.resx">
+      <DependentUpon>XtraControl3.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControl\WTS\XoaInputChuyenMay.resx">
-      <DependentUpon>XoaInputChuyenMay.cs</DependentUpon>
+    <EmbeddedResource Include="XtraControl4.resx">
+      <DependentUpon>XtraControl4.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControl\WMS\KhoVai.resx">
-      <DependentUpon>KhoVai.cs</DependentUpon>
+    <EmbeddedResource Include="XtraControl5.resx">
+      <DependentUpon>XtraControl5.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControl\WMS\KhoPhuLieu.resx">
-      <DependentUpon>KhoPhuLieu.cs</DependentUpon>
+    <EmbeddedResource Include="XtraControl6.resx">
+      <DependentUpon>XtraControl6.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControl\WMS\KhoThanhPham.resx">
-      <DependentUpon>KhoThanhPham.cs</DependentUpon>
+    <EmbeddedResource Include="XtraControl7.resx">
+      <DependentUpon>XtraControl7.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControl\WMS\CatSieuThi.resx">
-      <DependentUpon>CatSieuThi.cs</DependentUpon>
+    <EmbeddedResource Include="XtraControl8.resx">
+      <DependentUpon>XtraControl8.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControl\ITS\KiemTraLuuTrinh.resx">
-      <DependentUpon>KiemTraLuuTrinh.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControl\ITS\CapNhatMaVatTu.resx">
-      <DependentUpon>CapNhatMaVatTu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControl\ITS\CapNhatQCMPQ.resx">
-      <DependentUpon>CapNhatQCMPQ.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControl\ERP\DongMoDonHang.resx">
-      <DependentUpon>DongMoDonHang.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControl\ITS\DangXuatITS.resx">
-      <DependentUpon>DangXuatITS.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControl\Other\LayMatKhauMoi.resx">
-      <DependentUpon>LayMatKhauMoi.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControl\ITS\KhuVucBaoVe.resx">
-      <DependentUpon>KhuVucBaoVe.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControl\WTS\XoaPPASieuThi.resx">
-      <DependentUpon>XoaPPASieuThi.cs</DependentUpon>
+    <EmbeddedResource Include="XtraControl9.resx">
+      <DependentUpon>XtraControl9.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="App.config" />
     <None Include="Properties\Settings.settings">
@@ -352,7 +270,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="Key\SupportTools_TemporaryKey.pfx" />
+    <None Include="SupportTools_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <COMReference Include="Microsoft.Office.Core">
@@ -392,11 +310,6 @@
       <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
-    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
-      <Visible>False</Visible>
-      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
-      <Install>true</Install>
-    </BootstrapperPackage>
     <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
       <Visible>False</Visible>
       <ProductName>.NET Framework 3.5 SP1</ProductName>
@@ -404,18 +317,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\5.ico" />
-    <Content Include="Resources\it.ico" />
-    <None Include="Resources\bg.png" />
-    <None Include="Resources\apply_16x16.png" />
-    <None Include="Resources\add_16x16.png" />
-    <None Include="Resources\actions_remove.svg" />
-    <None Include="Resources\insertcombobox.svg" />
-    <None Include="Resources\ic.png" />
-    <None Include="Resources\5.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadata Include="Connected Services\" />
+    <Content Include="it.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

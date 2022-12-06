@@ -170,7 +170,6 @@
             this.accordionControlElement4,
             this.accordionControlElement9,
             this.accordionControlElement20});
-            this.accordionControlElement12.Expanded = true;
             this.accordionControlElement12.ImageOptions.Image = global::SupportTools.Properties.Resources.apply_16x16;
             this.accordionControlElement12.Name = "accordionControlElement12";
             this.accordionControlElement12.Text = "ITS";
