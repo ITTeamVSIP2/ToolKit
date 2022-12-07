@@ -104,6 +104,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SuaThongTinDonDieuDong.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SuaThongTinDonDieuDong.Designer.cs">
+      <DependentUpon>SuaThongTinDonDieuDong.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControl\ITS\Frm_EditERP.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -247,6 +253,9 @@
     <Compile Include="UserControl\WTS\XoaPPASieuThi.Designer.cs">
       <DependentUpon>XoaPPASieuThi.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="SuaThongTinDonDieuDong.resx">
+      <DependentUpon>SuaThongTinDonDieuDong.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControl\ITS\Frm_EditERP.resx">
       <DependentUpon>Frm_EditERP.cs</DependentUpon>
     </EmbeddedResource>
