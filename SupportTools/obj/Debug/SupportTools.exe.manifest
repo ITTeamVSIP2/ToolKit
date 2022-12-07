@@ -55,18 +55,6 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DevExpress.Charts.v22.1.Core.dll" size="1050512">
-      <assemblyIdentity name="DevExpress.Charts.v22.1.Core" version="22.1.6.0" publicKeyToken="B88D1754D700E49A" language="neutral" processorArchitecture="msil" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>xTVH2AHYjPzECehCvNtJR6FtlX1Tqw5eGOBpbMKJ9pA=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DevExpress.CodeParser.v22.1.dll" size="1738640">
       <assemblyIdentity name="DevExpress.CodeParser.v22.1" version="22.1.6.0" publicKeyToken="B88D1754D700E49A" language="neutral" processorArchitecture="msil" />
       <hash>
@@ -75,6 +63,18 @@
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
         <dsig:DigestValue>muOLVoZzLBUX8JBedEmtZ4U5l8bIDV75iH3YBELISw8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DevExpress.Charts.v22.1.Core.dll" size="1050512">
+      <assemblyIdentity name="DevExpress.Charts.v22.1.Core" version="22.1.6.0" publicKeyToken="B88D1754D700E49A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>xTVH2AHYjPzECehCvNtJR6FtlX1Tqw5eGOBpbMKJ9pA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -1159,14 +1159,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SupportTools.exe" size="1596864">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SupportTools.exe" size="1607104">
       <assemblyIdentity name="SupportTools" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>tdEpYjfcrMZIAkXGbDSHFptAD90azDtvT91meWGC47w=</dsig:DigestValue>
+        <dsig:DigestValue>3tt79ZRLxutR3mMHGsS9rXols8y6dP5jYHbfZqy/yqg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
