@@ -110,6 +110,12 @@
     <Compile Include="SuaThongTinDonDieuDong.Designer.cs">
       <DependentUpon>SuaThongTinDonDieuDong.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControl\Other\TaoTaiKhoanAGP.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\Other\TaoTaiKhoanAGP.Designer.cs">
+      <DependentUpon>TaoTaiKhoanAGP.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControl\ITS\Frm_EditERP.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -255,6 +261,9 @@
     </Compile>
     <EmbeddedResource Include="SuaThongTinDonDieuDong.resx">
       <DependentUpon>SuaThongTinDonDieuDong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\Other\TaoTaiKhoanAGP.resx">
+      <DependentUpon>TaoTaiKhoanAGP.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl\ITS\Frm_EditERP.resx">
       <DependentUpon>Frm_EditERP.cs</DependentUpon>

@@ -846,3 +846,5 @@ D:\Soft-James\ToolKit\SupportTools\obj\Debug\SupportTools.application
 D:\Soft-James\ToolKit\SupportTools\obj\Debug\SupportTools.csproj.CopyComplete
 D:\Soft-James\ToolKit\SupportTools\obj\Debug\SupportTools.exe
 D:\Soft-James\ToolKit\SupportTools\obj\Debug\SupportTools.pdb
+D:\Software\@Kay\ToolKit\SupportTools\obj\Debug\SupportTools.SuaThongTinDonDieuDong.resources
+D:\Software\@Kay\ToolKit\SupportTools\obj\Debug\SupportTools.TaoTaiKhoanAGP.resources
