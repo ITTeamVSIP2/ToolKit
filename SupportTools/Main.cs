@@ -16,7 +16,7 @@ namespace SupportTools
         XtraUserControl _Control1, _Control2, _Control3, _Control4, _Control5, 
             _Control6, _Control7, _Control8, _Control9, _Control10, _Control11, 
             _Control12,_Control13, _Control14, _Control15, _Control16, _Control17, 
-            _Control18, _Control19, _Control20;
+            _Control18, _Control19;
         string suadonkyduyet = "Sửa đơn ký duyệt";
         string kiemtraluutrinh = "Kiểm tra lưu trình";
         string capnhatmavattu = "Cập nhật mã vật tư";
@@ -36,7 +36,6 @@ namespace SupportTools
         string tachbundleticket = "Tách bundle ticket";
         string themdautickgp = "Thêm dấu tick GP";
         string suathongtindondieudong = "Sửa thông tin đơn điều động";
-        string taotaikhoanAGP = "Tạo tài khoản AGP";
         public Main()
         {
             InitializeComponent();
@@ -59,7 +58,6 @@ namespace SupportTools
             _Control17 = OpenControl17(tachbundleticket);
             _Control18 = OpenControl18(themdautickgp);
             _Control19 = OpenControl19(suathongtindondieudong);
-            _Control20 = OpenControl20(taotaikhoanAGP);
         }
         XtraUserControl OpenControl1(string text)
         {
@@ -253,16 +251,6 @@ namespace SupportTools
             xtra.Parent = result;
             return result;
         }
-        XtraUserControl OpenControl20(string text)
-        {
-            XtraUserControl result = new XtraUserControl();
-            result.Name = text.ToLower() + "UserControl";
-            result.Text = text;
-            TaoTaiKhoanAGP xtra = new TaoTaiKhoanAGP();
-            xtra.Dock = System.Windows.Forms.DockStyle.Fill;
-            xtra.Parent = result;
-            return result;
-        }
         private void accordionControl_SelectedElementChanged(object sender, DevExpress.XtraBars.Navigation.SelectedElementChangedEventArgs e)
         {
             if (e.Element == null) return;
@@ -361,11 +349,6 @@ namespace SupportTools
                 tabbedView.AddDocument(_Control19);
                 tabbedView.ActivateDocument(_Control19);
             }
-            if (e.Element.Text == taotaikhoanAGP)
-            {
-                tabbedView.AddDocument(_Control20);
-                tabbedView.ActivateDocument(_Control20);
-            }
         }
 
         private void tabbedView_DocumentClosed(object sender, DevExpress.XtraBars.Docking2010.Views.DocumentEventArgs e)
@@ -389,7 +372,6 @@ namespace SupportTools
             if (e.Document.Caption == tachbundleticket) _Control17 = OpenControl17(tachbundleticket);
             if (e.Document.Caption == themdautickgp) _Control18 = OpenControl18(themdautickgp);
             if (e.Document.Caption == suathongtindondieudong) _Control19 = OpenControl19(suathongtindondieudong);
-            if (e.Document.Caption == taotaikhoanAGP) _Control20 = OpenControl20(taotaikhoanAGP);
         }
 
 

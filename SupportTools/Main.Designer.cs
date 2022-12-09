@@ -275,6 +275,7 @@
             this.accordionControlElement3,
             this.accordionControlElement22,
             this.accordionControlElement25});
+            this.accordionControlElement13.Expanded = true;
             this.accordionControlElement13.ImageOptions.Image = global::SupportTools.Properties.Resources.apply_16x16;
             this.accordionControlElement13.Name = "accordionControlElement13";
             this.accordionControlElement13.Text = "ERP";
