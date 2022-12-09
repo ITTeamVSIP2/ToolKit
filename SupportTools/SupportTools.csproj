@@ -26,8 +26,8 @@
     <InstallUrl>\\fv2it010\IT-Team%28Share%29\Tool Kit\</InstallUrl>
     <UpdateUrl>\\fv2it010\IT-Team%28Share%29\Tool Kit\</UpdateUrl>
     <MinimumRequiredVersion>1.0.0.0</MinimumRequiredVersion>
-    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
-    <ApplicationRevision>6</ApplicationRevision>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>1</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -63,10 +63,16 @@
     <GenerateManifests>true</GenerateManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>true</SignManifests>
+    <SignManifests>false</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>Resources\5.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DevExpress.BonusSkins.v22.1" />
@@ -104,11 +110,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="SuaThongTinDonDieuDong.cs">
+    <Compile Include="UserControl\ITS\SuaThongTinDonDieuDong.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="SuaThongTinDonDieuDong.Designer.cs">
+    <Compile Include="UserControl\ITS\SuaThongTinDonDieuDong.Designer.cs">
       <DependentUpon>SuaThongTinDonDieuDong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\Other\TaoTaiKhoanAGP.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\Other\TaoTaiKhoanAGP.Designer.cs">
+      <DependentUpon>TaoTaiKhoanAGP.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControl\ITS\Frm_EditERP.cs">
       <SubType>Form</SubType>
@@ -253,8 +265,12 @@
     <Compile Include="UserControl\WTS\XoaPPASieuThi.Designer.cs">
       <DependentUpon>XoaPPASieuThi.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="SuaThongTinDonDieuDong.resx">
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="UserControl\ITS\SuaThongTinDonDieuDong.resx">
       <DependentUpon>SuaThongTinDonDieuDong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\Other\TaoTaiKhoanAGP.resx">
+      <DependentUpon>TaoTaiKhoanAGP.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl\ITS\Frm_EditERP.resx">
       <DependentUpon>Frm_EditERP.cs</DependentUpon>
@@ -265,7 +281,6 @@
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -334,6 +349,7 @@
       <DependentUpon>XoaPPASieuThi.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="App.config" />
+    <None Include="Properties\app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
