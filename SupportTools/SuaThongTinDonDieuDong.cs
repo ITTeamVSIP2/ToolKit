@@ -11,6 +11,8 @@ using System.Data.SqlClient;
 using System.Configuration;
 using DevExpress.XtraGrid.Views.Grid;
 using DevExpress.XtraGrid.Views.Grid.ViewInfo;
+using DevExpress.XtraEditors;
+using DevExpress.XtraGrid.Localization;
 
 namespace SupportTools
 {
@@ -18,11 +20,13 @@ namespace SupportTools
     {
         string Sql;
         string SqlLike;
+        string idAfter, orderCodeAfter, desAfter, itemEmployeeIDAfter, employeeCodeAfter, toLineIDAfter, sectionDetailIDAfter, desDetailAfter;
         public SuaThongTinDonDieuDong()
         {
             InitializeComponent();
         }
-        private void btnSelectLine_Click(object sender, EventArgs e)
+
+        private void BtnHienTra_Click(object sender, EventArgs e)
         {
             string connString = ConfigurationManager.ConnectionStrings["ITS_Server"].ConnectionString;
             var connection = new SqlConnection(connString);
@@ -49,6 +53,88 @@ namespace SupportTools
             {
             }
         }
+
+        private void btnConThieu_Click(object sender, EventArgs e)
+        {
+            string Sql;
+            string connString = ConfigurationManager.ConnectionStrings["ITS_Server"].ConnectionString;
+            var connection = new SqlConnection(connString);
+            Sql = "SELECT islsd.SectionID, isls.SectionName, NEWID() AS SectionDetailID" + " "
+                + "FROM dbo.IESewingLineSectionDetail AS islsd" + " "
+                + "INNER JOIN dbo.IESewingLineSection AS isls ON isls.SectionID = islsd.SectionID" + " "
+                + "WHERE islsd.LineID = 'C3A70FEC-F5DB-4D23-B0FF-566A6725479F' AND islsd.SectionID IN" + " "
+                + "(SELECT SectionID FROM IESewingLineSectionDetail WHERE LineID = 'C3A70FEC-F5DB-4D23-B0FF-566A6725479F' AND SectionID NOT IN" + " "
+                + "(SELECT SectionID FROM IESewingLineSectionDetail WHERE LineID = '" + txtAddLine.Text + "'))";
+            //SqlLike = "SELECT LineID, LineName FROM IESewingLine WHERE LineName LIKE '%" + txtNameLine.Text + "%' AND CompanyCode='79101'";
+            try
+            {
+                connection.Open();
+                SqlDataAdapter adapter;
+                adapter = new SqlDataAdapter(Sql, connection);
+                DataTable dt = new DataTable();
+                adapter.Fill(dt);
+                connection.Close();
+                gcInsert.DataSource = dt;
+            }
+            catch (Exception ex)
+            {
+            }
+        }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            string Sql;
+            string connString = ConfigurationManager.ConnectionStrings["ITS_Server"].ConnectionString;
+            var connection = new SqlConnection(connString);
+            Sql = "INSERT INTO dbo.IESewingLineSectionDetail" + " "
+                            + "SELECT NEWID(), '" + txtAddLine.Text + "', islsd.SectionID, islsd.Status, '25413', GETDATE(), '25413', GETDATE()" + " "
+                            + "FROM dbo.IESewingLineSectionDetail AS islsd" + " "
+                            + "WHERE islsd.LineID = 'C3A70FEC-F5DB-4D23-B0FF-566A6725479F' AND islsd.SectionID IN" + " "
+                            + "(SELECT SectionID FROM IESewingLineSectionDetail WHERE LineID = 'C3A70FEC-F5DB-4D23-B0FF-566A6725479F' AND SectionID NOT IN" + " "
+                            + "(SELECT SectionID FROM IESewingLineSectionDetail WHERE LineID = '" + txtAddLine.Text + "'))";
+            //SqlLike = "SELECT LineID, LineName FROM IESewingLine WHERE LineName LIKE '%" + txtNameLine.Text + "%' AND CompanyCode='79101'";
+            try
+            {
+                connection.Open();
+                SqlCommand commandINSERT = new SqlCommand(Sql, connection);
+                commandINSERT.ExecuteNonQuery();
+                MessageBox.Show("Insert successful.", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
+
+        private void btnHienThiAll_Click(object sender, EventArgs e)
+        {
+            string Sql;
+            string connString = ConfigurationManager.ConnectionStrings["ITS_Server"].ConnectionString;
+            var connection = new SqlConnection(connString);
+            Sql = @"SELECT ieat.ID, ieat.OrderCode, ieat.Description, ieated.ItemEmployeeID, HR.EmployeeCode, ieated.ToLineID, ieated.SectionDetailID, ieated.Description AS 'DescriptionDetail'
+                    FROM dbo.IEAbnormalTime AS ieat
+                    INNER JOIN dbo.IEAbnormalTimeEmployeeDetail AS ieated ON ieated.IEAbnormalTimeID = ieat.ID
+					INNER JOIN dbo.HREmployee AS HR ON HR.EmployeeID = ieated.EmployeeID
+                    WHERE ieat.OrderCode='" + txtOrderCode.Text + "'";
+            //SqlLike = "SELECT LineID, LineName FROM IESewingLine WHERE LineName LIKE '%" + txtNameLine.Text + "%' AND CompanyCode='79101'";
+            try
+            {
+                connection.Open();
+                SqlDataAdapter adapter;
+
+                adapter = new SqlDataAdapter(Sql, connection);
+
+                DataTable dt = new DataTable();
+                adapter.Fill(dt);
+                connection.Close();
+                gcIEAbnormalTime.DataSource = dt;
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
+
         private void btnQueryAddLine_Click(object sender, EventArgs e)
         {
             string Sql;
@@ -83,84 +169,13 @@ namespace SupportTools
 
         private void btnCheckQuery_Click(object sender, EventArgs e)
         {
-            string Sql;
-            string connString = ConfigurationManager.ConnectionStrings["ITS_Server"].ConnectionString;
-            var connection = new SqlConnection(connString);
-            Sql = "SELECT islsd.SectionID, isls.SectionName, NEWID() AS SectionDetailID" + " "
-                + "FROM dbo.IESewingLineSectionDetail AS islsd" + " "
-                + "INNER JOIN dbo.IESewingLineSection AS isls ON isls.SectionID = islsd.SectionID" + " "
-                + "WHERE islsd.LineID = 'C3A70FEC-F5DB-4D23-B0FF-566A6725479F' AND islsd.SectionID IN" + " "
-                + "(SELECT SectionID FROM IESewingLineSectionDetail WHERE LineID = 'C3A70FEC-F5DB-4D23-B0FF-566A6725479F' AND SectionID NOT IN" + " "
-                + "(SELECT SectionID FROM IESewingLineSectionDetail WHERE LineID = '" + txtInsertLine.Text + "'))";
-            //SqlLike = "SELECT LineID, LineName FROM IESewingLine WHERE LineName LIKE '%" + txtNameLine.Text + "%' AND CompanyCode='79101'";
-            try
-            {
-                connection.Open();
-                SqlDataAdapter adapter;
-                adapter = new SqlDataAdapter(Sql, connection);
-                DataTable dt = new DataTable();
-                adapter.Fill(dt);
-                connection.Close();
-                gcInsert.DataSource = dt;
-            }
-            catch (Exception ex)
-            {
-            }
+            
         }
 
         private void btnInsertLineDetail_Click(object sender, EventArgs e)
         {
-            string Sql;
-            string connString = ConfigurationManager.ConnectionStrings["ITS_Server"].ConnectionString;
-            var connection = new SqlConnection(connString);
-            Sql = "INSERT INTO dbo.IESewingLineSectionDetail" + " "
-                            + "SELECT NEWID(), '" + txtInsertLine.Text + "', islsd.SectionID, islsd.Status, '25413', GETDATE(), '25413', GETDATE()" + " "
-                            + "FROM dbo.IESewingLineSectionDetail AS islsd" + " "
-                            + "WHERE islsd.LineID = 'C3A70FEC-F5DB-4D23-B0FF-566A6725479F' AND islsd.SectionID IN" + " "
-                            + "(SELECT SectionID FROM IESewingLineSectionDetail WHERE LineID = 'C3A70FEC-F5DB-4D23-B0FF-566A6725479F' AND SectionID NOT IN" + " "
-                            + "(SELECT SectionID FROM IESewingLineSectionDetail WHERE LineID = '" + txtInsertLine.Text + "'))";
-            //SqlLike = "SELECT LineID, LineName FROM IESewingLine WHERE LineName LIKE '%" + txtNameLine.Text + "%' AND CompanyCode='79101'";
-            try
-            {
-                connection.Open();
-                SqlCommand commandINSERT = new SqlCommand(Sql, connection);
-                commandINSERT.ExecuteNonQuery();
-                MessageBox.Show("Insert successful.", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            catch (Exception ex)
-            {
-
-            }
+            
         }
-
-        private void btnSelect_Click(object sender, EventArgs e)
-        {
-            string Sql;
-            string connString = ConfigurationManager.ConnectionStrings["ITS_Server"].ConnectionString;
-            var connection = new SqlConnection(connString);
-            Sql = @"SELECT ieat.ID, ieat.OrderCode, ieat.Description, ieat.Status, ieated.FromLineID, ieated.ToLineID, ieated.SectionDetailID, ieated.Description AS 'DescriptionDetail'
-                    FROM dbo.IEAbnormalTime AS ieat
-                    INNER JOIN dbo.IEAbnormalTimeEmployeeDetail AS ieated ON ieated.IEAbnormalTimeID = ieat.ID
-                    WHERE ieat.OrderCode='" + txtOrderCode.Text + "'";
-            //SqlLike = "SELECT LineID, LineName FROM IESewingLine WHERE LineName LIKE '%" + txtNameLine.Text + "%' AND CompanyCode='79101'";
-            try
-            {
-                connection.Open();
-                SqlDataAdapter adapter;
-
-                adapter = new SqlDataAdapter(Sql, connection);
-
-                DataTable dt = new DataTable();
-                adapter.Fill(dt);
-                connection.Close();
-                gcIEAbnormalTime.DataSource = dt;
-            }
-            catch (Exception ex)
-            {
-
-            }
-        }
-
         private void dgvLine_Click(object sender, EventArgs e)
         {
             GridView view = (GridView)sender;
@@ -168,7 +183,6 @@ namespace SupportTools
             if (hitInfo.InRow)
             {
                 txtAddLine.Text = dgvLine.GetRowCellValue(hitInfo.RowHandle, "LineID").ToString();
-                txtInsertLine.Text = dgvLine.GetRowCellValue(hitInfo.RowHandle, "LineID").ToString();
             }
             string Sql;
             string connString = ConfigurationManager.ConnectionStrings["ITS_Server"].ConnectionString;
@@ -195,27 +209,86 @@ namespace SupportTools
 
             }
         }
-
-        private void gcIEAbnormalTime_Load(object sender, EventArgs e)
+        private void dgvIEAbnormalTime_RowUpdated(object sender, DevExpress.XtraGrid.Views.Base.RowObjectEventArgs e)
         {
-            gcIEAbnormalTime.EmbeddedNavigator.ButtonClick += EmbeddedNavigator_ButtonClick;
+            try
+            {
+                GridView view = (GridView)sender;
+                GridHitInfo hitInfo = view.CalcHitInfo(view.GridControl.PointToClient(Control.MousePosition));
+                if (hitInfo.InRow)
+                {
+                    idAfter = System.Convert.ToString(dgvIEAbnormalTime.GetRowCellValue(hitInfo.RowHandle, "ID"));
+                    orderCodeAfter = System.Convert.ToString(dgvIEAbnormalTime.GetRowCellValue(hitInfo.RowHandle, "OrderCode"));
+                    desAfter = System.Convert.ToString(dgvIEAbnormalTime.GetRowCellValue(hitInfo.RowHandle, "Description"));
+                    itemEmployeeIDAfter = System.Convert.ToString(dgvIEAbnormalTime.GetRowCellValue(hitInfo.RowHandle, "ItemEmployeeID"));
+                    employeeCodeAfter = System.Convert.ToString(dgvIEAbnormalTime.GetRowCellValue(hitInfo.RowHandle, "EmployeeCode"));
+                    toLineIDAfter = System.Convert.ToString(dgvIEAbnormalTime.GetRowCellValue(hitInfo.RowHandle, "ToLineID"));
+                    sectionDetailIDAfter = System.Convert.ToString(dgvIEAbnormalTime.GetRowCellValue(hitInfo.RowHandle, "SectionDetailID"));
+                    desDetailAfter = System.Convert.ToString(dgvIEAbnormalTime.GetRowCellValue(hitInfo.RowHandle, "DescriptionDetail"));
+                }
+                string connString = ConfigurationManager.ConnectionStrings["ITS_Server"].ConnectionString;
+                var connection = new SqlConnection(connString);
+                if (checkEditThayDoiTatCa.Checked == true)
+                {
+                    string SqlMain = @"UPDATE IEAbnormalTime
+                    SET Description = N'" + desAfter + "' WHERE ID = '" + idAfter + "' AND OrderCode = '" + orderCodeAfter + "'";
+                    string SqlDetail = @"UPDATE dbo.IEAbnormalTimeEmployeeDetail
+                    SET ToLineID='" + toLineIDAfter + "', SectionDetailID='" + sectionDetailIDAfter + "', Description=N'" + desDetailAfter + "' WHERE IEAbnormalTimeID='" + idAfter + "'";
+                    DialogResult dialogResult = XtraMessageBox.Show("Bạn có chắc chắn muốn thay đổi tất cả?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (dialogResult == DialogResult.Yes)
+                    {
+                        connection.Open();
+                        SqlCommand commandMain = new SqlCommand(SqlMain, connection);
+                        SqlCommand commandDetail = new SqlCommand(SqlDetail, connection);
+                        commandMain.ExecuteNonQuery();
+                        commandDetail.ExecuteNonQuery();
+                        connection.Close();
+                        btnHienThiAll_Click(sender, e);
+                        XtraMessageBox.Show("Thay đổi tất cả thành công.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else if (dialogResult == DialogResult.No)
+                    {
+                        btnHienThiAll_Click(sender, e);
+                    }
+                    
+                }
+                else
+                {
+                    string SqlUpdateDetail = "UPDATE dbo.[IEAbnormalTimeEmployeeDetail]" + " "
+                                + "SET ToLineID='" + toLineIDAfter + "', SectionDetailID='" + sectionDetailIDAfter + "', Description=N'" + desDetailAfter + "'" + " "
+                                + "WHERE ItemEmployeeID = '" + itemEmployeeIDAfter + "'";
+                    connection.Open();
+                    SqlCommand commandPrefix = new SqlCommand(SqlUpdateDetail, connection);
+                    commandPrefix.ExecuteNonQuery();
+                    connection.Close();
+                    XtraMessageBox.Show("Thay đổi thành công.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                
+            }
+            catch (Exception ex)
+            {
+                XtraMessageBox.Show(ex.Message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
         }
 
-        private void EmbeddedNavigator_ButtonClick(object sender, DevExpress.XtraEditors.NavigatorButtonClickEventArgs e)
+        private void dgvIEAbnormalTime_Click(object sender, EventArgs e)
         {
-            /*int[] selectedRows = dgvIEAbnormalTime.GetSelectedRows();
-            foreach (int rowHandle in selectedRows)
-            {
-                if (rowHandle >= 0)
-                    var cellValue = dgvIEAbnormalTime.GetRowCellValue(rowHandle, "Order Code");
-            }
-            if (e.Button.ButtonType == DevExpress.XtraEditors.NavigatorButtonType.EndEdit)
-            {
+            //GridView view = (GridView)sender;
+            //GridHitInfo hitInfo = view.CalcHitInfo(view.GridControl.PointToClient(Control.MousePosition));
 
-                string a = dgvIEAbnormalTime.GetRowCellValue(Rơ)
-                MessageBox.Show("Đã cập nhật thành công", a + "", MessageBoxButtons.OK);
-
-            }*/
+            //if (hitInfo.InRow)
+            //{
+            //    string id = System.Convert.ToString(dgvIEAbnormalTime.GetRowCellValue(hitInfo.RowHandle, "ID"));
+            //    string orderCode = System.Convert.ToString(dgvIEAbnormalTime.GetRowCellValue(hitInfo.RowHandle, "OrderCode"));
+            //    string des = System.Convert.ToString(dgvIEAbnormalTime.GetRowCellValue(hitInfo.RowHandle, "Description"));
+            //    string stt = System.Convert.ToString(dgvIEAbnormalTime.GetRowCellValue(hitInfo.RowHandle, "Status"));
+            //    string fromLineID = System.Convert.ToString(dgvIEAbnormalTime.GetRowCellValue(hitInfo.RowHandle, "FromLineID"));
+            //    string toLineID = System.Convert.ToString(dgvIEAbnormalTime.GetRowCellValue(hitInfo.RowHandle, "ToLineID"));
+            //    string sectionDetailID = System.Convert.ToString(dgvIEAbnormalTime.GetRowCellValue(hitInfo.RowHandle, "SectionDetailID"));
+            //    string desDetail = System.Convert.ToString(dgvIEAbnormalTime.GetRowCellValue(hitInfo.RowHandle, "DescriptionDetail"));
+            //}
+            
         }
     }
 }
