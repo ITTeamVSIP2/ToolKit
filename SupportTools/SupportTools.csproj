@@ -26,8 +26,8 @@
     <InstallUrl>\\fv2it010\IT-Team%28Share%29\Tool Kit\</InstallUrl>
     <UpdateUrl>\\fv2it010\IT-Team%28Share%29\Tool Kit\</UpdateUrl>
     <MinimumRequiredVersion>1.0.0.0</MinimumRequiredVersion>
-    <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>1</ApplicationRevision>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <ApplicationRevision>6</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -63,16 +63,10 @@
     <GenerateManifests>true</GenerateManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>false</SignManifests>
+    <SignManifests>true</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>Resources\5.ico</ApplicationIcon>
-  </PropertyGroup>
-  <PropertyGroup>
-    <TargetZone>LocalIntranet</TargetZone>
-  </PropertyGroup>
-  <PropertyGroup>
-    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DevExpress.BonusSkins.v22.1" />
@@ -110,10 +104,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="UserControl\ITS\SuaThongTinDonDieuDong.cs">
+    <Compile Include="SuaThongTinDonDieuDong.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControl\ITS\SuaThongTinDonDieuDong.Designer.cs">
+    <Compile Include="SuaThongTinDonDieuDong.Designer.cs">
       <DependentUpon>SuaThongTinDonDieuDong.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControl\Other\TaoTaiKhoanAGP.cs">
@@ -265,8 +259,7 @@
     <Compile Include="UserControl\WTS\XoaPPASieuThi.Designer.cs">
       <DependentUpon>XoaPPASieuThi.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Properties\licenses.licx" />
-    <EmbeddedResource Include="UserControl\ITS\SuaThongTinDonDieuDong.resx">
+    <EmbeddedResource Include="SuaThongTinDonDieuDong.resx">
       <DependentUpon>SuaThongTinDonDieuDong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl\Other\TaoTaiKhoanAGP.resx">
@@ -281,6 +274,7 @@
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -349,7 +343,6 @@
       <DependentUpon>XoaPPASieuThi.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="App.config" />
-    <None Include="Properties\app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

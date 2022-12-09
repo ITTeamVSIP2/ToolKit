@@ -30,20 +30,9 @@ namespace SupportTools
         private void InitializeComponent()
         {
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.btnConThieu = new DevExpress.XtraEditors.SimpleButton();
-            this.btnThem = new DevExpress.XtraEditors.SimpleButton();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.groupControl5 = new DevExpress.XtraEditors.GroupControl();
             this.gcIEAbnormalTime = new DevExpress.XtraGrid.GridControl();
             this.dgvIEAbnormalTime = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.colID = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colOrderCode = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colDescription = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colItemEmployeeID = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colEmployeeCode = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colToLineID = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colSectionDetailID = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colDescriptionDetail = new DevExpress.XtraGrid.Columns.GridColumn();
             this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
             this.gcInsert = new DevExpress.XtraGrid.GridControl();
             this.dgvInsert = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -61,6 +50,9 @@ namespace SupportTools
             this.txtOrderCode = new DevExpress.XtraEditors.TextEdit();
             this.txtAddLine = new DevExpress.XtraEditors.TextEdit();
             this.txtNameLine = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            this.btnThem = new DevExpress.XtraEditors.SimpleButton();
+            this.btnConThieu = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl5)).BeginInit();
@@ -114,32 +106,6 @@ namespace SupportTools
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Danh sách line";
             // 
-            // btnConThieu
-            // 
-            this.btnConThieu.Location = new System.Drawing.Point(829, 6);
-            this.btnConThieu.Name = "btnConThieu";
-            this.btnConThieu.Size = new System.Drawing.Size(100, 40);
-            this.btnConThieu.TabIndex = 28;
-            this.btnConThieu.Text = "Còn thiếu";
-            this.btnConThieu.Click += new System.EventHandler(this.btnConThieu_Click);
-            // 
-            // btnThem
-            // 
-            this.btnThem.Location = new System.Drawing.Point(935, 6);
-            this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(100, 40);
-            this.btnThem.TabIndex = 27;
-            this.btnThem.Text = "Thêm";
-            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
-            // 
-            // labelControl3
-            // 
-            this.labelControl3.Location = new System.Drawing.Point(23, 438);
-            this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(39, 13);
-            this.labelControl3.TabIndex = 26;
-            this.labelControl3.Text = "Mã đơn:";
-            // 
             // groupControl5
             // 
             this.groupControl5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -183,90 +149,12 @@ namespace SupportTools
             // 
             // dgvIEAbnormalTime
             // 
-            this.dgvIEAbnormalTime.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.colID,
-            this.colOrderCode,
-            this.colDescription,
-            this.colItemEmployeeID,
-            this.colEmployeeCode,
-            this.colToLineID,
-            this.colSectionDetailID,
-            this.colDescriptionDetail});
             this.dgvIEAbnormalTime.GridControl = this.gcIEAbnormalTime;
             this.dgvIEAbnormalTime.Name = "dgvIEAbnormalTime";
             this.dgvIEAbnormalTime.OptionsBehavior.EditingMode = DevExpress.XtraGrid.Views.Grid.GridEditingMode.EditFormInplace;
             this.dgvIEAbnormalTime.OptionsView.ShowGroupPanel = false;
-            this.dgvIEAbnormalTime.ShowingPopupEditForm += new DevExpress.XtraGrid.Views.Grid.ShowingPopupEditFormEventHandler(this.dgvIEAbnormalTime_ShowingPopupEditForm);
             this.dgvIEAbnormalTime.RowUpdated += new DevExpress.XtraGrid.Views.Base.RowObjectEventHandler(this.dgvIEAbnormalTime_RowUpdated);
             this.dgvIEAbnormalTime.Click += new System.EventHandler(this.dgvIEAbnormalTime_Click);
-            // 
-            // colID
-            // 
-            this.colID.Caption = "ID";
-            this.colID.FieldName = "ID";
-            this.colID.Name = "colID";
-            this.colID.OptionsColumn.ReadOnly = true;
-            this.colID.Visible = true;
-            this.colID.VisibleIndex = 0;
-            // 
-            // colOrderCode
-            // 
-            this.colOrderCode.Caption = "Order Code";
-            this.colOrderCode.FieldName = "OrderCode";
-            this.colOrderCode.Name = "colOrderCode";
-            this.colOrderCode.OptionsColumn.ReadOnly = true;
-            this.colOrderCode.Visible = true;
-            this.colOrderCode.VisibleIndex = 1;
-            // 
-            // colDescription
-            // 
-            this.colDescription.Caption = "Description";
-            this.colDescription.FieldName = "Description";
-            this.colDescription.Name = "colDescription";
-            this.colDescription.Visible = true;
-            this.colDescription.VisibleIndex = 2;
-            // 
-            // colItemEmployeeID
-            // 
-            this.colItemEmployeeID.Caption = "Item Employee ID";
-            this.colItemEmployeeID.FieldName = "ItemEmployeeID";
-            this.colItemEmployeeID.Name = "colItemEmployeeID";
-            this.colItemEmployeeID.OptionsColumn.ReadOnly = true;
-            this.colItemEmployeeID.Visible = true;
-            this.colItemEmployeeID.VisibleIndex = 3;
-            // 
-            // colEmployeeCode
-            // 
-            this.colEmployeeCode.Caption = "Employee Code";
-            this.colEmployeeCode.FieldName = "EmployeeCode";
-            this.colEmployeeCode.Name = "colEmployeeCode";
-            this.colEmployeeCode.OptionsColumn.ReadOnly = true;
-            this.colEmployeeCode.Visible = true;
-            this.colEmployeeCode.VisibleIndex = 4;
-            // 
-            // colToLineID
-            // 
-            this.colToLineID.Caption = "To Line ID";
-            this.colToLineID.FieldName = "ToLineID";
-            this.colToLineID.Name = "colToLineID";
-            this.colToLineID.Visible = true;
-            this.colToLineID.VisibleIndex = 5;
-            // 
-            // colSectionDetailID
-            // 
-            this.colSectionDetailID.Caption = "Section Detail ID";
-            this.colSectionDetailID.FieldName = "SectionDetailID";
-            this.colSectionDetailID.Name = "colSectionDetailID";
-            this.colSectionDetailID.Visible = true;
-            this.colSectionDetailID.VisibleIndex = 6;
-            // 
-            // colDescriptionDetail
-            // 
-            this.colDescriptionDetail.Caption = "Description Detail";
-            this.colDescriptionDetail.FieldName = "DescriptionDetail";
-            this.colDescriptionDetail.Name = "colDescriptionDetail";
-            this.colDescriptionDetail.Visible = true;
-            this.colDescriptionDetail.VisibleIndex = 7;
             // 
             // groupControl4
             // 
@@ -423,6 +311,32 @@ namespace SupportTools
             this.txtNameLine.Size = new System.Drawing.Size(155, 20);
             this.txtNameLine.TabIndex = 0;
             // 
+            // labelControl3
+            // 
+            this.labelControl3.Location = new System.Drawing.Point(23, 438);
+            this.labelControl3.Name = "labelControl3";
+            this.labelControl3.Size = new System.Drawing.Size(39, 13);
+            this.labelControl3.TabIndex = 26;
+            this.labelControl3.Text = "Mã đơn:";
+            // 
+            // btnThem
+            // 
+            this.btnThem.Location = new System.Drawing.Point(935, 6);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(100, 40);
+            this.btnThem.TabIndex = 27;
+            this.btnThem.Text = "Thêm";
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
+            // 
+            // btnConThieu
+            // 
+            this.btnConThieu.Location = new System.Drawing.Point(829, 6);
+            this.btnConThieu.Name = "btnConThieu";
+            this.btnConThieu.Size = new System.Drawing.Size(100, 40);
+            this.btnConThieu.TabIndex = 28;
+            this.btnConThieu.Text = "Còn thiếu";
+            this.btnConThieu.Click += new System.EventHandler(this.btnConThieu_Click);
+            // 
             // SuaThongTinDonDieuDong
             // 
             this.Appearance.BackColor = System.Drawing.Color.White;
@@ -485,13 +399,5 @@ namespace SupportTools
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.SimpleButton btnConThieu;
         private DevExpress.XtraEditors.SimpleButton btnThem;
-        private DevExpress.XtraGrid.Columns.GridColumn colID;
-        private DevExpress.XtraGrid.Columns.GridColumn colOrderCode;
-        private DevExpress.XtraGrid.Columns.GridColumn colDescription;
-        private DevExpress.XtraGrid.Columns.GridColumn colItemEmployeeID;
-        private DevExpress.XtraGrid.Columns.GridColumn colEmployeeCode;
-        private DevExpress.XtraGrid.Columns.GridColumn colToLineID;
-        private DevExpress.XtraGrid.Columns.GridColumn colSectionDetailID;
-        private DevExpress.XtraGrid.Columns.GridColumn colDescriptionDetail;
     }
 }

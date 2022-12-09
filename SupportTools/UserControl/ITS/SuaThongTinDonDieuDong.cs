@@ -13,7 +13,6 @@ using DevExpress.XtraGrid.Views.Grid;
 using DevExpress.XtraGrid.Views.Grid.ViewInfo;
 using DevExpress.XtraEditors;
 using DevExpress.XtraGrid.Localization;
-using DevExpress.XtraGrid.EditForm.Helpers.Controls;
 
 namespace SupportTools
 {
@@ -25,7 +24,6 @@ namespace SupportTools
         public SuaThongTinDonDieuDong()
         {
             InitializeComponent();
-
         }
 
         private void BtnHienTra_Click(object sender, EventArgs e)
@@ -55,14 +53,6 @@ namespace SupportTools
             {
             }
         }
-
-
-
-        
-
-        
-
-
 
         private void btnConThieu_Click(object sender, EventArgs e)
         {
@@ -176,6 +166,16 @@ namespace SupportTools
 
         }
 
+
+        private void btnCheckQuery_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnInsertLineDetail_Click(object sender, EventArgs e)
+        {
+            
+        }
         private void dgvLine_Click(object sender, EventArgs e)
         {
             GridView view = (GridView)sender;
@@ -207,46 +207,6 @@ namespace SupportTools
             catch (Exception ex)
             {
 
-            }
-        }
-        private void dgvIEAbnormalTime_ShowingPopupEditForm(object sender, ShowingPopupEditFormEventArgs e)
-        {
-            foreach (Control control in e.EditForm.Controls)
-            {
-                if (!(control is EditFormContainer))
-                {
-                    continue;
-                }
-                foreach (Control nestedControl in control.Controls)
-                {
-                    if (!(nestedControl is PanelControl))
-                    {
-                        continue;
-                    }
-                    foreach (Control button in nestedControl.Controls)
-                    {
-                        if (button is SimpleButton)
-                        {
-                            var simpleButton = button as SimpleButton;
-                            ChangeButtonCaption(simpleButton);
-                        }
-                    }
-                }
-            }
-        }
-        private void ChangeButtonCaption(SimpleButton simpleButton)
-        {
-            string newUpdateBtnText = "New Update";
-            string newCancelBtnText = "New Cancel";
-            string btnText = simpleButton.Text;
-            switch (btnText)
-            {
-                case "Update":
-                    simpleButton.Text = newUpdateBtnText;
-                    break;
-                case "Cancel":
-                    simpleButton.Text = newCancelBtnText;
-                    break;
             }
         }
         private void dgvIEAbnormalTime_RowUpdated(object sender, DevExpress.XtraGrid.Views.Base.RowObjectEventArgs e)
@@ -294,18 +254,13 @@ namespace SupportTools
                 }
                 else
                 {
-                    string SqlMain = @"UPDATE IEAbnormalTime
-                    SET Description = N'" + desAfter + "' WHERE ID = '" + idAfter + "' AND OrderCode = '" + orderCodeAfter + "'";
                     string SqlUpdateDetail = "UPDATE dbo.[IEAbnormalTimeEmployeeDetail]" + " "
                                 + "SET ToLineID='" + toLineIDAfter + "', SectionDetailID='" + sectionDetailIDAfter + "', Description=N'" + desDetailAfter + "'" + " "
                                 + "WHERE ItemEmployeeID = '" + itemEmployeeIDAfter + "'";
                     connection.Open();
                     SqlCommand commandPrefix = new SqlCommand(SqlUpdateDetail, connection);
-                    SqlCommand commandMain = new SqlCommand(SqlMain, connection);
                     commandPrefix.ExecuteNonQuery();
-                    commandMain.ExecuteNonQuery();
                     connection.Close();
-                    btnHienThiAll_Click(sender, e);
                     XtraMessageBox.Show("Thay đổi thành công.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 
