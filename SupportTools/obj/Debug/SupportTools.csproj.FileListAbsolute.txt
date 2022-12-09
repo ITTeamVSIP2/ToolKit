@@ -120,7 +120,6 @@ D:\Soft-James\ToolKit\SupportTools\bin\Debug\ja\DevExpress.PivotGrid.v22.1.Core.
 D:\Soft-James\ToolKit\SupportTools\bin\Debug\de\DevExpress.XtraGauges.v22.1.Core.resources.dll
 D:\Soft-James\ToolKit\SupportTools\bin\Debug\es\DevExpress.XtraGauges.v22.1.Core.resources.dll
 D:\Soft-James\ToolKit\SupportTools\bin\Debug\ja\DevExpress.XtraGauges.v22.1.Core.resources.dll
-D:\Soft-James\ToolKit\SupportTools\obj\Debug\SupportTools.csproj.AssemblyReference.cache
 D:\Soft-James\ToolKit\SupportTools\obj\Debug\SupportTools.csproj.ResolveComReference.cache
 D:\Soft-James\ToolKit\SupportTools\obj\Debug\SupportTools.SuaThongTinDonDieuDong.resources
 D:\Soft-James\ToolKit\SupportTools\obj\Debug\SupportTools.TaoTaiKhoanAGP.resources

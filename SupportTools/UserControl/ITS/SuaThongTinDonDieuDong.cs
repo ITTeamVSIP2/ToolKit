@@ -27,7 +27,7 @@ namespace SupportTools
             InitializeComponent();
 
         }
-
+        //
         private void BtnHienTra_Click(object sender, EventArgs e)
         {
             string connString = ConfigurationManager.ConnectionStrings["ITS_Server"].ConnectionString;
